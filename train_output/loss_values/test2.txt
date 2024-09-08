@@ -1,0 +1,1270 @@
+[INFO] EPOCH: 1
+Train loss: 0.095910,  Validation loss: 0.101130, Test loss: 0.083280, Train pred loss: 0.095035, Validation pred loss: 0.100395, Test pred loss: 0.082545, Train kl loss: 0.000875, Validation kl loss: 0.000734, Test kl loss:  0.000735
+Time for epoch: 49.157739877700806
+[INFO] EPOCH: 2
+Train loss: 0.090796,  Validation loss: 0.101739, Test loss: 0.081927, Train pred loss: 0.090118, Validation pred loss: 0.101114, Test pred loss: 0.081276, Train kl loss: 0.000678, Validation kl loss: 0.000625, Test kl loss:  0.000651
+Time for epoch: 49.342902421951294
+[INFO] EPOCH: 3
+Train loss: 0.089164,  Validation loss: 0.101673, Test loss: 0.081106, Train pred loss: 0.088565, Validation pred loss: 0.101117, Test pred loss: 0.080497, Train kl loss: 0.000599, Validation kl loss: 0.000555, Test kl loss:  0.000609
+Time for epoch: 49.43745732307434
+[INFO] EPOCH: 4
+Train loss: 0.070111,  Validation loss: 0.083018, Test loss: 0.056043, Train pred loss: 0.069338, Validation pred loss: 0.082273, Test pred loss: 0.055198, Train kl loss: 0.000773, Validation kl loss: 0.000745, Test kl loss:  0.000846
+Time for epoch: 49.46504044532776
+[INFO] EPOCH: 5
+Train loss: 0.042519,  Validation loss: 0.081534, Test loss: 0.043608, Train pred loss: 0.041435, Validation pred loss: 0.080519, Test pred loss: 0.042492, Train kl loss: 0.001084, Validation kl loss: 0.001015, Test kl loss:  0.001116
+Time for epoch: 49.42858552932739
+[INFO] EPOCH: 6
+Train loss: 0.024584,  Validation loss: 0.079368, Test loss: 0.041133, Train pred loss: 0.023320, Validation pred loss: 0.078241, Test pred loss: 0.039900, Train kl loss: 0.001263, Validation kl loss: 0.001127, Test kl loss:  0.001233
+Time for epoch: 49.60451078414917
+[INFO] EPOCH: 7
+Train loss: 0.016336,  Validation loss: 0.078488, Test loss: 0.040485, Train pred loss: 0.015041, Validation pred loss: 0.077346, Test pred loss: 0.039267, Train kl loss: 0.001295, Validation kl loss: 0.001142, Test kl loss:  0.001218
+Time for epoch: 49.58416986465454
+[INFO] EPOCH: 8
+Train loss: 0.012702,  Validation loss: 0.077769, Test loss: 0.040565, Train pred loss: 0.011415, Validation pred loss: 0.076614, Test pred loss: 0.039350, Train kl loss: 0.001287, Validation kl loss: 0.001156, Test kl loss:  0.001215
+Time for epoch: 49.796162128448486
+[INFO] EPOCH: 9
+Train loss: 0.010804,  Validation loss: 0.079459, Test loss: 0.041152, Train pred loss: 0.009540, Validation pred loss: 0.078316, Test pred loss: 0.039956, Train kl loss: 0.001264, Validation kl loss: 0.001143, Test kl loss:  0.001196
+Time for epoch: 49.86988663673401
+[INFO] EPOCH: 10
+Train loss: 0.009821,  Validation loss: 0.079168, Test loss: 0.041140, Train pred loss: 0.008579, Validation pred loss: 0.078037, Test pred loss: 0.039967, Train kl loss: 0.001242, Validation kl loss: 0.001130, Test kl loss:  0.001173
+Time for epoch: 49.81558895111084
+[INFO] EPOCH: 11
+Train loss: 0.009175,  Validation loss: 0.079103, Test loss: 0.040765, Train pred loss: 0.007946, Validation pred loss: 0.077979, Test pred loss: 0.039612, Train kl loss: 0.001228, Validation kl loss: 0.001124, Test kl loss:  0.001153
+Time for epoch: 211.89479875564575
+Validation loss is at a minimum. Saving the model
+[INFO] EPOCH: 12
+Train loss: 0.008738,  Validation loss: 0.078683, Test loss: 0.040385, Train pred loss: 0.007527, Validation pred loss: 0.077567, Test pred loss: 0.039234, Train kl loss: 0.001211, Validation kl loss: 0.001117, Test kl loss:  0.001151
+Time for epoch: 50.45542240142822
+[INFO] EPOCH: 13
+Train loss: 0.008399,  Validation loss: 0.079268, Test loss: 0.039918, Train pred loss: 0.007198, Validation pred loss: 0.078160, Test pred loss: 0.038781, Train kl loss: 0.001200, Validation kl loss: 0.001108, Test kl loss:  0.001136
+Time for epoch: 50.01733136177063
+[INFO] EPOCH: 14
+Train loss: 0.008038,  Validation loss: 0.078780, Test loss: 0.039769, Train pred loss: 0.006861, Validation pred loss: 0.077697, Test pred loss: 0.038661, Train kl loss: 0.001177, Validation kl loss: 0.001083, Test kl loss:  0.001108
+Time for epoch: 50.072211265563965
+[INFO] EPOCH: 15
+Train loss: 0.007835,  Validation loss: 0.079002, Test loss: 0.039405, Train pred loss: 0.006671, Validation pred loss: 0.077909, Test pred loss: 0.038295, Train kl loss: 0.001164, Validation kl loss: 0.001093, Test kl loss:  0.001109
+Time for epoch: 49.865506410598755
+[INFO] EPOCH: 16
+Train loss: 0.007559,  Validation loss: 0.079074, Test loss: 0.039086, Train pred loss: 0.006416, Validation pred loss: 0.077991, Test pred loss: 0.037995, Train kl loss: 0.001143, Validation kl loss: 0.001082, Test kl loss:  0.001091
+Time for epoch: 50.005956172943115
+[INFO] EPOCH: 17
+Train loss: 0.007393,  Validation loss: 0.078941, Test loss: 0.038430, Train pred loss: 0.006260, Validation pred loss: 0.077878, Test pred loss: 0.037354, Train kl loss: 0.001133, Validation kl loss: 0.001063, Test kl loss:  0.001076
+Time for epoch: 49.969353914260864
+[INFO] EPOCH: 18
+Train loss: 0.007213,  Validation loss: 0.078966, Test loss: 0.038084, Train pred loss: 0.006090, Validation pred loss: 0.077908, Test pred loss: 0.037016, Train kl loss: 0.001123, Validation kl loss: 0.001058, Test kl loss:  0.001068
+Time for epoch: 49.98291754722595
+[INFO] EPOCH: 19
+Train loss: 0.007037,  Validation loss: 0.079662, Test loss: 0.038194, Train pred loss: 0.005923, Validation pred loss: 0.078614, Test pred loss: 0.037136, Train kl loss: 0.001113, Validation kl loss: 0.001048, Test kl loss:  0.001058
+Time for epoch: 49.930267333984375
+Validation loss is at a minimum. Saving the model
+[INFO] EPOCH: 20
+Train loss: 0.006975,  Validation loss: 0.078050, Test loss: 0.037836, Train pred loss: 0.005873, Validation pred loss: 0.077002, Test pred loss: 0.036788, Train kl loss: 0.001102, Validation kl loss: 0.001049, Test kl loss:  0.001048
+Time for epoch: 51.177961587905884
+Validation loss is at a minimum. Saving the model
+[INFO] EPOCH: 21
+Train loss: 0.006819,  Validation loss: 0.077763, Test loss: 0.037816, Train pred loss: 0.005729, Validation pred loss: 0.076730, Test pred loss: 0.036785, Train kl loss: 0.001090, Validation kl loss: 0.001033, Test kl loss:  0.001031
+Time for epoch: 240.57061672210693
+[INFO] EPOCH: 22
+Train loss: 0.006702,  Validation loss: 0.078157, Test loss: 0.037245, Train pred loss: 0.005618, Validation pred loss: 0.077130, Test pred loss: 0.036226, Train kl loss: 0.001084, Validation kl loss: 0.001027, Test kl loss:  0.001019
+Time for epoch: 49.62659001350403
+Validation loss is at a minimum. Saving the model
+[INFO] EPOCH: 23
+Train loss: 0.006630,  Validation loss: 0.077519, Test loss: 0.037071, Train pred loss: 0.005553, Validation pred loss: 0.076493, Test pred loss: 0.036051, Train kl loss: 0.001077, Validation kl loss: 0.001026, Test kl loss:  0.001020
+Time for epoch: 51.06703209877014
+Validation loss is at a minimum. Saving the model
+[INFO] EPOCH: 24
+Train loss: 0.006558,  Validation loss: 0.077502, Test loss: 0.036993, Train pred loss: 0.005488, Validation pred loss: 0.076480, Test pred loss: 0.035973, Train kl loss: 0.001070, Validation kl loss: 0.001023, Test kl loss:  0.001020
+Time for epoch: 51.01075530052185
+[INFO] EPOCH: 25
+Train loss: 0.006445,  Validation loss: 0.078138, Test loss: 0.036739, Train pred loss: 0.005391, Validation pred loss: 0.077134, Test pred loss: 0.035740, Train kl loss: 0.001054, Validation kl loss: 0.001003, Test kl loss:  0.000999
+Time for epoch: 49.96050310134888
+[INFO] EPOCH: 26
+Train loss: 0.006444,  Validation loss: 0.077503, Test loss: 0.036997, Train pred loss: 0.005394, Validation pred loss: 0.076508, Test pred loss: 0.036006, Train kl loss: 0.001050, Validation kl loss: 0.000995, Test kl loss:  0.000991
+Time for epoch: 49.99781584739685
+[INFO] EPOCH: 27
+Train loss: 0.006305,  Validation loss: 0.078322, Test loss: 0.036725, Train pred loss: 0.005260, Validation pred loss: 0.077322, Test pred loss: 0.035736, Train kl loss: 0.001045, Validation kl loss: 0.000999, Test kl loss:  0.000988
+Time for epoch: 50.08267664909363
+[INFO] EPOCH: 28
+Train loss: 0.006213,  Validation loss: 0.077893, Test loss: 0.036289, Train pred loss: 0.005180, Validation pred loss: 0.076907, Test pred loss: 0.035314, Train kl loss: 0.001033, Validation kl loss: 0.000986, Test kl loss:  0.000976
+Time for epoch: 49.98907017707825
+Validation loss is at a minimum. Saving the model
+[INFO] EPOCH: 29
+Train loss: 0.006336,  Validation loss: 0.076209, Test loss: 0.037064, Train pred loss: 0.005315, Validation pred loss: 0.075238, Test pred loss: 0.036111, Train kl loss: 0.001021, Validation kl loss: 0.000971, Test kl loss:  0.000953
+Time for epoch: 51.20612359046936
+[INFO] EPOCH: 30
+Train loss: 0.006099,  Validation loss: 0.077207, Test loss: 0.036107, Train pred loss: 0.005078, Validation pred loss: 0.076232, Test pred loss: 0.035146, Train kl loss: 0.001021, Validation kl loss: 0.000975, Test kl loss:  0.000961
+Time for epoch: 49.95789694786072
+[INFO] EPOCH: 31
+Train loss: 0.006079,  Validation loss: 0.077241, Test loss: 0.035912, Train pred loss: 0.005068, Validation pred loss: 0.076274, Test pred loss: 0.034961, Train kl loss: 0.001011, Validation kl loss: 0.000967, Test kl loss:  0.000950
+Time for epoch: 271.976567029953
+[INFO] EPOCH: 32
+Train loss: 0.006056,  Validation loss: 0.077820, Test loss: 0.036185, Train pred loss: 0.005050, Validation pred loss: 0.076856, Test pred loss: 0.035242, Train kl loss: 0.001006, Validation kl loss: 0.000964, Test kl loss:  0.000943
+Time for epoch: 61.651920318603516
+[INFO] EPOCH: 33
+Train loss: 0.005941,  Validation loss: 0.077856, Test loss: 0.035812, Train pred loss: 0.004940, Validation pred loss: 0.076890, Test pred loss: 0.034868, Train kl loss: 0.001001, Validation kl loss: 0.000966, Test kl loss:  0.000945
+Time for epoch: 50.586132526397705
+[INFO] EPOCH: 34
+Train loss: 0.005945,  Validation loss: 0.076950, Test loss: 0.036056, Train pred loss: 0.004952, Validation pred loss: 0.075983, Test pred loss: 0.035119, Train kl loss: 0.000993, Validation kl loss: 0.000967, Test kl loss:  0.000937
+Time for epoch: 50.39268374443054
+[INFO] EPOCH: 35
+Train loss: 0.005892,  Validation loss: 0.076682, Test loss: 0.035876, Train pred loss: 0.004905, Validation pred loss: 0.075727, Test pred loss: 0.034947, Train kl loss: 0.000987, Validation kl loss: 0.000956, Test kl loss:  0.000928
+Time for epoch: 50.53477096557617
+[INFO] EPOCH: 36
+Train loss: 0.005871,  Validation loss: 0.077109, Test loss: 0.035567, Train pred loss: 0.004890, Validation pred loss: 0.076166, Test pred loss: 0.034648, Train kl loss: 0.000981, Validation kl loss: 0.000943, Test kl loss:  0.000919
+Time for epoch: 50.182289123535156
+[INFO] EPOCH: 37
+Train loss: 0.005834,  Validation loss: 0.077156, Test loss: 0.035445, Train pred loss: 0.004853, Validation pred loss: 0.076207, Test pred loss: 0.034522, Train kl loss: 0.000980, Validation kl loss: 0.000949, Test kl loss:  0.000923
+Time for epoch: 50.17772698402405
+[INFO] EPOCH: 38
+Train loss: 0.005716,  Validation loss: 0.077819, Test loss: 0.035570, Train pred loss: 0.004748, Validation pred loss: 0.076880, Test pred loss: 0.034659, Train kl loss: 0.000968, Validation kl loss: 0.000939, Test kl loss:  0.000912
+Time for epoch: 50.29869723320007
+[INFO] EPOCH: 39
+Train loss: 0.005705,  Validation loss: 0.076504, Test loss: 0.035432, Train pred loss: 0.004742, Validation pred loss: 0.075582, Test pred loss: 0.034536, Train kl loss: 0.000964, Validation kl loss: 0.000921, Test kl loss:  0.000896
+Time for epoch: 50.325939416885376
+[INFO] EPOCH: 40
+Train loss: 0.005713,  Validation loss: 0.076673, Test loss: 0.035439, Train pred loss: 0.004750, Validation pred loss: 0.075744, Test pred loss: 0.034541, Train kl loss: 0.000963, Validation kl loss: 0.000928, Test kl loss:  0.000899
+Time for epoch: 50.3466911315918
+[INFO] EPOCH: 41
+Train loss: 0.005651,  Validation loss: 0.076438, Test loss: 0.034699, Train pred loss: 0.004695, Validation pred loss: 0.075505, Test pred loss: 0.033801, Train kl loss: 0.000956, Validation kl loss: 0.000933, Test kl loss:  0.000899
+Time for epoch: 296.58426880836487
+[INFO] EPOCH: 42
+Train loss: 0.005662,  Validation loss: 0.076716, Test loss: 0.034708, Train pred loss: 0.004708, Validation pred loss: 0.075784, Test pred loss: 0.033810, Train kl loss: 0.000955, Validation kl loss: 0.000933, Test kl loss:  0.000898
+Time for epoch: 49.88232946395874
+Validation loss is at a minimum. Saving the model
+[INFO] EPOCH: 43
+Train loss: 0.005588,  Validation loss: 0.075923, Test loss: 0.035137, Train pred loss: 0.004639, Validation pred loss: 0.075004, Test pred loss: 0.034247, Train kl loss: 0.000949, Validation kl loss: 0.000919, Test kl loss:  0.000891
+Time for epoch: 51.29319667816162
+[INFO] EPOCH: 44
+Train loss: 0.005544,  Validation loss: 0.076300, Test loss: 0.035137, Train pred loss: 0.004600, Validation pred loss: 0.075387, Test pred loss: 0.034251, Train kl loss: 0.000944, Validation kl loss: 0.000913, Test kl loss:  0.000886
+Time for epoch: 49.96496653556824
+[INFO] EPOCH: 45
+Train loss: 0.005503,  Validation loss: 0.076606, Test loss: 0.034741, Train pred loss: 0.004567, Validation pred loss: 0.075705, Test pred loss: 0.033869, Train kl loss: 0.000935, Validation kl loss: 0.000901, Test kl loss:  0.000872
+Time for epoch: 50.131386041641235
+[INFO] EPOCH: 46
+Train loss: 0.005537,  Validation loss: 0.076286, Test loss: 0.034548, Train pred loss: 0.004601, Validation pred loss: 0.075386, Test pred loss: 0.033678, Train kl loss: 0.000936, Validation kl loss: 0.000900, Test kl loss:  0.000870
+Time for epoch: 50.23707962036133
+Validation loss is at a minimum. Saving the model
+[INFO] EPOCH: 47
+Train loss: 0.005507,  Validation loss: 0.075728, Test loss: 0.034796, Train pred loss: 0.004575, Validation pred loss: 0.074824, Test pred loss: 0.033925, Train kl loss: 0.000932, Validation kl loss: 0.000904, Test kl loss:  0.000870
+Time for epoch: 51.368337631225586
+Validation loss is at a minimum. Saving the model
+[INFO] EPOCH: 48
+Train loss: 0.005470,  Validation loss: 0.075541, Test loss: 0.034631, Train pred loss: 0.004538, Validation pred loss: 0.074646, Test pred loss: 0.033764, Train kl loss: 0.000932, Validation kl loss: 0.000896, Test kl loss:  0.000867
+Time for epoch: 51.29836869239807
+[INFO] EPOCH: 49
+Train loss: 0.005460,  Validation loss: 0.076170, Test loss: 0.034655, Train pred loss: 0.004537, Validation pred loss: 0.075271, Test pred loss: 0.033791, Train kl loss: 0.000923, Validation kl loss: 0.000898, Test kl loss:  0.000864
+Time for epoch: 50.216275691986084
+[INFO] EPOCH: 50
+Train loss: 0.005411,  Validation loss: 0.076000, Test loss: 0.034451, Train pred loss: 0.004491, Validation pred loss: 0.075122, Test pred loss: 0.033600, Train kl loss: 0.000920, Validation kl loss: 0.000878, Test kl loss:  0.000851
+Time for epoch: 50.22977566719055
+[INFO] EPOCH: 51
+Train loss: 0.005408,  Validation loss: 0.076116, Test loss: 0.034680, Train pred loss: 0.004492, Validation pred loss: 0.075228, Test pred loss: 0.033824, Train kl loss: 0.000916, Validation kl loss: 0.000888, Test kl loss:  0.000856
+Time for epoch: 338.24943804740906
+Validation loss is at a minimum. Saving the model
+[INFO] EPOCH: 52
+Train loss: 0.005349,  Validation loss: 0.075453, Test loss: 0.034390, Train pred loss: 0.004434, Validation pred loss: 0.074567, Test pred loss: 0.033531, Train kl loss: 0.000915, Validation kl loss: 0.000885, Test kl loss:  0.000858
+Time for epoch: 50.97616505622864
+[INFO] EPOCH: 53
+Train loss: 0.005404,  Validation loss: 0.075806, Test loss: 0.034174, Train pred loss: 0.004492, Validation pred loss: 0.074925, Test pred loss: 0.033319, Train kl loss: 0.000912, Validation kl loss: 0.000881, Test kl loss:  0.000855
+Time for epoch: 50.1363685131073
+[INFO] EPOCH: 54
+Train loss: 0.005363,  Validation loss: 0.076377, Test loss: 0.034456, Train pred loss: 0.004453, Validation pred loss: 0.075495, Test pred loss: 0.033605, Train kl loss: 0.000910, Validation kl loss: 0.000882, Test kl loss:  0.000851
+Time for epoch: 50.15287947654724
+[INFO] EPOCH: 55
+Train loss: 0.005277,  Validation loss: 0.076338, Test loss: 0.034447, Train pred loss: 0.004374, Validation pred loss: 0.075465, Test pred loss: 0.033606, Train kl loss: 0.000903, Validation kl loss: 0.000872, Test kl loss:  0.000841
+Time for epoch: 50.20939564704895
+[INFO] EPOCH: 56
+Train loss: 0.005276,  Validation loss: 0.075815, Test loss: 0.034218, Train pred loss: 0.004376, Validation pred loss: 0.074942, Test pred loss: 0.033377, Train kl loss: 0.000900, Validation kl loss: 0.000873, Test kl loss:  0.000841
+Time for epoch: 50.41669011116028
+[INFO] EPOCH: 57
+Train loss: 0.005279,  Validation loss: 0.076116, Test loss: 0.034495, Train pred loss: 0.004383, Validation pred loss: 0.075253, Test pred loss: 0.033661, Train kl loss: 0.000896, Validation kl loss: 0.000864, Test kl loss:  0.000834
+Time for epoch: 50.193888664245605
+[INFO] EPOCH: 58
+Train loss: 0.005232,  Validation loss: 0.075900, Test loss: 0.034054, Train pred loss: 0.004338, Validation pred loss: 0.075037, Test pred loss: 0.033219, Train kl loss: 0.000894, Validation kl loss: 0.000863, Test kl loss:  0.000835
+Time for epoch: 50.0213418006897
+[INFO] EPOCH: 59
+Train loss: 0.005290,  Validation loss: 0.076286, Test loss: 0.034378, Train pred loss: 0.004396, Validation pred loss: 0.075420, Test pred loss: 0.033539, Train kl loss: 0.000894, Validation kl loss: 0.000866, Test kl loss:  0.000839
+Time for epoch: 50.20863485336304
+[INFO] EPOCH: 60
+Train loss: 0.005249,  Validation loss: 0.076160, Test loss: 0.034205, Train pred loss: 0.004355, Validation pred loss: 0.075291, Test pred loss: 0.033372, Train kl loss: 0.000894, Validation kl loss: 0.000869, Test kl loss:  0.000833
+Time for epoch: 49.92738199234009
+[INFO] EPOCH: 61
+Train loss: 0.005161,  Validation loss: 0.076214, Test loss: 0.034317, Train pred loss: 0.004279, Validation pred loss: 0.075355, Test pred loss: 0.033490, Train kl loss: 0.000883, Validation kl loss: 0.000858, Test kl loss:  0.000827
+Time for epoch: 362.31164741516113
+Validation loss stopped decreasing at epoch 62
+[INFO] EPOCH: 62
+Train loss: 0.005187,  Validation loss: 0.076612, Test loss: 0.033973, Train pred loss: 0.004307, Validation pred loss: 0.075762, Test pred loss: 0.033157, Train kl loss: 0.000879, Validation kl loss: 0.000850, Test kl loss:  0.000816
+Time for epoch: 49.963282108306885
+Validation loss stopped decreasing at epoch 63
+[INFO] EPOCH: 63
+Train loss: 0.005153,  Validation loss: 0.075941, Test loss: 0.034201, Train pred loss: 0.004273, Validation pred loss: 0.075096, Test pred loss: 0.033384, Train kl loss: 0.000880, Validation kl loss: 0.000846, Test kl loss:  0.000816
+Time for epoch: 50.20041346549988
+[INFO] EPOCH: 64
+Train loss: 0.005168,  Validation loss: 0.076151, Test loss: 0.033936, Train pred loss: 0.004291, Validation pred loss: 0.075302, Test pred loss: 0.033116, Train kl loss: 0.000877, Validation kl loss: 0.000849, Test kl loss:  0.000820
+Time for epoch: 50.151246547698975
+[INFO] EPOCH: 65
+Train loss: 0.005155,  Validation loss: 0.075693, Test loss: 0.034057, Train pred loss: 0.004279, Validation pred loss: 0.074847, Test pred loss: 0.033243, Train kl loss: 0.000876, Validation kl loss: 0.000846, Test kl loss:  0.000814
+Time for epoch: 50.1926155090332
+[INFO] EPOCH: 66
+Train loss: 0.005169,  Validation loss: 0.075922, Test loss: 0.033795, Train pred loss: 0.004297, Validation pred loss: 0.075083, Test pred loss: 0.032984, Train kl loss: 0.000872, Validation kl loss: 0.000840, Test kl loss:  0.000811
+Time for epoch: 50.41184377670288
+Validation loss is at a minimum. Saving the model
+[INFO] EPOCH: 67
+Train loss: 0.005062,  Validation loss: 0.075416, Test loss: 0.033806, Train pred loss: 0.004194, Validation pred loss: 0.074574, Test pred loss: 0.032997, Train kl loss: 0.000868, Validation kl loss: 0.000843, Test kl loss:  0.000809
+Time for epoch: 51.04674196243286
+[INFO] EPOCH: 68
+Train loss: 0.005074,  Validation loss: 0.076016, Test loss: 0.033642, Train pred loss: 0.004209, Validation pred loss: 0.075176, Test pred loss: 0.032836, Train kl loss: 0.000865, Validation kl loss: 0.000840, Test kl loss:  0.000806
+Time for epoch: 50.514183044433594
+[INFO] EPOCH: 69
+Train loss: 0.005120,  Validation loss: 0.075818, Test loss: 0.033608, Train pred loss: 0.004254, Validation pred loss: 0.074983, Test pred loss: 0.032803, Train kl loss: 0.000866, Validation kl loss: 0.000835, Test kl loss:  0.000806
+Time for epoch: 50.23364067077637
+[INFO] EPOCH: 70
+Train loss: 0.005045,  Validation loss: 0.075577, Test loss: 0.033828, Train pred loss: 0.004178, Validation pred loss: 0.074740, Test pred loss: 0.033020, Train kl loss: 0.000866, Validation kl loss: 0.000837, Test kl loss:  0.000808
+Time for epoch: 50.00521278381348
+[INFO] EPOCH: 71
+Train loss: 0.005041,  Validation loss: 0.075521, Test loss: 0.033047, Train pred loss: 0.004179, Validation pred loss: 0.074689, Test pred loss: 0.032243, Train kl loss: 0.000861, Validation kl loss: 0.000832, Test kl loss:  0.000804
+Time for epoch: 404.4015860557556
+[INFO] EPOCH: 72
+Train loss: 0.005083,  Validation loss: 0.075585, Test loss: 0.033741, Train pred loss: 0.004226, Validation pred loss: 0.074755, Test pred loss: 0.032940, Train kl loss: 0.000857, Validation kl loss: 0.000829, Test kl loss:  0.000801
+Time for epoch: 49.638290882110596
+Validation loss is at a minimum. Saving the model
+[INFO] EPOCH: 73
+Train loss: 0.005026,  Validation loss: 0.075330, Test loss: 0.033174, Train pred loss: 0.004166, Validation pred loss: 0.074499, Test pred loss: 0.032372, Train kl loss: 0.000860, Validation kl loss: 0.000831, Test kl loss:  0.000803
+Time for epoch: 51.09219145774841
+[INFO] EPOCH: 74
+Train loss: 0.005048,  Validation loss: 0.075807, Test loss: 0.033273, Train pred loss: 0.004196, Validation pred loss: 0.074981, Test pred loss: 0.032481, Train kl loss: 0.000852, Validation kl loss: 0.000826, Test kl loss:  0.000792
+Time for epoch: 50.36686420440674
+[INFO] EPOCH: 75
+Train loss: 0.005018,  Validation loss: 0.075540, Test loss: 0.033206, Train pred loss: 0.004165, Validation pred loss: 0.074712, Test pred loss: 0.032406, Train kl loss: 0.000853, Validation kl loss: 0.000827, Test kl loss:  0.000800
+Time for epoch: 49.79392075538635
+[INFO] EPOCH: 76
+Train loss: 0.004974,  Validation loss: 0.075408, Test loss: 0.033286, Train pred loss: 0.004124, Validation pred loss: 0.074584, Test pred loss: 0.032494, Train kl loss: 0.000849, Validation kl loss: 0.000824, Test kl loss:  0.000792
+Time for epoch: 50.4615843296051
+[INFO] EPOCH: 77
+Train loss: 0.004971,  Validation loss: 0.075435, Test loss: 0.033177, Train pred loss: 0.004126, Validation pred loss: 0.074620, Test pred loss: 0.032392, Train kl loss: 0.000845, Validation kl loss: 0.000815, Test kl loss:  0.000785
+Time for epoch: 50.72322201728821
+[INFO] EPOCH: 78
+Train loss: 0.004985,  Validation loss: 0.075954, Test loss: 0.033233, Train pred loss: 0.004137, Validation pred loss: 0.075133, Test pred loss: 0.032443, Train kl loss: 0.000847, Validation kl loss: 0.000821, Test kl loss:  0.000790
+Time for epoch: 49.82813334465027
+Validation loss is at a minimum. Saving the model
+[INFO] EPOCH: 79
+Train loss: 0.005006,  Validation loss: 0.075126, Test loss: 0.033515, Train pred loss: 0.004163, Validation pred loss: 0.074303, Test pred loss: 0.032726, Train kl loss: 0.000843, Validation kl loss: 0.000823, Test kl loss:  0.000789
+Time for epoch: 51.45985507965088
+[INFO] EPOCH: 80
+Train loss: 0.004954,  Validation loss: 0.075932, Test loss: 0.033530, Train pred loss: 0.004110, Validation pred loss: 0.075112, Test pred loss: 0.032741, Train kl loss: 0.000844, Validation kl loss: 0.000820, Test kl loss:  0.000789
+Time for epoch: 49.92513966560364
+Validation loss is at a minimum. Saving the model
+[INFO] EPOCH: 81
+Train loss: 0.004946,  Validation loss: 0.074759, Test loss: 0.033344, Train pred loss: 0.004108, Validation pred loss: 0.073945, Test pred loss: 0.032557, Train kl loss: 0.000839, Validation kl loss: 0.000815, Test kl loss:  0.000787
+Time for epoch: 426.8443193435669
+[INFO] EPOCH: 82
+Train loss: 0.004924,  Validation loss: 0.075187, Test loss: 0.033434, Train pred loss: 0.004086, Validation pred loss: 0.074374, Test pred loss: 0.032654, Train kl loss: 0.000838, Validation kl loss: 0.000813, Test kl loss:  0.000781
+Time for epoch: 49.694823026657104
+[INFO] EPOCH: 83
+Train loss: 0.004926,  Validation loss: 0.074921, Test loss: 0.032969, Train pred loss: 0.004091, Validation pred loss: 0.074113, Test pred loss: 0.032188, Train kl loss: 0.000835, Validation kl loss: 0.000808, Test kl loss:  0.000781
+Time for epoch: 49.92299127578735
+Validation loss is at a minimum. Saving the model
+[INFO] EPOCH: 84
+Train loss: 0.004865,  Validation loss: 0.074720, Test loss: 0.032856, Train pred loss: 0.004032, Validation pred loss: 0.073916, Test pred loss: 0.032081, Train kl loss: 0.000833, Validation kl loss: 0.000804, Test kl loss:  0.000775
+Time for epoch: 51.041447162628174
+Validation loss is at a minimum. Saving the model
+[INFO] EPOCH: 85
+Train loss: 0.004944,  Validation loss: 0.074598, Test loss: 0.032838, Train pred loss: 0.004110, Validation pred loss: 0.073792, Test pred loss: 0.032065, Train kl loss: 0.000834, Validation kl loss: 0.000806, Test kl loss:  0.000774
+Time for epoch: 51.10886025428772
+[INFO] EPOCH: 86
+Train loss: 0.004879,  Validation loss: 0.074942, Test loss: 0.032645, Train pred loss: 0.004050, Validation pred loss: 0.074138, Test pred loss: 0.031870, Train kl loss: 0.000830, Validation kl loss: 0.000804, Test kl loss:  0.000776
+Time for epoch: 49.952592849731445
+[INFO] EPOCH: 87
+Train loss: 0.004899,  Validation loss: 0.074855, Test loss: 0.032867, Train pred loss: 0.004069, Validation pred loss: 0.074050, Test pred loss: 0.032095, Train kl loss: 0.000830, Validation kl loss: 0.000804, Test kl loss:  0.000772
+Time for epoch: 49.9058632850647
+[INFO] EPOCH: 88
+Train loss: 0.004921,  Validation loss: 0.074814, Test loss: 0.032744, Train pred loss: 0.004089, Validation pred loss: 0.074010, Test pred loss: 0.031972, Train kl loss: 0.000832, Validation kl loss: 0.000804, Test kl loss:  0.000772
+Time for epoch: 49.995484590530396
+[INFO] EPOCH: 89
+Train loss: 0.004858,  Validation loss: 0.074878, Test loss: 0.033225, Train pred loss: 0.004032, Validation pred loss: 0.074077, Test pred loss: 0.032454, Train kl loss: 0.000826, Validation kl loss: 0.000801, Test kl loss:  0.000771
+Time for epoch: 50.45282697677612
+[INFO] EPOCH: 90
+Train loss: 0.004878,  Validation loss: 0.075660, Test loss: 0.032644, Train pred loss: 0.004051, Validation pred loss: 0.074858, Test pred loss: 0.031873, Train kl loss: 0.000827, Validation kl loss: 0.000802, Test kl loss:  0.000771
+Time for epoch: 50.00475740432739
+[INFO] EPOCH: 91
+Train loss: 0.004844,  Validation loss: 0.075131, Test loss: 0.032626, Train pred loss: 0.004020, Validation pred loss: 0.074332, Test pred loss: 0.031857, Train kl loss: 0.000824, Validation kl loss: 0.000798, Test kl loss:  0.000769
+Time for epoch: 453.9231176376343
+[INFO] EPOCH: 92
+Train loss: 0.004897,  Validation loss: 0.074695, Test loss: 0.032694, Train pred loss: 0.004072, Validation pred loss: 0.073893, Test pred loss: 0.031924, Train kl loss: 0.000824, Validation kl loss: 0.000802, Test kl loss:  0.000770
+Time for epoch: 49.53201103210449
+[INFO] EPOCH: 93
+Train loss: 0.004799,  Validation loss: 0.074885, Test loss: 0.032639, Train pred loss: 0.003977, Validation pred loss: 0.074088, Test pred loss: 0.031873, Train kl loss: 0.000822, Validation kl loss: 0.000797, Test kl loss:  0.000767
+Time for epoch: 49.86633610725403
+[INFO] EPOCH: 94
+Train loss: 0.004826,  Validation loss: 0.074643, Test loss: 0.032907, Train pred loss: 0.004003, Validation pred loss: 0.073845, Test pred loss: 0.032138, Train kl loss: 0.000823, Validation kl loss: 0.000799, Test kl loss:  0.000769
+Time for epoch: 49.88623595237732
+[INFO] EPOCH: 95
+Train loss: 0.004844,  Validation loss: 0.074977, Test loss: 0.032824, Train pred loss: 0.004027, Validation pred loss: 0.074185, Test pred loss: 0.032064, Train kl loss: 0.000817, Validation kl loss: 0.000793, Test kl loss:  0.000760
+Time for epoch: 49.739203453063965
+Validation loss is at a minimum. Saving the model
+[INFO] EPOCH: 96
+Train loss: 0.004837,  Validation loss: 0.074418, Test loss: 0.032587, Train pred loss: 0.004017, Validation pred loss: 0.073630, Test pred loss: 0.031827, Train kl loss: 0.000820, Validation kl loss: 0.000789, Test kl loss:  0.000760
+Time for epoch: 50.97459006309509
+[INFO] EPOCH: 97
+Train loss: 0.004815,  Validation loss: 0.075329, Test loss: 0.032734, Train pred loss: 0.003998, Validation pred loss: 0.074541, Test pred loss: 0.031973, Train kl loss: 0.000816, Validation kl loss: 0.000788, Test kl loss:  0.000761
+Time for epoch: 49.86739444732666
+[INFO] EPOCH: 98
+Train loss: 0.004807,  Validation loss: 0.074707, Test loss: 0.032709, Train pred loss: 0.003994, Validation pred loss: 0.073917, Test pred loss: 0.031952, Train kl loss: 0.000814, Validation kl loss: 0.000790, Test kl loss:  0.000758
+Time for epoch: 50.104273080825806
+[INFO] EPOCH: 99
+Train loss: 0.004796,  Validation loss: 0.074666, Test loss: 0.032593, Train pred loss: 0.003981, Validation pred loss: 0.073874, Test pred loss: 0.031831, Train kl loss: 0.000816, Validation kl loss: 0.000792, Test kl loss:  0.000762
+Time for epoch: 49.82444357872009
+[INFO] EPOCH: 100
+Train loss: 0.004781,  Validation loss: 0.075189, Test loss: 0.032735, Train pred loss: 0.003966, Validation pred loss: 0.074398, Test pred loss: 0.031978, Train kl loss: 0.000815, Validation kl loss: 0.000790, Test kl loss:  0.000757
+Time for epoch: 49.931729793548584
+[INFO] EPOCH: 101
+Train loss: 0.004801,  Validation loss: 0.075144, Test loss: 0.032401, Train pred loss: 0.003990, Validation pred loss: 0.074353, Test pred loss: 0.031643, Train kl loss: 0.000811, Validation kl loss: 0.000791, Test kl loss:  0.000758
+Time for epoch: 492.773663520813
+[INFO] EPOCH: 102
+Train loss: 0.004800,  Validation loss: 0.074838, Test loss: 0.032829, Train pred loss: 0.003987, Validation pred loss: 0.074048, Test pred loss: 0.032071, Train kl loss: 0.000813, Validation kl loss: 0.000790, Test kl loss:  0.000758
+Time for epoch: 49.56007981300354
+Validation loss is at a minimum. Saving the model
+[INFO] EPOCH: 103
+Train loss: 0.004767,  Validation loss: 0.074418, Test loss: 0.033022, Train pred loss: 0.003958, Validation pred loss: 0.073636, Test pred loss: 0.032271, Train kl loss: 0.000809, Validation kl loss: 0.000781, Test kl loss:  0.000751
+Time for epoch: 50.74590182304382
+[INFO] EPOCH: 104
+Train loss: 0.004734,  Validation loss: 0.075045, Test loss: 0.032633, Train pred loss: 0.003925, Validation pred loss: 0.074259, Test pred loss: 0.031875, Train kl loss: 0.000810, Validation kl loss: 0.000785, Test kl loss:  0.000758
+Time for epoch: 49.91976547241211
+[INFO] EPOCH: 105
+Train loss: 0.004786,  Validation loss: 0.074424, Test loss: 0.032511, Train pred loss: 0.003979, Validation pred loss: 0.073648, Test pred loss: 0.031758, Train kl loss: 0.000807, Validation kl loss: 0.000777, Test kl loss:  0.000753
+Time for epoch: 49.873196601867676
+[INFO] EPOCH: 106
+Train loss: 0.004797,  Validation loss: 0.074704, Test loss: 0.032636, Train pred loss: 0.003988, Validation pred loss: 0.073921, Test pred loss: 0.031882, Train kl loss: 0.000809, Validation kl loss: 0.000783, Test kl loss:  0.000753
+Time for epoch: 49.82317614555359
+[INFO] EPOCH: 107
+Train loss: 0.004755,  Validation loss: 0.074776, Test loss: 0.032716, Train pred loss: 0.003949, Validation pred loss: 0.074000, Test pred loss: 0.031967, Train kl loss: 0.000806, Validation kl loss: 0.000776, Test kl loss:  0.000749
+Time for epoch: 49.879499435424805
+[INFO] EPOCH: 108
+Train loss: 0.004788,  Validation loss: 0.075090, Test loss: 0.032722, Train pred loss: 0.003979, Validation pred loss: 0.074305, Test pred loss: 0.031968, Train kl loss: 0.000809, Validation kl loss: 0.000785, Test kl loss:  0.000754
+Time for epoch: 49.88798546791077
+[INFO] EPOCH: 109
+Train loss: 0.004725,  Validation loss: 0.075395, Test loss: 0.032863, Train pred loss: 0.003921, Validation pred loss: 0.074610, Test pred loss: 0.032110, Train kl loss: 0.000803, Validation kl loss: 0.000785, Test kl loss:  0.000753
+Time for epoch: 49.90599083900452
+[INFO] EPOCH: 110
+Train loss: 0.004779,  Validation loss: 0.074647, Test loss: 0.032539, Train pred loss: 0.003976, Validation pred loss: 0.073873, Test pred loss: 0.031791, Train kl loss: 0.000803, Validation kl loss: 0.000774, Test kl loss:  0.000748
+Time for epoch: 49.8560848236084
+Validation loss is at a minimum. Saving the model
+[INFO] EPOCH: 111
+Train loss: 0.004701,  Validation loss: 0.074413, Test loss: 0.032521, Train pred loss: 0.003901, Validation pred loss: 0.073638, Test pred loss: 0.031775, Train kl loss: 0.000800, Validation kl loss: 0.000774, Test kl loss:  0.000746
+Time for epoch: 520.0486538410187
+[INFO] EPOCH: 112
+Train loss: 0.004730,  Validation loss: 0.074736, Test loss: 0.032593, Train pred loss: 0.003930, Validation pred loss: 0.073958, Test pred loss: 0.031844, Train kl loss: 0.000800, Validation kl loss: 0.000779, Test kl loss:  0.000749
+Time for epoch: 49.60571527481079
+[INFO] EPOCH: 113
+Train loss: 0.004729,  Validation loss: 0.074766, Test loss: 0.032587, Train pred loss: 0.003924, Validation pred loss: 0.073986, Test pred loss: 0.031842, Train kl loss: 0.000804, Validation kl loss: 0.000779, Test kl loss:  0.000745
+Time for epoch: 49.66732740402222
+[INFO] EPOCH: 114
+Train loss: 0.004686,  Validation loss: 0.074869, Test loss: 0.032103, Train pred loss: 0.003889, Validation pred loss: 0.074091, Test pred loss: 0.031355, Train kl loss: 0.000797, Validation kl loss: 0.000778, Test kl loss:  0.000748
+Time for epoch: 49.783849239349365
+Validation loss is at a minimum. Saving the model
+[INFO] EPOCH: 115
+Train loss: 0.004704,  Validation loss: 0.074022, Test loss: 0.032751, Train pred loss: 0.003905, Validation pred loss: 0.073249, Test pred loss: 0.032010, Train kl loss: 0.000799, Validation kl loss: 0.000773, Test kl loss:  0.000740
+Time for epoch: 50.904964208602905
+[INFO] EPOCH: 116
+Train loss: 0.004731,  Validation loss: 0.074830, Test loss: 0.032713, Train pred loss: 0.003929, Validation pred loss: 0.074050, Test pred loss: 0.031964, Train kl loss: 0.000802, Validation kl loss: 0.000780, Test kl loss:  0.000749
+Time for epoch: 49.707157373428345
+[INFO] EPOCH: 117
+Train loss: 0.004714,  Validation loss: 0.074346, Test loss: 0.032472, Train pred loss: 0.003915, Validation pred loss: 0.073569, Test pred loss: 0.031723, Train kl loss: 0.000800, Validation kl loss: 0.000776, Test kl loss:  0.000749
+Time for epoch: 49.647887229919434
+[INFO] EPOCH: 118
+Train loss: 0.004692,  Validation loss: 0.074757, Test loss: 0.032328, Train pred loss: 0.003895, Validation pred loss: 0.073981, Test pred loss: 0.031581, Train kl loss: 0.000797, Validation kl loss: 0.000776, Test kl loss:  0.000747
+Time for epoch: 49.670313358306885
+[INFO] EPOCH: 119
+Train loss: 0.004684,  Validation loss: 0.075043, Test loss: 0.032419, Train pred loss: 0.003888, Validation pred loss: 0.074267, Test pred loss: 0.031676, Train kl loss: 0.000796, Validation kl loss: 0.000776, Test kl loss:  0.000743
+Time for epoch: 49.792821168899536
+[INFO] EPOCH: 120
+Train loss: 0.004681,  Validation loss: 0.074463, Test loss: 0.032748, Train pred loss: 0.003885, Validation pred loss: 0.073688, Test pred loss: 0.032003, Train kl loss: 0.000796, Validation kl loss: 0.000775, Test kl loss:  0.000745
+Time for epoch: 49.77163028717041
+[INFO] EPOCH: 121
+Train loss: 0.004690,  Validation loss: 0.075239, Test loss: 0.032468, Train pred loss: 0.003896, Validation pred loss: 0.074473, Test pred loss: 0.031732, Train kl loss: 0.000794, Validation kl loss: 0.000766, Test kl loss:  0.000736
+Time for epoch: 557.1876084804535
+[INFO] EPOCH: 122
+Train loss: 0.004671,  Validation loss: 0.075818, Test loss: 0.032308, Train pred loss: 0.003877, Validation pred loss: 0.075049, Test pred loss: 0.031572, Train kl loss: 0.000794, Validation kl loss: 0.000768, Test kl loss:  0.000736
+Time for epoch: 49.51882290840149
+[INFO] EPOCH: 123
+Train loss: 0.004715,  Validation loss: 0.075293, Test loss: 0.032094, Train pred loss: 0.003920, Validation pred loss: 0.074517, Test pred loss: 0.031350, Train kl loss: 0.000795, Validation kl loss: 0.000776, Test kl loss:  0.000744
+Time for epoch: 49.796454191207886
+[INFO] EPOCH: 124
+Train loss: 0.004716,  Validation loss: 0.074218, Test loss: 0.032624, Train pred loss: 0.003922, Validation pred loss: 0.073452, Test pred loss: 0.031887, Train kl loss: 0.000795, Validation kl loss: 0.000766, Test kl loss:  0.000737
+Time for epoch: 49.75308609008789
+[INFO] EPOCH: 125
+Train loss: 0.004692,  Validation loss: 0.074291, Test loss: 0.032177, Train pred loss: 0.003901, Validation pred loss: 0.073523, Test pred loss: 0.031443, Train kl loss: 0.000790, Validation kl loss: 0.000769, Test kl loss:  0.000735
+Time for epoch: 49.79864573478699
+[INFO] EPOCH: 126
+Train loss: 0.004670,  Validation loss: 0.075157, Test loss: 0.032381, Train pred loss: 0.003878, Validation pred loss: 0.074389, Test pred loss: 0.031643, Train kl loss: 0.000792, Validation kl loss: 0.000768, Test kl loss:  0.000738
+Time for epoch: 49.80693078041077
+[INFO] EPOCH: 127
+Train loss: 0.004632,  Validation loss: 0.074120, Test loss: 0.032379, Train pred loss: 0.003843, Validation pred loss: 0.073356, Test pred loss: 0.031651, Train kl loss: 0.000790, Validation kl loss: 0.000764, Test kl loss:  0.000728
+Time for epoch: 49.68420600891113
+[INFO] EPOCH: 128
+Train loss: 0.004682,  Validation loss: 0.074207, Test loss: 0.032379, Train pred loss: 0.003891, Validation pred loss: 0.073443, Test pred loss: 0.031646, Train kl loss: 0.000791, Validation kl loss: 0.000765, Test kl loss:  0.000733
+Time for epoch: 49.7943971157074
+[INFO] EPOCH: 129
+Train loss: 0.004628,  Validation loss: 0.074330, Test loss: 0.032490, Train pred loss: 0.003840, Validation pred loss: 0.073573, Test pred loss: 0.031760, Train kl loss: 0.000788, Validation kl loss: 0.000757, Test kl loss:  0.000730
+Time for epoch: 49.75976276397705
+[INFO] EPOCH: 130
+Train loss: 0.004671,  Validation loss: 0.074428, Test loss: 0.032280, Train pred loss: 0.003884, Validation pred loss: 0.073662, Test pred loss: 0.031546, Train kl loss: 0.000787, Validation kl loss: 0.000766, Test kl loss:  0.000735
+Time for epoch: 49.70165276527405
+[INFO] EPOCH: 131
+Train loss: 0.004651,  Validation loss: 0.074369, Test loss: 0.032350, Train pred loss: 0.003865, Validation pred loss: 0.073608, Test pred loss: 0.031616, Train kl loss: 0.000786, Validation kl loss: 0.000762, Test kl loss:  0.000735
+Time for epoch: 582.5608565807343
+[INFO] EPOCH: 132
+Train loss: 0.004618,  Validation loss: 0.074591, Test loss: 0.032352, Train pred loss: 0.003833, Validation pred loss: 0.073828, Test pred loss: 0.031619, Train kl loss: 0.000785, Validation kl loss: 0.000763, Test kl loss:  0.000734
+Time for epoch: 49.61550283432007
+[INFO] EPOCH: 133
+Train loss: 0.004675,  Validation loss: 0.074779, Test loss: 0.032380, Train pred loss: 0.003891, Validation pred loss: 0.074019, Test pred loss: 0.031648, Train kl loss: 0.000784, Validation kl loss: 0.000761, Test kl loss:  0.000732
+Time for epoch: 49.70712494850159
+[INFO] EPOCH: 134
+Train loss: 0.004610,  Validation loss: 0.074105, Test loss: 0.032459, Train pred loss: 0.003826, Validation pred loss: 0.073349, Test pred loss: 0.031728, Train kl loss: 0.000784, Validation kl loss: 0.000756, Test kl loss:  0.000732
+Time for epoch: 49.735156297683716
+Validation loss is at a minimum. Saving the model
+[INFO] EPOCH: 135
+Train loss: 0.004658,  Validation loss: 0.074014, Test loss: 0.032464, Train pred loss: 0.003873, Validation pred loss: 0.073252, Test pred loss: 0.031729, Train kl loss: 0.000785, Validation kl loss: 0.000763, Test kl loss:  0.000735
+Time for epoch: 51.00328230857849
+Validation loss is at a minimum. Saving the model
+[INFO] EPOCH: 136
+Train loss: 0.004618,  Validation loss: 0.073846, Test loss: 0.032567, Train pred loss: 0.003836, Validation pred loss: 0.073092, Test pred loss: 0.031847, Train kl loss: 0.000782, Validation kl loss: 0.000753, Test kl loss:  0.000720
+Time for epoch: 50.852614641189575
+[INFO] EPOCH: 137
+Train loss: 0.004608,  Validation loss: 0.074191, Test loss: 0.032408, Train pred loss: 0.003826, Validation pred loss: 0.073432, Test pred loss: 0.031682, Train kl loss: 0.000782, Validation kl loss: 0.000759, Test kl loss:  0.000726
+Time for epoch: 49.77136015892029
+[INFO] EPOCH: 138
+Train loss: 0.004654,  Validation loss: 0.073917, Test loss: 0.032203, Train pred loss: 0.003874, Validation pred loss: 0.073158, Test pred loss: 0.031474, Train kl loss: 0.000781, Validation kl loss: 0.000759, Test kl loss:  0.000728
+Time for epoch: 49.847394704818726
+[INFO] EPOCH: 139
+Train loss: 0.004608,  Validation loss: 0.074462, Test loss: 0.032487, Train pred loss: 0.003827, Validation pred loss: 0.073709, Test pred loss: 0.031762, Train kl loss: 0.000781, Validation kl loss: 0.000752, Test kl loss:  0.000725
+Time for epoch: 49.752541065216064
+[INFO] EPOCH: 140
+Train loss: 0.004632,  Validation loss: 0.074086, Test loss: 0.032436, Train pred loss: 0.003851, Validation pred loss: 0.073331, Test pred loss: 0.031713, Train kl loss: 0.000781, Validation kl loss: 0.000755, Test kl loss:  0.000723
+Time for epoch: 49.63893413543701
+[INFO] EPOCH: 141
+Train loss: 0.004580,  Validation loss: 0.073975, Test loss: 0.032214, Train pred loss: 0.003802, Validation pred loss: 0.073221, Test pred loss: 0.031490, Train kl loss: 0.000778, Validation kl loss: 0.000754, Test kl loss:  0.000724
+Time for epoch: 615.7483642101288
+[INFO] EPOCH: 142
+Train loss: 0.004622,  Validation loss: 0.074442, Test loss: 0.032378, Train pred loss: 0.003843, Validation pred loss: 0.073682, Test pred loss: 0.031655, Train kl loss: 0.000780, Validation kl loss: 0.000761, Test kl loss:  0.000723
+Time for epoch: 49.569984674453735
+Validation loss is at a minimum. Saving the model
+[INFO] EPOCH: 143
+Train loss: 0.004607,  Validation loss: 0.073834, Test loss: 0.032265, Train pred loss: 0.003827, Validation pred loss: 0.073079, Test pred loss: 0.031545, Train kl loss: 0.000780, Validation kl loss: 0.000755, Test kl loss:  0.000721
+Time for epoch: 50.60880184173584
+Validation loss is at a minimum. Saving the model
+[INFO] EPOCH: 144
+Train loss: 0.004603,  Validation loss: 0.073789, Test loss: 0.032175, Train pred loss: 0.003826, Validation pred loss: 0.073035, Test pred loss: 0.031456, Train kl loss: 0.000776, Validation kl loss: 0.000754, Test kl loss:  0.000719
+Time for epoch: 50.747220516204834
+[INFO] EPOCH: 145
+Train loss: 0.004590,  Validation loss: 0.074519, Test loss: 0.032338, Train pred loss: 0.003814, Validation pred loss: 0.073763, Test pred loss: 0.031614, Train kl loss: 0.000777, Validation kl loss: 0.000757, Test kl loss:  0.000724
+Time for epoch: 49.81897735595703
+Validation loss is at a minimum. Saving the model
+[INFO] EPOCH: 146
+Train loss: 0.004613,  Validation loss: 0.073531, Test loss: 0.032294, Train pred loss: 0.003837, Validation pred loss: 0.072776, Test pred loss: 0.031576, Train kl loss: 0.000777, Validation kl loss: 0.000755, Test kl loss:  0.000718
+Time for epoch: 50.79413843154907
+[INFO] EPOCH: 147
+Train loss: 0.004581,  Validation loss: 0.074347, Test loss: 0.032609, Train pred loss: 0.003806, Validation pred loss: 0.073594, Test pred loss: 0.031887, Train kl loss: 0.000775, Validation kl loss: 0.000753, Test kl loss:  0.000722
+Time for epoch: 49.557459115982056
+[INFO] EPOCH: 148
+Train loss: 0.004637,  Validation loss: 0.073704, Test loss: 0.032476, Train pred loss: 0.003861, Validation pred loss: 0.072956, Test pred loss: 0.031756, Train kl loss: 0.000775, Validation kl loss: 0.000748, Test kl loss:  0.000720
+Time for epoch: 49.63857960700989
+[INFO] EPOCH: 149
+Train loss: 0.004571,  Validation loss: 0.074037, Test loss: 0.032586, Train pred loss: 0.003799, Validation pred loss: 0.073289, Test pred loss: 0.031867, Train kl loss: 0.000772, Validation kl loss: 0.000747, Test kl loss:  0.000719
+Time for epoch: 49.67891049385071
+[INFO] EPOCH: 150
+Train loss: 0.004587,  Validation loss: 0.074042, Test loss: 0.032262, Train pred loss: 0.003815, Validation pred loss: 0.073295, Test pred loss: 0.031545, Train kl loss: 0.000771, Validation kl loss: 0.000748, Test kl loss:  0.000717
+Time for epoch: 49.77558493614197
+[INFO] EPOCH: 151
+Train loss: 0.004600,  Validation loss: 0.074237, Test loss: 0.032131, Train pred loss: 0.003827, Validation pred loss: 0.073491, Test pred loss: 0.031416, Train kl loss: 0.000773, Validation kl loss: 0.000746, Test kl loss:  0.000715
+Time for epoch: 660.5068707466125
+Validation loss is at a minimum. Saving the model
+[INFO] EPOCH: 152
+Train loss: 0.004541,  Validation loss: 0.073095, Test loss: 0.032922, Train pred loss: 0.003773, Validation pred loss: 0.072350, Test pred loss: 0.032213, Train kl loss: 0.000769, Validation kl loss: 0.000745, Test kl loss:  0.000708
+Time for epoch: 50.456642150878906
+[INFO] EPOCH: 153
+Train loss: 0.004607,  Validation loss: 0.074272, Test loss: 0.032295, Train pred loss: 0.003837, Validation pred loss: 0.073529, Test pred loss: 0.031584, Train kl loss: 0.000770, Validation kl loss: 0.000743, Test kl loss:  0.000711
+Time for epoch: 49.72753596305847
+[INFO] EPOCH: 154
+Train loss: 0.004559,  Validation loss: 0.074531, Test loss: 0.032357, Train pred loss: 0.003790, Validation pred loss: 0.073787, Test pred loss: 0.031643, Train kl loss: 0.000769, Validation kl loss: 0.000743, Test kl loss:  0.000714
+Time for epoch: 49.63076424598694
+[INFO] EPOCH: 155
+Train loss: 0.004558,  Validation loss: 0.073954, Test loss: 0.032354, Train pred loss: 0.003790, Validation pred loss: 0.073215, Test pred loss: 0.031639, Train kl loss: 0.000768, Validation kl loss: 0.000739, Test kl loss:  0.000715
+Time for epoch: 49.59697651863098
+[INFO] EPOCH: 156
+Train loss: 0.004600,  Validation loss: 0.073683, Test loss: 0.032140, Train pred loss: 0.003830, Validation pred loss: 0.072936, Test pred loss: 0.031422, Train kl loss: 0.000770, Validation kl loss: 0.000747, Test kl loss:  0.000718
+Time for epoch: 49.587321519851685
+[INFO] EPOCH: 157
+Train loss: 0.004514,  Validation loss: 0.074736, Test loss: 0.032407, Train pred loss: 0.003748, Validation pred loss: 0.073995, Test pred loss: 0.031696, Train kl loss: 0.000766, Validation kl loss: 0.000741, Test kl loss:  0.000711
+Time for epoch: 49.71354937553406
+[INFO] EPOCH: 158
+Train loss: 0.004540,  Validation loss: 0.073427, Test loss: 0.032577, Train pred loss: 0.003777, Validation pred loss: 0.072686, Test pred loss: 0.031870, Train kl loss: 0.000763, Validation kl loss: 0.000741, Test kl loss:  0.000707
+Time for epoch: 49.54599738121033
+[INFO] EPOCH: 159
+Train loss: 0.004557,  Validation loss: 0.073653, Test loss: 0.032497, Train pred loss: 0.003791, Validation pred loss: 0.072914, Test pred loss: 0.031789, Train kl loss: 0.000766, Validation kl loss: 0.000738, Test kl loss:  0.000708
+Time for epoch: 49.61422109603882
+[INFO] EPOCH: 160
+Train loss: 0.004554,  Validation loss: 0.074070, Test loss: 0.032291, Train pred loss: 0.003789, Validation pred loss: 0.073331, Test pred loss: 0.031583, Train kl loss: 0.000765, Validation kl loss: 0.000739, Test kl loss:  0.000708
+Time for epoch: 49.68531084060669
+[INFO] EPOCH: 161
+Train loss: 0.004561,  Validation loss: 0.074161, Test loss: 0.032559, Train pred loss: 0.003794, Validation pred loss: 0.073419, Test pred loss: 0.031845, Train kl loss: 0.000767, Validation kl loss: 0.000742, Test kl loss:  0.000714
+Time for epoch: 673.4580218791962
+[INFO] EPOCH: 162
+Train loss: 0.004550,  Validation loss: 0.073343, Test loss: 0.032325, Train pred loss: 0.003787, Validation pred loss: 0.072608, Test pred loss: 0.031617, Train kl loss: 0.000763, Validation kl loss: 0.000736, Test kl loss:  0.000708
+Time for epoch: 49.365063428878784
+[INFO] EPOCH: 163
+Train loss: 0.004520,  Validation loss: 0.073642, Test loss: 0.032634, Train pred loss: 0.003759, Validation pred loss: 0.072907, Test pred loss: 0.031926, Train kl loss: 0.000762, Validation kl loss: 0.000735, Test kl loss:  0.000707
+Time for epoch: 49.81705570220947
+[INFO] EPOCH: 164
+Train loss: 0.004532,  Validation loss: 0.073608, Test loss: 0.032585, Train pred loss: 0.003771, Validation pred loss: 0.072868, Test pred loss: 0.031877, Train kl loss: 0.000761, Validation kl loss: 0.000741, Test kl loss:  0.000708
+Time for epoch: 49.77325987815857
+[INFO] EPOCH: 165
+Train loss: 0.004520,  Validation loss: 0.073848, Test loss: 0.032182, Train pred loss: 0.003757, Validation pred loss: 0.073107, Test pred loss: 0.031469, Train kl loss: 0.000763, Validation kl loss: 0.000742, Test kl loss:  0.000713
+Time for epoch: 49.703651905059814
+[INFO] EPOCH: 166
+Train loss: 0.004506,  Validation loss: 0.073625, Test loss: 0.032516, Train pred loss: 0.003747, Validation pred loss: 0.072888, Test pred loss: 0.031807, Train kl loss: 0.000759, Validation kl loss: 0.000736, Test kl loss:  0.000709
+Time for epoch: 49.678345918655396
+[INFO] EPOCH: 167
+Train loss: 0.004552,  Validation loss: 0.074082, Test loss: 0.033078, Train pred loss: 0.003791, Validation pred loss: 0.073344, Test pred loss: 0.032370, Train kl loss: 0.000761, Validation kl loss: 0.000739, Test kl loss:  0.000708
+Time for epoch: 49.69428586959839
+[INFO] EPOCH: 168
+Train loss: 0.004521,  Validation loss: 0.073334, Test loss: 0.032541, Train pred loss: 0.003763, Validation pred loss: 0.072602, Test pred loss: 0.031836, Train kl loss: 0.000757, Validation kl loss: 0.000732, Test kl loss:  0.000705
+Time for epoch: 49.652616024017334
+[INFO] EPOCH: 169
+Train loss: 0.004515,  Validation loss: 0.073146, Test loss: 0.032780, Train pred loss: 0.003757, Validation pred loss: 0.072414, Test pred loss: 0.032074, Train kl loss: 0.000758, Validation kl loss: 0.000733, Test kl loss:  0.000706
+Time for epoch: 49.79762887954712
+[INFO] EPOCH: 170
+Train loss: 0.004516,  Validation loss: 0.074029, Test loss: 0.032338, Train pred loss: 0.003758, Validation pred loss: 0.073297, Test pred loss: 0.031639, Train kl loss: 0.000758, Validation kl loss: 0.000732, Test kl loss:  0.000699
+Time for epoch: 49.67620229721069
+[INFO] EPOCH: 171
+Train loss: 0.004527,  Validation loss: 0.073754, Test loss: 0.032125, Train pred loss: 0.003767, Validation pred loss: 0.073015, Test pred loss: 0.031418, Train kl loss: 0.000760, Validation kl loss: 0.000739, Test kl loss:  0.000707
+Time for epoch: 711.4502675533295
+[INFO] EPOCH: 172
+Train loss: 0.004534,  Validation loss: 0.073342, Test loss: 0.032378, Train pred loss: 0.003776, Validation pred loss: 0.072602, Test pred loss: 0.031672, Train kl loss: 0.000758, Validation kl loss: 0.000740, Test kl loss:  0.000706
+Time for epoch: 49.49772119522095
+[INFO] EPOCH: 173
+Train loss: 0.004526,  Validation loss: 0.073204, Test loss: 0.032713, Train pred loss: 0.003768, Validation pred loss: 0.072470, Test pred loss: 0.032007, Train kl loss: 0.000757, Validation kl loss: 0.000734, Test kl loss:  0.000705
+Time for epoch: 49.72794055938721
+[INFO] EPOCH: 174
+Train loss: 0.004521,  Validation loss: 0.073646, Test loss: 0.032597, Train pred loss: 0.003765, Validation pred loss: 0.072911, Test pred loss: 0.031892, Train kl loss: 0.000756, Validation kl loss: 0.000735, Test kl loss:  0.000705
+Time for epoch: 49.81161618232727
+[INFO] EPOCH: 175
+Train loss: 0.004478,  Validation loss: 0.073492, Test loss: 0.032536, Train pred loss: 0.003722, Validation pred loss: 0.072761, Test pred loss: 0.031837, Train kl loss: 0.000757, Validation kl loss: 0.000731, Test kl loss:  0.000698
+Time for epoch: 49.8407506942749
+[INFO] EPOCH: 176
+Train loss: 0.004451,  Validation loss: 0.073615, Test loss: 0.032294, Train pred loss: 0.003698, Validation pred loss: 0.072886, Test pred loss: 0.031593, Train kl loss: 0.000754, Validation kl loss: 0.000729, Test kl loss:  0.000700
+Time for epoch: 49.82839345932007
+[INFO] EPOCH: 177
+Train loss: 0.004488,  Validation loss: 0.074649, Test loss: 0.032587, Train pred loss: 0.003734, Validation pred loss: 0.073922, Test pred loss: 0.031891, Train kl loss: 0.000754, Validation kl loss: 0.000727, Test kl loss:  0.000696
+Time for epoch: 49.784647703170776
+[INFO] EPOCH: 178
+Train loss: 0.004472,  Validation loss: 0.073851, Test loss: 0.032433, Train pred loss: 0.003719, Validation pred loss: 0.073119, Test pred loss: 0.031734, Train kl loss: 0.000754, Validation kl loss: 0.000732, Test kl loss:  0.000698
+Time for epoch: 49.67153358459473
+[INFO] EPOCH: 179
+Train loss: 0.004516,  Validation loss: 0.073591, Test loss: 0.032405, Train pred loss: 0.003760, Validation pred loss: 0.072856, Test pred loss: 0.031703, Train kl loss: 0.000756, Validation kl loss: 0.000735, Test kl loss:  0.000702
+Time for epoch: 49.76066827774048
+[INFO] EPOCH: 180
+Train loss: 0.004464,  Validation loss: 0.073940, Test loss: 0.032433, Train pred loss: 0.003710, Validation pred loss: 0.073206, Test pred loss: 0.031731, Train kl loss: 0.000754, Validation kl loss: 0.000735, Test kl loss:  0.000702
+Time for epoch: 49.7093071937561
+[INFO] EPOCH: 181
+Train loss: 0.004509,  Validation loss: 0.073895, Test loss: 0.032327, Train pred loss: 0.003757, Validation pred loss: 0.073169, Test pred loss: 0.031633, Train kl loss: 0.000752, Validation kl loss: 0.000726, Test kl loss:  0.000694
+Time for epoch: 753.3057224750519
+[INFO] EPOCH: 182
+Train loss: 0.004501,  Validation loss: 0.073782, Test loss: 0.032329, Train pred loss: 0.003751, Validation pred loss: 0.073048, Test pred loss: 0.031626, Train kl loss: 0.000751, Validation kl loss: 0.000734, Test kl loss:  0.000703
+Time for epoch: 49.344584941864014
+[INFO] EPOCH: 183
+Train loss: 0.004495,  Validation loss: 0.073861, Test loss: 0.032478, Train pred loss: 0.003743, Validation pred loss: 0.073132, Test pred loss: 0.031780, Train kl loss: 0.000752, Validation kl loss: 0.000729, Test kl loss:  0.000697
+Time for epoch: 49.598368406295776
+[INFO] EPOCH: 184
+Train loss: 0.004468,  Validation loss: 0.073692, Test loss: 0.032480, Train pred loss: 0.003718, Validation pred loss: 0.072967, Test pred loss: 0.031786, Train kl loss: 0.000750, Validation kl loss: 0.000725, Test kl loss:  0.000693
+Time for epoch: 49.64345669746399
+[INFO] EPOCH: 185
+Train loss: 0.004508,  Validation loss: 0.074299, Test loss: 0.032514, Train pred loss: 0.003757, Validation pred loss: 0.073573, Test pred loss: 0.031817, Train kl loss: 0.000751, Validation kl loss: 0.000726, Test kl loss:  0.000696
+Time for epoch: 49.741509675979614
+Validation loss stopped decreasing at epoch 186
+[INFO] EPOCH: 186
+Train loss: 0.004500,  Validation loss: 0.073670, Test loss: 0.032280, Train pred loss: 0.003751, Validation pred loss: 0.072942, Test pred loss: 0.031582, Train kl loss: 0.000749, Validation kl loss: 0.000728, Test kl loss:  0.000698
+Time for epoch: 49.66827702522278
+[INFO] EPOCH: 187
+Train loss: 0.004470,  Validation loss: 0.073314, Test loss: 0.032153, Train pred loss: 0.003722, Validation pred loss: 0.072589, Test pred loss: 0.031458, Train kl loss: 0.000748, Validation kl loss: 0.000725, Test kl loss:  0.000696
+Time for epoch: 49.78098273277283
+[INFO] EPOCH: 188
+Train loss: 0.004456,  Validation loss: 0.073685, Test loss: 0.031838, Train pred loss: 0.003706, Validation pred loss: 0.072956, Test pred loss: 0.031141, Train kl loss: 0.000750, Validation kl loss: 0.000729, Test kl loss:  0.000697
+Time for epoch: 49.68131113052368
+[INFO] EPOCH: 189
+Train loss: 0.004471,  Validation loss: 0.073714, Test loss: 0.032378, Train pred loss: 0.003721, Validation pred loss: 0.072982, Test pred loss: 0.031680, Train kl loss: 0.000750, Validation kl loss: 0.000731, Test kl loss:  0.000698
+Time for epoch: 49.63702082633972
+[INFO] EPOCH: 190
+Train loss: 0.004444,  Validation loss: 0.073992, Test loss: 0.031921, Train pred loss: 0.003697, Validation pred loss: 0.073270, Test pred loss: 0.031233, Train kl loss: 0.000748, Validation kl loss: 0.000722, Test kl loss:  0.000688
+Time for epoch: 49.86559247970581
+[INFO] EPOCH: 191
+Train loss: 0.004505,  Validation loss: 0.073331, Test loss: 0.032091, Train pred loss: 0.003756, Validation pred loss: 0.072607, Test pred loss: 0.031398, Train kl loss: 0.000749, Validation kl loss: 0.000725, Test kl loss:  0.000693
+Time for epoch: 776.7933285236359
+[INFO] EPOCH: 192
+Train loss: 0.004445,  Validation loss: 0.073720, Test loss: 0.032253, Train pred loss: 0.003699, Validation pred loss: 0.072998, Test pred loss: 0.031565, Train kl loss: 0.000746, Validation kl loss: 0.000722, Test kl loss:  0.000689
+Time for epoch: 49.3927104473114
+[INFO] EPOCH: 193
+Train loss: 0.004462,  Validation loss: 0.074259, Test loss: 0.032557, Train pred loss: 0.003713, Validation pred loss: 0.073534, Test pred loss: 0.031861, Train kl loss: 0.000749, Validation kl loss: 0.000725, Test kl loss:  0.000696
+Time for epoch: 49.55746817588806
+[INFO] EPOCH: 194
+Train loss: 0.004469,  Validation loss: 0.074006, Test loss: 0.032548, Train pred loss: 0.003722, Validation pred loss: 0.073282, Test pred loss: 0.031857, Train kl loss: 0.000747, Validation kl loss: 0.000725, Test kl loss:  0.000691
+Time for epoch: 49.54727578163147
+[INFO] EPOCH: 195
+Train loss: 0.004453,  Validation loss: 0.073272, Test loss: 0.032163, Train pred loss: 0.003708, Validation pred loss: 0.072551, Test pred loss: 0.031475, Train kl loss: 0.000745, Validation kl loss: 0.000721, Test kl loss:  0.000688
+Time for epoch: 49.621341705322266
+[INFO] EPOCH: 196
+Train loss: 0.004422,  Validation loss: 0.074205, Test loss: 0.032258, Train pred loss: 0.003679, Validation pred loss: 0.073486, Test pred loss: 0.031571, Train kl loss: 0.000744, Validation kl loss: 0.000719, Test kl loss:  0.000687
+Time for epoch: 49.67967867851257
+[INFO] EPOCH: 197
+Train loss: 0.004477,  Validation loss: 0.073303, Test loss: 0.032270, Train pred loss: 0.003731, Validation pred loss: 0.072577, Test pred loss: 0.031575, Train kl loss: 0.000746, Validation kl loss: 0.000726, Test kl loss:  0.000695
+Time for epoch: 49.77994704246521
+[INFO] EPOCH: 198
+Train loss: 0.004508,  Validation loss: 0.073419, Test loss: 0.032454, Train pred loss: 0.003761, Validation pred loss: 0.072697, Test pred loss: 0.031763, Train kl loss: 0.000747, Validation kl loss: 0.000722, Test kl loss:  0.000690
+Time for epoch: 49.748971939086914
+Validation loss is at a minimum. Saving the model
+[INFO] EPOCH: 199
+Train loss: 0.004445,  Validation loss: 0.073055, Test loss: 0.032402, Train pred loss: 0.003701, Validation pred loss: 0.072333, Test pred loss: 0.031713, Train kl loss: 0.000744, Validation kl loss: 0.000722, Test kl loss:  0.000689
+Time for epoch: 50.77868986129761
+[INFO] EPOCH: 200
+Train loss: 0.004402,  Validation loss: 0.073500, Test loss: 0.032227, Train pred loss: 0.003657, Validation pred loss: 0.072780, Test pred loss: 0.031538, Train kl loss: 0.000745, Validation kl loss: 0.000720, Test kl loss:  0.000689
+Time for epoch: 49.66587543487549
+[INFO] EPOCH: 201
+Train loss: 0.004456,  Validation loss: 0.073532, Test loss: 0.032069, Train pred loss: 0.003711, Validation pred loss: 0.072809, Test pred loss: 0.031378, Train kl loss: 0.000746, Validation kl loss: 0.000722, Test kl loss:  0.000691
+Time for epoch: 805.6551260948181
+[INFO] EPOCH: 202
+Train loss: 0.004431,  Validation loss: 0.073773, Test loss: 0.032290, Train pred loss: 0.003687, Validation pred loss: 0.073055, Test pred loss: 0.031603, Train kl loss: 0.000744, Validation kl loss: 0.000718, Test kl loss:  0.000687
+Time for epoch: 49.35608649253845
+[INFO] EPOCH: 203
+Train loss: 0.004514,  Validation loss: 0.073708, Test loss: 0.032214, Train pred loss: 0.003763, Validation pred loss: 0.072987, Test pred loss: 0.031525, Train kl loss: 0.000751, Validation kl loss: 0.000721, Test kl loss:  0.000689
+Time for epoch: 49.690701484680176
+[INFO] EPOCH: 204
+Train loss: 0.004416,  Validation loss: 0.073815, Test loss: 0.032236, Train pred loss: 0.003672, Validation pred loss: 0.073092, Test pred loss: 0.031542, Train kl loss: 0.000743, Validation kl loss: 0.000723, Test kl loss:  0.000693
+Time for epoch: 49.53354501724243
+[INFO] EPOCH: 205
+Train loss: 0.004411,  Validation loss: 0.073838, Test loss: 0.031808, Train pred loss: 0.003671, Validation pred loss: 0.073120, Test pred loss: 0.031121, Train kl loss: 0.000741, Validation kl loss: 0.000718, Test kl loss:  0.000687
+Time for epoch: 49.642742395401
+[INFO] EPOCH: 206
+Train loss: 0.004474,  Validation loss: 0.073613, Test loss: 0.031784, Train pred loss: 0.003729, Validation pred loss: 0.072893, Test pred loss: 0.031093, Train kl loss: 0.000744, Validation kl loss: 0.000720, Test kl loss:  0.000690
+Time for epoch: 50.11883568763733
+[INFO] EPOCH: 207
+Train loss: 0.004436,  Validation loss: 0.073123, Test loss: 0.031824, Train pred loss: 0.003691, Validation pred loss: 0.072405, Test pred loss: 0.031135, Train kl loss: 0.000745, Validation kl loss: 0.000719, Test kl loss:  0.000689
+Time for epoch: 49.6419472694397
+[INFO] EPOCH: 208
+Train loss: 0.004419,  Validation loss: 0.073070, Test loss: 0.032012, Train pred loss: 0.003677, Validation pred loss: 0.072350, Test pred loss: 0.031324, Train kl loss: 0.000743, Validation kl loss: 0.000720, Test kl loss:  0.000687
+Time for epoch: 49.851009130477905
+[INFO] EPOCH: 209
+Train loss: 0.004409,  Validation loss: 0.073156, Test loss: 0.031934, Train pred loss: 0.003668, Validation pred loss: 0.072432, Test pred loss: 0.031243, Train kl loss: 0.000741, Validation kl loss: 0.000724, Test kl loss:  0.000690
+Time for epoch: 49.740809202194214
+[INFO] EPOCH: 210
+Train loss: 0.004410,  Validation loss: 0.073185, Test loss: 0.032024, Train pred loss: 0.003668, Validation pred loss: 0.072468, Test pred loss: 0.031339, Train kl loss: 0.000742, Validation kl loss: 0.000717, Test kl loss:  0.000686
+Time for epoch: 49.58587074279785
+Validation loss is at a minimum. Saving the model
+[INFO] EPOCH: 211
+Train loss: 0.004433,  Validation loss: 0.072327, Test loss: 0.032079, Train pred loss: 0.003691, Validation pred loss: 0.071605, Test pred loss: 0.031391, Train kl loss: 0.000743, Validation kl loss: 0.000722, Test kl loss:  0.000689
+Time for epoch: 847.5276155471802
+[INFO] EPOCH: 212
+Train loss: 0.004423,  Validation loss: 0.073316, Test loss: 0.032169, Train pred loss: 0.003681, Validation pred loss: 0.072597, Test pred loss: 0.031481, Train kl loss: 0.000743, Validation kl loss: 0.000719, Test kl loss:  0.000688
+Time for epoch: 49.29648518562317
+[INFO] EPOCH: 213
+Train loss: 0.004408,  Validation loss: 0.073189, Test loss: 0.031830, Train pred loss: 0.003666, Validation pred loss: 0.072469, Test pred loss: 0.031141, Train kl loss: 0.000741, Validation kl loss: 0.000720, Test kl loss:  0.000689
+Time for epoch: 49.5207884311676
+[INFO] EPOCH: 214
+Train loss: 0.004436,  Validation loss: 0.073590, Test loss: 0.031878, Train pred loss: 0.003694, Validation pred loss: 0.072870, Test pred loss: 0.031191, Train kl loss: 0.000742, Validation kl loss: 0.000721, Test kl loss:  0.000687
+Time for epoch: 49.64996814727783
+[INFO] EPOCH: 215
+Train loss: 0.004426,  Validation loss: 0.073397, Test loss: 0.032086, Train pred loss: 0.003685, Validation pred loss: 0.072680, Test pred loss: 0.031400, Train kl loss: 0.000741, Validation kl loss: 0.000717, Test kl loss:  0.000686
+Time for epoch: 49.778990268707275
+[INFO] EPOCH: 216
+Train loss: 0.004425,  Validation loss: 0.073259, Test loss: 0.031764, Train pred loss: 0.003684, Validation pred loss: 0.072539, Test pred loss: 0.031076, Train kl loss: 0.000741, Validation kl loss: 0.000720, Test kl loss:  0.000688
+Time for epoch: 49.615084648132324
+[INFO] EPOCH: 217
+Train loss: 0.004406,  Validation loss: 0.073774, Test loss: 0.031842, Train pred loss: 0.003665, Validation pred loss: 0.073053, Test pred loss: 0.031155, Train kl loss: 0.000741, Validation kl loss: 0.000721, Test kl loss:  0.000687
+Time for epoch: 49.747793197631836
+[INFO] EPOCH: 218
+Train loss: 0.004437,  Validation loss: 0.073028, Test loss: 0.031960, Train pred loss: 0.003694, Validation pred loss: 0.072307, Test pred loss: 0.031273, Train kl loss: 0.000743, Validation kl loss: 0.000721, Test kl loss:  0.000687
+Time for epoch: 49.609537839889526
+[INFO] EPOCH: 219
+Train loss: 0.004431,  Validation loss: 0.073427, Test loss: 0.031971, Train pred loss: 0.003693, Validation pred loss: 0.072708, Test pred loss: 0.031282, Train kl loss: 0.000738, Validation kl loss: 0.000719, Test kl loss:  0.000688
+Time for epoch: 49.65474581718445
+[INFO] EPOCH: 220
+Train loss: 0.004389,  Validation loss: 0.073343, Test loss: 0.031981, Train pred loss: 0.003650, Validation pred loss: 0.072628, Test pred loss: 0.031299, Train kl loss: 0.000739, Validation kl loss: 0.000715, Test kl loss:  0.000682
+Time for epoch: 49.590680837631226
+[INFO] EPOCH: 221
+Train loss: 0.004412,  Validation loss: 0.073433, Test loss: 0.032344, Train pred loss: 0.003673, Validation pred loss: 0.072717, Test pred loss: 0.031659, Train kl loss: 0.000740, Validation kl loss: 0.000715, Test kl loss:  0.000685
+Time for epoch: 875.0797057151794
+[INFO] EPOCH: 222
+Train loss: 0.004418,  Validation loss: 0.073438, Test loss: 0.032048, Train pred loss: 0.003681, Validation pred loss: 0.072725, Test pred loss: 0.031368, Train kl loss: 0.000737, Validation kl loss: 0.000713, Test kl loss:  0.000679
+Time for epoch: 49.61707544326782
+[INFO] EPOCH: 223
+Train loss: 0.004423,  Validation loss: 0.073363, Test loss: 0.032264, Train pred loss: 0.003683, Validation pred loss: 0.072648, Test pred loss: 0.031581, Train kl loss: 0.000739, Validation kl loss: 0.000716, Test kl loss:  0.000682
+Time for epoch: 49.635902404785156
+[INFO] EPOCH: 224
+Train loss: 0.004388,  Validation loss: 0.073410, Test loss: 0.032260, Train pred loss: 0.003650, Validation pred loss: 0.072692, Test pred loss: 0.031575, Train kl loss: 0.000738, Validation kl loss: 0.000717, Test kl loss:  0.000685
+Time for epoch: 49.76542830467224
+[INFO] EPOCH: 225
+Train loss: 0.004408,  Validation loss: 0.073345, Test loss: 0.032221, Train pred loss: 0.003670, Validation pred loss: 0.072630, Test pred loss: 0.031537, Train kl loss: 0.000738, Validation kl loss: 0.000715, Test kl loss:  0.000684
+Time for epoch: 49.632028341293335
+[INFO] EPOCH: 226
+Train loss: 0.004397,  Validation loss: 0.073318, Test loss: 0.032178, Train pred loss: 0.003659, Validation pred loss: 0.072600, Test pred loss: 0.031494, Train kl loss: 0.000738, Validation kl loss: 0.000718, Test kl loss:  0.000684
+Time for epoch: 49.67044973373413
+[INFO] EPOCH: 227
+Train loss: 0.004410,  Validation loss: 0.072923, Test loss: 0.031908, Train pred loss: 0.003674, Validation pred loss: 0.072209, Test pred loss: 0.031228, Train kl loss: 0.000736, Validation kl loss: 0.000714, Test kl loss:  0.000681
+Time for epoch: 49.70269703865051
+[INFO] EPOCH: 228
+Train loss: 0.004417,  Validation loss: 0.073107, Test loss: 0.031608, Train pred loss: 0.003679, Validation pred loss: 0.072394, Test pred loss: 0.030928, Train kl loss: 0.000738, Validation kl loss: 0.000713, Test kl loss:  0.000681
+Time for epoch: 49.565574169158936
+[INFO] EPOCH: 229
+Train loss: 0.004388,  Validation loss: 0.073857, Test loss: 0.032056, Train pred loss: 0.003651, Validation pred loss: 0.073138, Test pred loss: 0.031372, Train kl loss: 0.000737, Validation kl loss: 0.000719, Test kl loss:  0.000684
+Time for epoch: 49.61974120140076
+[INFO] EPOCH: 230
+Train loss: 0.004383,  Validation loss: 0.073787, Test loss: 0.031778, Train pred loss: 0.003647, Validation pred loss: 0.073074, Test pred loss: 0.031099, Train kl loss: 0.000736, Validation kl loss: 0.000713, Test kl loss:  0.000679
+Time for epoch: 49.509915351867676
+[INFO] EPOCH: 231
+Train loss: 0.004394,  Validation loss: 0.073680, Test loss: 0.031668, Train pred loss: 0.003657, Validation pred loss: 0.072969, Test pred loss: 0.030991, Train kl loss: 0.000737, Validation kl loss: 0.000711, Test kl loss:  0.000678
+Time for epoch: 903.4113550186157
+[INFO] EPOCH: 232
+Train loss: 0.004407,  Validation loss: 0.073203, Test loss: 0.031901, Train pred loss: 0.003671, Validation pred loss: 0.072487, Test pred loss: 0.031217, Train kl loss: 0.000736, Validation kl loss: 0.000715, Test kl loss:  0.000684
+Time for epoch: 49.296204805374146
+[INFO] EPOCH: 233
+Train loss: 0.004422,  Validation loss: 0.073459, Test loss: 0.031787, Train pred loss: 0.003684, Validation pred loss: 0.072745, Test pred loss: 0.031105, Train kl loss: 0.000738, Validation kl loss: 0.000715, Test kl loss:  0.000682
+Time for epoch: 49.507105350494385
+[INFO] EPOCH: 234
+Train loss: 0.004411,  Validation loss: 0.073751, Test loss: 0.031992, Train pred loss: 0.003674, Validation pred loss: 0.073036, Test pred loss: 0.031310, Train kl loss: 0.000737, Validation kl loss: 0.000715, Test kl loss:  0.000682
+Time for epoch: 49.687018632888794
+[INFO] EPOCH: 235
+Train loss: 0.004385,  Validation loss: 0.073145, Test loss: 0.031959, Train pred loss: 0.003649, Validation pred loss: 0.072435, Test pred loss: 0.031284, Train kl loss: 0.000737, Validation kl loss: 0.000710, Test kl loss:  0.000675
+Time for epoch: 49.70802164077759
+[INFO] EPOCH: 236
+Train loss: 0.004376,  Validation loss: 0.073089, Test loss: 0.031670, Train pred loss: 0.003641, Validation pred loss: 0.072377, Test pred loss: 0.030993, Train kl loss: 0.000735, Validation kl loss: 0.000713, Test kl loss:  0.000677
+Time for epoch: 49.670345306396484
+[INFO] EPOCH: 237
+Train loss: 0.004380,  Validation loss: 0.073364, Test loss: 0.031536, Train pred loss: 0.003645, Validation pred loss: 0.072650, Test pred loss: 0.030859, Train kl loss: 0.000735, Validation kl loss: 0.000714, Test kl loss:  0.000677
+Time for epoch: 49.696266889572144
+[INFO] EPOCH: 238
+Train loss: 0.004396,  Validation loss: 0.072985, Test loss: 0.031776, Train pred loss: 0.003661, Validation pred loss: 0.072274, Test pred loss: 0.031100, Train kl loss: 0.000735, Validation kl loss: 0.000711, Test kl loss:  0.000677
+Time for epoch: 49.56399703025818
+[INFO] EPOCH: 239
+Train loss: 0.004342,  Validation loss: 0.073478, Test loss: 0.031692, Train pred loss: 0.003607, Validation pred loss: 0.072767, Test pred loss: 0.031016, Train kl loss: 0.000735, Validation kl loss: 0.000710, Test kl loss:  0.000676
+Time for epoch: 49.785226345062256
+[INFO] EPOCH: 240
+Train loss: 0.004395,  Validation loss: 0.073736, Test loss: 0.031446, Train pred loss: 0.003660, Validation pred loss: 0.073023, Test pred loss: 0.030764, Train kl loss: 0.000735, Validation kl loss: 0.000713, Test kl loss:  0.000682
+Time for epoch: 49.615819454193115
+[INFO] EPOCH: 241
+Train loss: 0.004409,  Validation loss: 0.073662, Test loss: 0.031749, Train pred loss: 0.003673, Validation pred loss: 0.072950, Test pred loss: 0.031068, Train kl loss: 0.000736, Validation kl loss: 0.000711, Test kl loss:  0.000681
+Time for epoch: 933.7283163070679
+[INFO] EPOCH: 242
+Train loss: 0.004384,  Validation loss: 0.072938, Test loss: 0.031818, Train pred loss: 0.003650, Validation pred loss: 0.072222, Test pred loss: 0.031135, Train kl loss: 0.000734, Validation kl loss: 0.000716, Test kl loss:  0.000683
+Time for epoch: 49.33423900604248
+[INFO] EPOCH: 243
+Train loss: 0.004388,  Validation loss: 0.073310, Test loss: 0.031651, Train pred loss: 0.003655, Validation pred loss: 0.072602, Test pred loss: 0.030975, Train kl loss: 0.000733, Validation kl loss: 0.000708, Test kl loss:  0.000676
+Time for epoch: 49.71737504005432
+[INFO] EPOCH: 244
+Train loss: 0.004380,  Validation loss: 0.072884, Test loss: 0.031696, Train pred loss: 0.003647, Validation pred loss: 0.072176, Test pred loss: 0.031020, Train kl loss: 0.000733, Validation kl loss: 0.000709, Test kl loss:  0.000676
+Time for epoch: 49.75685095787048
+[INFO] EPOCH: 245
+Train loss: 0.004378,  Validation loss: 0.073540, Test loss: 0.031582, Train pred loss: 0.003646, Validation pred loss: 0.072828, Test pred loss: 0.030900, Train kl loss: 0.000732, Validation kl loss: 0.000712, Test kl loss:  0.000682
+Time for epoch: 49.613741874694824
+[INFO] EPOCH: 246
+Train loss: 0.004416,  Validation loss: 0.073536, Test loss: 0.031466, Train pred loss: 0.003681, Validation pred loss: 0.072821, Test pred loss: 0.030787, Train kl loss: 0.000734, Validation kl loss: 0.000715, Test kl loss:  0.000679
+Time for epoch: 49.69739317893982
+[INFO] EPOCH: 247
+Train loss: 0.004331,  Validation loss: 0.073373, Test loss: 0.031573, Train pred loss: 0.003598, Validation pred loss: 0.072665, Test pred loss: 0.030898, Train kl loss: 0.000733, Validation kl loss: 0.000708, Test kl loss:  0.000675
+Time for epoch: 49.84066390991211
+[INFO] EPOCH: 248
+Train loss: 0.004369,  Validation loss: 0.072982, Test loss: 0.031490, Train pred loss: 0.003637, Validation pred loss: 0.072276, Test pred loss: 0.030815, Train kl loss: 0.000732, Validation kl loss: 0.000706, Test kl loss:  0.000675
+Time for epoch: 49.65939927101135
+[INFO] EPOCH: 249
+Train loss: 0.004387,  Validation loss: 0.073395, Test loss: 0.031652, Train pred loss: 0.003652, Validation pred loss: 0.072682, Test pred loss: 0.030974, Train kl loss: 0.000734, Validation kl loss: 0.000713, Test kl loss:  0.000679
+Time for epoch: 49.76757526397705
+[INFO] EPOCH: 250
+Train loss: 0.004385,  Validation loss: 0.073476, Test loss: 0.031638, Train pred loss: 0.003652, Validation pred loss: 0.072765, Test pred loss: 0.030960, Train kl loss: 0.000733, Validation kl loss: 0.000711, Test kl loss:  0.000679
+Time for epoch: 49.56342387199402
+[INFO] EPOCH: 251
+Train loss: 0.004381,  Validation loss: 0.073983, Test loss: 0.031876, Train pred loss: 0.003647, Validation pred loss: 0.073272, Test pred loss: 0.031198, Train kl loss: 0.000734, Validation kl loss: 0.000711, Test kl loss:  0.000678
+Time for epoch: 979.6529386043549
+[INFO] EPOCH: 252
+Train loss: 0.004361,  Validation loss: 0.073277, Test loss: 0.031545, Train pred loss: 0.003631, Validation pred loss: 0.072569, Test pred loss: 0.030864, Train kl loss: 0.000730, Validation kl loss: 0.000708, Test kl loss:  0.000681
+Time for epoch: 49.22394871711731
+[INFO] EPOCH: 253
+Train loss: 0.004385,  Validation loss: 0.073920, Test loss: 0.031403, Train pred loss: 0.003653, Validation pred loss: 0.073212, Test pred loss: 0.030725, Train kl loss: 0.000732, Validation kl loss: 0.000708, Test kl loss:  0.000677
+Time for epoch: 49.55730175971985
+[INFO] EPOCH: 254
+Train loss: 0.004376,  Validation loss: 0.073314, Test loss: 0.031589, Train pred loss: 0.003646, Validation pred loss: 0.072606, Test pred loss: 0.030911, Train kl loss: 0.000730, Validation kl loss: 0.000708, Test kl loss:  0.000679
+Time for epoch: 49.61289882659912
+[INFO] EPOCH: 255
+Train loss: 0.004382,  Validation loss: 0.073650, Test loss: 0.031560, Train pred loss: 0.003647, Validation pred loss: 0.072939, Test pred loss: 0.030884, Train kl loss: 0.000734, Validation kl loss: 0.000711, Test kl loss:  0.000676
+Time for epoch: 49.74186563491821
+[INFO] EPOCH: 256
+Train loss: 0.004341,  Validation loss: 0.072693, Test loss: 0.031268, Train pred loss: 0.003610, Validation pred loss: 0.071982, Test pred loss: 0.030590, Train kl loss: 0.000731, Validation kl loss: 0.000711, Test kl loss:  0.000678
+Time for epoch: 49.63063144683838
+[INFO] EPOCH: 257
+Train loss: 0.004358,  Validation loss: 0.073026, Test loss: 0.031119, Train pred loss: 0.003632, Validation pred loss: 0.072320, Test pred loss: 0.030447, Train kl loss: 0.000727, Validation kl loss: 0.000706, Test kl loss:  0.000672
+Time for epoch: 49.66963028907776
+[INFO] EPOCH: 258
+Train loss: 0.004387,  Validation loss: 0.072839, Test loss: 0.031397, Train pred loss: 0.003657, Validation pred loss: 0.072130, Test pred loss: 0.030721, Train kl loss: 0.000730, Validation kl loss: 0.000709, Test kl loss:  0.000676
+Time for epoch: 49.5776629447937
+[INFO] EPOCH: 259
+Train loss: 0.004320,  Validation loss: 0.073942, Test loss: 0.031332, Train pred loss: 0.003591, Validation pred loss: 0.073233, Test pred loss: 0.030657, Train kl loss: 0.000729, Validation kl loss: 0.000709, Test kl loss:  0.000674
+Time for epoch: 49.538989782333374
+[INFO] EPOCH: 260
+Train loss: 0.004332,  Validation loss: 0.073334, Test loss: 0.031324, Train pred loss: 0.003602, Validation pred loss: 0.072625, Test pred loss: 0.030652, Train kl loss: 0.000730, Validation kl loss: 0.000709, Test kl loss:  0.000673
+Time for epoch: 49.62770438194275
+[INFO] EPOCH: 261
+Train loss: 0.004402,  Validation loss: 0.073804, Test loss: 0.031085, Train pred loss: 0.003673, Validation pred loss: 0.073097, Test pred loss: 0.030412, Train kl loss: 0.000728, Validation kl loss: 0.000707, Test kl loss:  0.000674
+Time for epoch: 999.8689947128296
+[INFO] EPOCH: 262
+Train loss: 0.004368,  Validation loss: 0.074046, Test loss: 0.031319, Train pred loss: 0.003640, Validation pred loss: 0.073342, Test pred loss: 0.030648, Train kl loss: 0.000729, Validation kl loss: 0.000704, Test kl loss:  0.000671
+Time for epoch: 49.23448991775513
+[INFO] EPOCH: 263
+Train loss: 0.004346,  Validation loss: 0.074039, Test loss: 0.030942, Train pred loss: 0.003617, Validation pred loss: 0.073334, Test pred loss: 0.030269, Train kl loss: 0.000729, Validation kl loss: 0.000705, Test kl loss:  0.000673
+Time for epoch: 49.613807916641235
+[INFO] EPOCH: 264
+Train loss: 0.004328,  Validation loss: 0.073307, Test loss: 0.031107, Train pred loss: 0.003601, Validation pred loss: 0.072602, Test pred loss: 0.030436, Train kl loss: 0.000727, Validation kl loss: 0.000705, Test kl loss:  0.000671
+Time for epoch: 49.548234939575195
+[INFO] EPOCH: 265
+Train loss: 0.004364,  Validation loss: 0.073447, Test loss: 0.031213, Train pred loss: 0.003633, Validation pred loss: 0.072734, Test pred loss: 0.030535, Train kl loss: 0.000731, Validation kl loss: 0.000713, Test kl loss:  0.000678
+Time for epoch: 49.59768748283386
+[INFO] EPOCH: 266
+Train loss: 0.004372,  Validation loss: 0.073452, Test loss: 0.031085, Train pred loss: 0.003642, Validation pred loss: 0.072743, Test pred loss: 0.030410, Train kl loss: 0.000730, Validation kl loss: 0.000709, Test kl loss:  0.000675
+Time for epoch: 49.61412525177002
+[INFO] EPOCH: 267
+Train loss: 0.004333,  Validation loss: 0.073384, Test loss: 0.031162, Train pred loss: 0.003606, Validation pred loss: 0.072679, Test pred loss: 0.030487, Train kl loss: 0.000727, Validation kl loss: 0.000706, Test kl loss:  0.000675
+Time for epoch: 49.73866415023804
+[INFO] EPOCH: 268
+Train loss: 0.004334,  Validation loss: 0.073715, Test loss: 0.030860, Train pred loss: 0.003605, Validation pred loss: 0.073007, Test pred loss: 0.030184, Train kl loss: 0.000729, Validation kl loss: 0.000708, Test kl loss:  0.000676
+Time for epoch: 49.62140369415283
+[INFO] EPOCH: 269
+Train loss: 0.004318,  Validation loss: 0.073701, Test loss: 0.031135, Train pred loss: 0.003594, Validation pred loss: 0.073000, Test pred loss: 0.030464, Train kl loss: 0.000724, Validation kl loss: 0.000702, Test kl loss:  0.000671
+Time for epoch: 49.5582332611084
+[INFO] EPOCH: 270
+Train loss: 0.004331,  Validation loss: 0.073846, Test loss: 0.031300, Train pred loss: 0.003606, Validation pred loss: 0.073145, Test pred loss: 0.030631, Train kl loss: 0.000726, Validation kl loss: 0.000701, Test kl loss:  0.000669
+Time for epoch: 49.67898869514465
+[INFO] EPOCH: 271
+Train loss: 0.004316,  Validation loss: 0.073178, Test loss: 0.031379, Train pred loss: 0.003593, Validation pred loss: 0.072475, Test pred loss: 0.030710, Train kl loss: 0.000723, Validation kl loss: 0.000703, Test kl loss:  0.000669
+Time for epoch: 1030.7483851909637
+[INFO] EPOCH: 272
+Train loss: 0.004366,  Validation loss: 0.073346, Test loss: 0.031350, Train pred loss: 0.003638, Validation pred loss: 0.072641, Test pred loss: 0.030678, Train kl loss: 0.000728, Validation kl loss: 0.000706, Test kl loss:  0.000672
+Time for epoch: 49.43231821060181
+[INFO] EPOCH: 273
+Train loss: 0.004322,  Validation loss: 0.073547, Test loss: 0.031409, Train pred loss: 0.003597, Validation pred loss: 0.072844, Test pred loss: 0.030738, Train kl loss: 0.000725, Validation kl loss: 0.000703, Test kl loss:  0.000670
+Time for epoch: 49.509798765182495
+[INFO] EPOCH: 274
+Train loss: 0.004372,  Validation loss: 0.073538, Test loss: 0.031472, Train pred loss: 0.003646, Validation pred loss: 0.072831, Test pred loss: 0.030796, Train kl loss: 0.000726, Validation kl loss: 0.000707, Test kl loss:  0.000676
+Time for epoch: 49.74769830703735
+[INFO] EPOCH: 275
+Train loss: 0.004297,  Validation loss: 0.073311, Test loss: 0.031139, Train pred loss: 0.003572, Validation pred loss: 0.072609, Test pred loss: 0.030470, Train kl loss: 0.000725, Validation kl loss: 0.000701, Test kl loss:  0.000669
+Time for epoch: 49.64199638366699
+[INFO] EPOCH: 276
+Train loss: 0.004346,  Validation loss: 0.074176, Test loss: 0.031158, Train pred loss: 0.003621, Validation pred loss: 0.073470, Test pred loss: 0.030487, Train kl loss: 0.000725, Validation kl loss: 0.000706, Test kl loss:  0.000671
+Time for epoch: 49.613176107406616
+[INFO] EPOCH: 277
+Train loss: 0.004352,  Validation loss: 0.073532, Test loss: 0.031402, Train pred loss: 0.003626, Validation pred loss: 0.072829, Test pred loss: 0.030731, Train kl loss: 0.000726, Validation kl loss: 0.000703, Test kl loss:  0.000671
+Time for epoch: 49.620075941085815
+[INFO] EPOCH: 278
+Train loss: 0.004318,  Validation loss: 0.073843, Test loss: 0.031470, Train pred loss: 0.003593, Validation pred loss: 0.073133, Test pred loss: 0.030796, Train kl loss: 0.000725, Validation kl loss: 0.000710, Test kl loss:  0.000674
+Time for epoch: 49.82207202911377
+[INFO] EPOCH: 279
+Train loss: 0.004340,  Validation loss: 0.073580, Test loss: 0.031292, Train pred loss: 0.003617, Validation pred loss: 0.072878, Test pred loss: 0.030621, Train kl loss: 0.000723, Validation kl loss: 0.000702, Test kl loss:  0.000670
+Time for epoch: 49.4547598361969
+[INFO] EPOCH: 280
+Train loss: 0.004348,  Validation loss: 0.073620, Test loss: 0.031236, Train pred loss: 0.003622, Validation pred loss: 0.072916, Test pred loss: 0.030568, Train kl loss: 0.000727, Validation kl loss: 0.000704, Test kl loss:  0.000668
+Time for epoch: 49.57959604263306
+[INFO] EPOCH: 281
+Train loss: 0.004348,  Validation loss: 0.073396, Test loss: 0.030981, Train pred loss: 0.003624, Validation pred loss: 0.072691, Test pred loss: 0.030309, Train kl loss: 0.000725, Validation kl loss: 0.000706, Test kl loss:  0.000672
+Time for epoch: 1074.5505406856537
+[INFO] EPOCH: 282
+Train loss: 0.004322,  Validation loss: 0.074093, Test loss: 0.031261, Train pred loss: 0.003597, Validation pred loss: 0.073395, Test pred loss: 0.030594, Train kl loss: 0.000725, Validation kl loss: 0.000698, Test kl loss:  0.000667
+Time for epoch: 49.50213861465454
+[INFO] EPOCH: 283
+Train loss: 0.004317,  Validation loss: 0.073845, Test loss: 0.031211, Train pred loss: 0.003594, Validation pred loss: 0.073143, Test pred loss: 0.030538, Train kl loss: 0.000723, Validation kl loss: 0.000703, Test kl loss:  0.000673
+Time for epoch: 49.59904360771179
+[INFO] EPOCH: 284
+Train loss: 0.004316,  Validation loss: 0.073250, Test loss: 0.031411, Train pred loss: 0.003594, Validation pred loss: 0.072547, Test pred loss: 0.030742, Train kl loss: 0.000722, Validation kl loss: 0.000703, Test kl loss:  0.000669
+Time for epoch: 49.63820672035217
+[INFO] EPOCH: 285
+Train loss: 0.004339,  Validation loss: 0.073130, Test loss: 0.031593, Train pred loss: 0.003614, Validation pred loss: 0.072426, Test pred loss: 0.030922, Train kl loss: 0.000725, Validation kl loss: 0.000704, Test kl loss:  0.000671
+Time for epoch: 49.69762825965881
+[INFO] EPOCH: 286
+Train loss: 0.004330,  Validation loss: 0.074001, Test loss: 0.031357, Train pred loss: 0.003607, Validation pred loss: 0.073301, Test pred loss: 0.030691, Train kl loss: 0.000722, Validation kl loss: 0.000700, Test kl loss:  0.000666
+Time for epoch: 49.66063165664673
+[INFO] EPOCH: 287
+Train loss: 0.004325,  Validation loss: 0.074047, Test loss: 0.031207, Train pred loss: 0.003602, Validation pred loss: 0.073342, Test pred loss: 0.030537, Train kl loss: 0.000723, Validation kl loss: 0.000705, Test kl loss:  0.000671
+Time for epoch: 49.551759243011475
+[INFO] EPOCH: 288
+Train loss: 0.004318,  Validation loss: 0.072962, Test loss: 0.031330, Train pred loss: 0.003595, Validation pred loss: 0.072261, Test pred loss: 0.030664, Train kl loss: 0.000723, Validation kl loss: 0.000701, Test kl loss:  0.000666
+Time for epoch: 49.864537715911865
+[INFO] EPOCH: 289
+Train loss: 0.004331,  Validation loss: 0.073450, Test loss: 0.031421, Train pred loss: 0.003607, Validation pred loss: 0.072747, Test pred loss: 0.030752, Train kl loss: 0.000724, Validation kl loss: 0.000703, Test kl loss:  0.000669
+Time for epoch: 49.62138891220093
+[INFO] EPOCH: 290
+Train loss: 0.004318,  Validation loss: 0.073006, Test loss: 0.031299, Train pred loss: 0.003593, Validation pred loss: 0.072300, Test pred loss: 0.030628, Train kl loss: 0.000725, Validation kl loss: 0.000706, Test kl loss:  0.000670
+Time for epoch: 49.63110399246216
+[INFO] EPOCH: 291
+Train loss: 0.004296,  Validation loss: 0.073130, Test loss: 0.031051, Train pred loss: 0.003575, Validation pred loss: 0.072426, Test pred loss: 0.030381, Train kl loss: 0.000721, Validation kl loss: 0.000703, Test kl loss:  0.000670
+Time for epoch: 1096.7210171222687
+[INFO] EPOCH: 292
+Train loss: 0.004364,  Validation loss: 0.073553, Test loss: 0.031262, Train pred loss: 0.003640, Validation pred loss: 0.072851, Test pred loss: 0.030594, Train kl loss: 0.000724, Validation kl loss: 0.000703, Test kl loss:  0.000667
+Time for epoch: 49.332082748413086
+[INFO] EPOCH: 293
+Train loss: 0.004300,  Validation loss: 0.073531, Test loss: 0.031338, Train pred loss: 0.003579, Validation pred loss: 0.072829, Test pred loss: 0.030668, Train kl loss: 0.000721, Validation kl loss: 0.000702, Test kl loss:  0.000671
+Time for epoch: 49.75036573410034
+[INFO] EPOCH: 294
+Train loss: 0.004333,  Validation loss: 0.073016, Test loss: 0.031014, Train pred loss: 0.003610, Validation pred loss: 0.072315, Test pred loss: 0.030348, Train kl loss: 0.000723, Validation kl loss: 0.000701, Test kl loss:  0.000666
+Time for epoch: 49.58445858955383
+[INFO] EPOCH: 295
+Train loss: 0.004342,  Validation loss: 0.073086, Test loss: 0.031107, Train pred loss: 0.003620, Validation pred loss: 0.072384, Test pred loss: 0.030441, Train kl loss: 0.000723, Validation kl loss: 0.000702, Test kl loss:  0.000666
+Time for epoch: 49.583850622177124
+[INFO] EPOCH: 296
+Train loss: 0.004287,  Validation loss: 0.073842, Test loss: 0.031181, Train pred loss: 0.003567, Validation pred loss: 0.073140, Test pred loss: 0.030516, Train kl loss: 0.000720, Validation kl loss: 0.000702, Test kl loss:  0.000665
+Time for epoch: 49.70927882194519
+[INFO] EPOCH: 297
+Train loss: 0.004271,  Validation loss: 0.073850, Test loss: 0.031364, Train pred loss: 0.003552, Validation pred loss: 0.073150, Test pred loss: 0.030699, Train kl loss: 0.000719, Validation kl loss: 0.000701, Test kl loss:  0.000665
+Time for epoch: 49.598703145980835
+[INFO] EPOCH: 298
+Train loss: 0.004337,  Validation loss: 0.073343, Test loss: 0.031180, Train pred loss: 0.003614, Validation pred loss: 0.072635, Test pred loss: 0.030508, Train kl loss: 0.000723, Validation kl loss: 0.000708, Test kl loss:  0.000672
+Time for epoch: 49.53721261024475
+[INFO] EPOCH: 299
+Train loss: 0.004328,  Validation loss: 0.073821, Test loss: 0.031062, Train pred loss: 0.003608, Validation pred loss: 0.073122, Test pred loss: 0.030396, Train kl loss: 0.000721, Validation kl loss: 0.000699, Test kl loss:  0.000666
+Time for epoch: 49.59590768814087
+[INFO] EPOCH: 300
+Train loss: 0.004276,  Validation loss: 0.073976, Test loss: 0.030961, Train pred loss: 0.003556, Validation pred loss: 0.073278, Test pred loss: 0.030299, Train kl loss: 0.000719, Validation kl loss: 0.000697, Test kl loss:  0.000662
+Time for epoch: 49.7392954826355
+[INFO] EPOCH: 301
+Train loss: 0.004330,  Validation loss: 0.073702, Test loss: 0.030597, Train pred loss: 0.003607, Validation pred loss: 0.073000, Test pred loss: 0.029932, Train kl loss: 0.000723, Validation kl loss: 0.000702, Test kl loss:  0.000665
+Time for epoch: 1122.2914066314697
+[INFO] EPOCH: 302
+Train loss: 0.004285,  Validation loss: 0.073866, Test loss: 0.030916, Train pred loss: 0.003567, Validation pred loss: 0.073167, Test pred loss: 0.030255, Train kl loss: 0.000718, Validation kl loss: 0.000699, Test kl loss:  0.000662
+Time for epoch: 49.57321000099182
+Validation loss stopped decreasing at epoch 303
+[INFO] EPOCH: 303
+Train loss: 0.004332,  Validation loss: 0.073732, Test loss: 0.030907, Train pred loss: 0.003613, Validation pred loss: 0.073030, Test pred loss: 0.030243, Train kl loss: 0.000719, Validation kl loss: 0.000702, Test kl loss:  0.000665
+Time for epoch: 49.70821666717529
+Validation loss stopped decreasing at epoch 304
+[INFO] EPOCH: 304
+Train loss: 0.004294,  Validation loss: 0.073668, Test loss: 0.030972, Train pred loss: 0.003573, Validation pred loss: 0.072966, Test pred loss: 0.030306, Train kl loss: 0.000721, Validation kl loss: 0.000702, Test kl loss:  0.000666
+Time for epoch: 49.68633842468262
+Validation loss stopped decreasing at epoch 305
+[INFO] EPOCH: 305
+Train loss: 0.004324,  Validation loss: 0.074177, Test loss: 0.030951, Train pred loss: 0.003605, Validation pred loss: 0.073478, Test pred loss: 0.030286, Train kl loss: 0.000719, Validation kl loss: 0.000699, Test kl loss:  0.000665
+Time for epoch: 49.57930064201355
+[INFO] EPOCH: 306
+Train loss: 0.004287,  Validation loss: 0.073488, Test loss: 0.031170, Train pred loss: 0.003566, Validation pred loss: 0.072782, Test pred loss: 0.030499, Train kl loss: 0.000722, Validation kl loss: 0.000706, Test kl loss:  0.000671
+Time for epoch: 49.68726634979248
+[INFO] EPOCH: 307
+Train loss: 0.004335,  Validation loss: 0.073379, Test loss: 0.031164, Train pred loss: 0.003615, Validation pred loss: 0.072677, Test pred loss: 0.030500, Train kl loss: 0.000720, Validation kl loss: 0.000702, Test kl loss:  0.000664
+Time for epoch: 49.58632230758667
+[INFO] EPOCH: 308
+Train loss: 0.004297,  Validation loss: 0.073020, Test loss: 0.031374, Train pred loss: 0.003578, Validation pred loss: 0.072320, Test pred loss: 0.030709, Train kl loss: 0.000719, Validation kl loss: 0.000700, Test kl loss:  0.000665
+Time for epoch: 49.47048473358154
+[INFO] EPOCH: 309
+Train loss: 0.004270,  Validation loss: 0.072801, Test loss: 0.031184, Train pred loss: 0.003553, Validation pred loss: 0.072105, Test pred loss: 0.030522, Train kl loss: 0.000717, Validation kl loss: 0.000696, Test kl loss:  0.000661
+Time for epoch: 49.66415023803711
+[INFO] EPOCH: 310
+Train loss: 0.004315,  Validation loss: 0.073291, Test loss: 0.031307, Train pred loss: 0.003592, Validation pred loss: 0.072584, Test pred loss: 0.030636, Train kl loss: 0.000723, Validation kl loss: 0.000707, Test kl loss:  0.000671
+Time for epoch: 49.79286026954651
+[INFO] EPOCH: 311
+Train loss: 0.004284,  Validation loss: 0.073785, Test loss: 0.031243, Train pred loss: 0.003565, Validation pred loss: 0.073089, Test pred loss: 0.030581, Train kl loss: 0.000719, Validation kl loss: 0.000696, Test kl loss:  0.000662
+Time for epoch: 1159.1295487880707
+[INFO] EPOCH: 312
+Train loss: 0.004314,  Validation loss: 0.073352, Test loss: 0.031326, Train pred loss: 0.003594, Validation pred loss: 0.072652, Test pred loss: 0.030662, Train kl loss: 0.000720, Validation kl loss: 0.000701, Test kl loss:  0.000664
+Time for epoch: 49.436545848846436
+[INFO] EPOCH: 313
+Train loss: 0.004286,  Validation loss: 0.073374, Test loss: 0.030982, Train pred loss: 0.003569, Validation pred loss: 0.072677, Test pred loss: 0.030319, Train kl loss: 0.000717, Validation kl loss: 0.000698, Test kl loss:  0.000663
+Time for epoch: 49.643895864486694
+[INFO] EPOCH: 314
+Train loss: 0.004292,  Validation loss: 0.073422, Test loss: 0.030910, Train pred loss: 0.003574, Validation pred loss: 0.072726, Test pred loss: 0.030249, Train kl loss: 0.000717, Validation kl loss: 0.000696, Test kl loss:  0.000661
+Time for epoch: 49.52251648902893
+[INFO] EPOCH: 315
+Train loss: 0.004339,  Validation loss: 0.073569, Test loss: 0.031109, Train pred loss: 0.003619, Validation pred loss: 0.072867, Test pred loss: 0.030443, Train kl loss: 0.000720, Validation kl loss: 0.000702, Test kl loss:  0.000666
+Time for epoch: 49.761552572250366
+[INFO] EPOCH: 316
+Train loss: 0.004315,  Validation loss: 0.073188, Test loss: 0.031482, Train pred loss: 0.003595, Validation pred loss: 0.072489, Test pred loss: 0.030816, Train kl loss: 0.000720, Validation kl loss: 0.000699, Test kl loss:  0.000666
+Time for epoch: 49.64607119560242
+[INFO] EPOCH: 317
+Train loss: 0.004272,  Validation loss: 0.073466, Test loss: 0.031124, Train pred loss: 0.003555, Validation pred loss: 0.072769, Test pred loss: 0.030462, Train kl loss: 0.000717, Validation kl loss: 0.000698, Test kl loss:  0.000662
+Time for epoch: 49.56859469413757
+[INFO] EPOCH: 318
+Train loss: 0.004306,  Validation loss: 0.074079, Test loss: 0.031413, Train pred loss: 0.003589, Validation pred loss: 0.073385, Test pred loss: 0.030753, Train kl loss: 0.000717, Validation kl loss: 0.000694, Test kl loss:  0.000660
+Time for epoch: 49.65168786048889
+[INFO] EPOCH: 319
+Train loss: 0.004293,  Validation loss: 0.073482, Test loss: 0.031314, Train pred loss: 0.003572, Validation pred loss: 0.072785, Test pred loss: 0.030651, Train kl loss: 0.000720, Validation kl loss: 0.000697, Test kl loss:  0.000663
+Time for epoch: 49.5995512008667
+[INFO] EPOCH: 320
+Train loss: 0.004313,  Validation loss: 0.074187, Test loss: 0.030858, Train pred loss: 0.003595, Validation pred loss: 0.073489, Test pred loss: 0.030195, Train kl loss: 0.000717, Validation kl loss: 0.000698, Test kl loss:  0.000663
+Time for epoch: 49.61148142814636
+[INFO] EPOCH: 321
+Train loss: 0.004279,  Validation loss: 0.074714, Test loss: 0.031487, Train pred loss: 0.003562, Validation pred loss: 0.074016, Test pred loss: 0.030825, Train kl loss: 0.000716, Validation kl loss: 0.000697, Test kl loss:  0.000663
+Time for epoch: 1204.4654500484467
+Validation loss stopped decreasing at epoch 322
+[INFO] EPOCH: 322
+Train loss: 0.004308,  Validation loss: 0.074065, Test loss: 0.031196, Train pred loss: 0.003592, Validation pred loss: 0.073368, Test pred loss: 0.030532, Train kl loss: 0.000717, Validation kl loss: 0.000697, Test kl loss:  0.000664
+Time for epoch: 49.35592269897461
+Validation loss stopped decreasing at epoch 323
+[INFO] EPOCH: 323
+Train loss: 0.004299,  Validation loss: 0.073518, Test loss: 0.031012, Train pred loss: 0.003584, Validation pred loss: 0.072822, Test pred loss: 0.030351, Train kl loss: 0.000716, Validation kl loss: 0.000696, Test kl loss:  0.000661
+Time for epoch: 49.87107610702515
+Validation loss stopped decreasing at epoch 324
+[INFO] EPOCH: 324
+Train loss: 0.004263,  Validation loss: 0.073605, Test loss: 0.031242, Train pred loss: 0.003547, Validation pred loss: 0.072908, Test pred loss: 0.030580, Train kl loss: 0.000716, Validation kl loss: 0.000697, Test kl loss:  0.000662
+Time for epoch: 49.76373076438904
+Validation loss stopped decreasing at epoch 325
+[INFO] EPOCH: 325
+Train loss: 0.004268,  Validation loss: 0.074274, Test loss: 0.030884, Train pred loss: 0.003552, Validation pred loss: 0.073579, Test pred loss: 0.030224, Train kl loss: 0.000716, Validation kl loss: 0.000696, Test kl loss:  0.000659
+Time for epoch: 49.61934280395508
+Validation loss stopped decreasing at epoch 326
+[INFO] EPOCH: 326
+Train loss: 0.004256,  Validation loss: 0.073729, Test loss: 0.031250, Train pred loss: 0.003542, Validation pred loss: 0.073032, Test pred loss: 0.030588, Train kl loss: 0.000715, Validation kl loss: 0.000696, Test kl loss:  0.000662
+Time for epoch: 49.602750062942505
+Validation loss stopped decreasing at epoch 327
+[INFO] EPOCH: 327
+Train loss: 0.004320,  Validation loss: 0.073640, Test loss: 0.030955, Train pred loss: 0.003603, Validation pred loss: 0.072939, Test pred loss: 0.030292, Train kl loss: 0.000717, Validation kl loss: 0.000701, Test kl loss:  0.000663
+Time for epoch: 49.67190504074097
+[INFO] EPOCH: 328
+Train loss: 0.004255,  Validation loss: 0.073941, Test loss: 0.030882, Train pred loss: 0.003540, Validation pred loss: 0.073245, Test pred loss: 0.030224, Train kl loss: 0.000715, Validation kl loss: 0.000696, Test kl loss:  0.000657
+Time for epoch: 49.659765005111694
+[INFO] EPOCH: 329
+Train loss: 0.004274,  Validation loss: 0.073234, Test loss: 0.030953, Train pred loss: 0.003561, Validation pred loss: 0.072537, Test pred loss: 0.030292, Train kl loss: 0.000713, Validation kl loss: 0.000696, Test kl loss:  0.000661
+Time for epoch: 49.51754665374756
+[INFO] EPOCH: 330
+Train loss: 0.004296,  Validation loss: 0.074178, Test loss: 0.031160, Train pred loss: 0.003580, Validation pred loss: 0.073481, Test pred loss: 0.030499, Train kl loss: 0.000716, Validation kl loss: 0.000697, Test kl loss:  0.000661
+Time for epoch: 49.588123083114624
+[INFO] EPOCH: 331
+Train loss: 0.004280,  Validation loss: 0.073815, Test loss: 0.031008, Train pred loss: 0.003567, Validation pred loss: 0.073118, Test pred loss: 0.030346, Train kl loss: 0.000714, Validation kl loss: 0.000697, Test kl loss:  0.000662
+Time for epoch: 1230.2006249427795
+[INFO] EPOCH: 332
+Train loss: 0.004301,  Validation loss: 0.073400, Test loss: 0.030719, Train pred loss: 0.003585, Validation pred loss: 0.072704, Test pred loss: 0.030058, Train kl loss: 0.000716, Validation kl loss: 0.000697, Test kl loss:  0.000661
+Time for epoch: 49.4845016002655
+[INFO] EPOCH: 333
+Train loss: 0.004264,  Validation loss: 0.073123, Test loss: 0.030960, Train pred loss: 0.003551, Validation pred loss: 0.072426, Test pred loss: 0.030300, Train kl loss: 0.000713, Validation kl loss: 0.000697, Test kl loss:  0.000660
+Time for epoch: 49.67220425605774
+[INFO] EPOCH: 334
+Train loss: 0.004279,  Validation loss: 0.073099, Test loss: 0.030929, Train pred loss: 0.003564, Validation pred loss: 0.072403, Test pred loss: 0.030271, Train kl loss: 0.000715, Validation kl loss: 0.000696, Test kl loss:  0.000658
+Time for epoch: 49.78960680961609
+[INFO] EPOCH: 335
+Train loss: 0.004260,  Validation loss: 0.074025, Test loss: 0.030850, Train pred loss: 0.003547, Validation pred loss: 0.073327, Test pred loss: 0.030189, Train kl loss: 0.000714, Validation kl loss: 0.000698, Test kl loss:  0.000661
+Time for epoch: 49.672027826309204
+[INFO] EPOCH: 336
+Train loss: 0.004271,  Validation loss: 0.073022, Test loss: 0.030872, Train pred loss: 0.003556, Validation pred loss: 0.072325, Test pred loss: 0.030212, Train kl loss: 0.000715, Validation kl loss: 0.000697, Test kl loss:  0.000660
+Time for epoch: 49.70143485069275
+[INFO] EPOCH: 337
+Train loss: 0.004301,  Validation loss: 0.073926, Test loss: 0.030780, Train pred loss: 0.003589, Validation pred loss: 0.073232, Test pred loss: 0.030123, Train kl loss: 0.000713, Validation kl loss: 0.000693, Test kl loss:  0.000657
+Time for epoch: 49.75684332847595
+[INFO] EPOCH: 338
+Train loss: 0.004248,  Validation loss: 0.074377, Test loss: 0.030840, Train pred loss: 0.003535, Validation pred loss: 0.073682, Test pred loss: 0.030181, Train kl loss: 0.000713, Validation kl loss: 0.000696, Test kl loss:  0.000660
+Time for epoch: 49.56799554824829
+[INFO] EPOCH: 339
+Train loss: 0.004279,  Validation loss: 0.074110, Test loss: 0.030720, Train pred loss: 0.003568, Validation pred loss: 0.073416, Test pred loss: 0.030063, Train kl loss: 0.000711, Validation kl loss: 0.000694, Test kl loss:  0.000656
+Time for epoch: 49.54080104827881
+[INFO] EPOCH: 340
+Train loss: 0.004276,  Validation loss: 0.073341, Test loss: 0.030917, Train pred loss: 0.003561, Validation pred loss: 0.072644, Test pred loss: 0.030256, Train kl loss: 0.000715, Validation kl loss: 0.000698, Test kl loss:  0.000661
+Time for epoch: 49.605231046676636
+[INFO] EPOCH: 341
+Train loss: 0.004273,  Validation loss: 0.073690, Test loss: 0.030570, Train pred loss: 0.003558, Validation pred loss: 0.072993, Test pred loss: 0.029907, Train kl loss: 0.000714, Validation kl loss: 0.000697, Test kl loss:  0.000662
+Time for epoch: 1292.8355679512024
+[INFO] EPOCH: 342
+Train loss: 0.004260,  Validation loss: 0.073313, Test loss: 0.030839, Train pred loss: 0.003548, Validation pred loss: 0.072617, Test pred loss: 0.030179, Train kl loss: 0.000712, Validation kl loss: 0.000696, Test kl loss:  0.000660
+Time for epoch: 124.13871884346008
+[INFO] EPOCH: 343
+Train loss: 0.004270,  Validation loss: 0.073750, Test loss: 0.030702, Train pred loss: 0.003558, Validation pred loss: 0.073055, Test pred loss: 0.030045, Train kl loss: 0.000712, Validation kl loss: 0.000694, Test kl loss:  0.000657
+Time for epoch: 124.47010231018066
+[INFO] EPOCH: 344
+Train loss: 0.004269,  Validation loss: 0.074088, Test loss: 0.030746, Train pred loss: 0.003555, Validation pred loss: 0.073392, Test pred loss: 0.030086, Train kl loss: 0.000714, Validation kl loss: 0.000696, Test kl loss:  0.000659
+Time for epoch: 124.25823330879211
+[INFO] EPOCH: 345
+Train loss: 0.004260,  Validation loss: 0.073466, Test loss: 0.030780, Train pred loss: 0.003547, Validation pred loss: 0.072770, Test pred loss: 0.030119, Train kl loss: 0.000714, Validation kl loss: 0.000696, Test kl loss:  0.000660
+Time for epoch: 124.37094235420227
+[INFO] EPOCH: 346
+Train loss: 0.004281,  Validation loss: 0.074212, Test loss: 0.030887, Train pred loss: 0.003566, Validation pred loss: 0.073518, Test pred loss: 0.030230, Train kl loss: 0.000715, Validation kl loss: 0.000694, Test kl loss:  0.000657
+Time for epoch: 124.2826931476593
+[INFO] EPOCH: 347
+Train loss: 0.004258,  Validation loss: 0.073550, Test loss: 0.030664, Train pred loss: 0.003545, Validation pred loss: 0.072852, Test pred loss: 0.030001, Train kl loss: 0.000713, Validation kl loss: 0.000699, Test kl loss:  0.000663
+Time for epoch: 124.32534074783325
+[INFO] EPOCH: 348
+Train loss: 0.004255,  Validation loss: 0.073673, Test loss: 0.030668, Train pred loss: 0.003545, Validation pred loss: 0.072981, Test pred loss: 0.030013, Train kl loss: 0.000710, Validation kl loss: 0.000692, Test kl loss:  0.000655
+Time for epoch: 124.35254406929016
+[INFO] EPOCH: 349
+Train loss: 0.004308,  Validation loss: 0.073475, Test loss: 0.030943, Train pred loss: 0.003594, Validation pred loss: 0.072783, Test pred loss: 0.030285, Train kl loss: 0.000714, Validation kl loss: 0.000692, Test kl loss:  0.000658
+Time for epoch: 124.35891151428223
+[INFO] EPOCH: 350
+Train loss: 0.004274,  Validation loss: 0.073355, Test loss: 0.030538, Train pred loss: 0.003560, Validation pred loss: 0.072658, Test pred loss: 0.029879, Train kl loss: 0.000714, Validation kl loss: 0.000698, Test kl loss:  0.000659
+Time for epoch: 124.32713747024536
+[INFO] EPOCH: 351
+Train loss: 0.004299,  Validation loss: 0.073502, Test loss: 0.030670, Train pred loss: 0.003585, Validation pred loss: 0.072801, Test pred loss: 0.030009, Train kl loss: 0.000714, Validation kl loss: 0.000701, Test kl loss:  0.000661
+Time for epoch: 1394.6803705692291
+[INFO] EPOCH: 352
+Train loss: 0.004248,  Validation loss: 0.073177, Test loss: 0.030891, Train pred loss: 0.003538, Validation pred loss: 0.072482, Test pred loss: 0.030234, Train kl loss: 0.000710, Validation kl loss: 0.000694, Test kl loss:  0.000658
+Time for epoch: 124.37652015686035
+[INFO] EPOCH: 353
+Train loss: 0.004234,  Validation loss: 0.073225, Test loss: 0.030906, Train pred loss: 0.003524, Validation pred loss: 0.072534, Test pred loss: 0.030251, Train kl loss: 0.000710, Validation kl loss: 0.000691, Test kl loss:  0.000655
+Time for epoch: 124.22614431381226
+[INFO] EPOCH: 354
+Train loss: 0.004243,  Validation loss: 0.074182, Test loss: 0.030705, Train pred loss: 0.003532, Validation pred loss: 0.073485, Test pred loss: 0.030049, Train kl loss: 0.000711, Validation kl loss: 0.000696, Test kl loss:  0.000657
+Time for epoch: 124.24665403366089
+[INFO] EPOCH: 355
+Train loss: 0.004264,  Validation loss: 0.073353, Test loss: 0.030606, Train pred loss: 0.003553, Validation pred loss: 0.072654, Test pred loss: 0.029946, Train kl loss: 0.000711, Validation kl loss: 0.000699, Test kl loss:  0.000659
+Time for epoch: 124.20265412330627
+[INFO] EPOCH: 356
+Train loss: 0.004275,  Validation loss: 0.074025, Test loss: 0.030699, Train pred loss: 0.003564, Validation pred loss: 0.073331, Test pred loss: 0.030043, Train kl loss: 0.000711, Validation kl loss: 0.000693, Test kl loss:  0.000656
+Time for epoch: 124.2571952342987
+[INFO] EPOCH: 357
+Train loss: 0.004251,  Validation loss: 0.074118, Test loss: 0.030546, Train pred loss: 0.003538, Validation pred loss: 0.073423, Test pred loss: 0.029889, Train kl loss: 0.000713, Validation kl loss: 0.000695, Test kl loss:  0.000657
+Time for epoch: 124.2527482509613
+[INFO] EPOCH: 358
+Train loss: 0.004262,  Validation loss: 0.073765, Test loss: 0.030445, Train pred loss: 0.003551, Validation pred loss: 0.073070, Test pred loss: 0.029789, Train kl loss: 0.000711, Validation kl loss: 0.000695, Test kl loss:  0.000656
+Time for epoch: 124.03124666213989
+[INFO] EPOCH: 359
+Train loss: 0.004234,  Validation loss: 0.073379, Test loss: 0.030751, Train pred loss: 0.003524, Validation pred loss: 0.072683, Test pred loss: 0.030094, Train kl loss: 0.000711, Validation kl loss: 0.000696, Test kl loss:  0.000657
+Time for epoch: 124.07794070243835
+[INFO] EPOCH: 360
+Train loss: 0.004252,  Validation loss: 0.073803, Test loss: 0.030498, Train pred loss: 0.003542, Validation pred loss: 0.073107, Test pred loss: 0.029841, Train kl loss: 0.000711, Validation kl loss: 0.000696, Test kl loss:  0.000658
+Time for epoch: 124.3062961101532
+[INFO] EPOCH: 361
+Train loss: 0.004271,  Validation loss: 0.074198, Test loss: 0.030533, Train pred loss: 0.003559, Validation pred loss: 0.073503, Test pred loss: 0.029871, Train kl loss: 0.000712, Validation kl loss: 0.000695, Test kl loss:  0.000661
+Time for epoch: 1429.0159916877747
+[INFO] EPOCH: 362
+Train loss: 0.004245,  Validation loss: 0.074134, Test loss: 0.030137, Train pred loss: 0.003536, Validation pred loss: 0.073443, Test pred loss: 0.029480, Train kl loss: 0.000709, Validation kl loss: 0.000692, Test kl loss:  0.000657
+Time for epoch: 124.62140202522278
+[INFO] EPOCH: 363
+Train loss: 0.004256,  Validation loss: 0.073676, Test loss: 0.030239, Train pred loss: 0.003544, Validation pred loss: 0.072982, Test pred loss: 0.029582, Train kl loss: 0.000712, Validation kl loss: 0.000694, Test kl loss:  0.000657
+Time for epoch: 124.56838893890381
+[INFO] EPOCH: 364
+Train loss: 0.004264,  Validation loss: 0.073461, Test loss: 0.030705, Train pred loss: 0.003555, Validation pred loss: 0.072767, Test pred loss: 0.030047, Train kl loss: 0.000710, Validation kl loss: 0.000694, Test kl loss:  0.000658
+Time for epoch: 124.34780550003052
+[INFO] EPOCH: 365
+Train loss: 0.004241,  Validation loss: 0.073594, Test loss: 0.030623, Train pred loss: 0.003530, Validation pred loss: 0.072900, Test pred loss: 0.029965, Train kl loss: 0.000711, Validation kl loss: 0.000694, Test kl loss:  0.000658
+Time for epoch: 124.19498991966248
+[INFO] EPOCH: 366
+Train loss: 0.004261,  Validation loss: 0.073716, Test loss: 0.030644, Train pred loss: 0.003549, Validation pred loss: 0.073026, Test pred loss: 0.029990, Train kl loss: 0.000711, Validation kl loss: 0.000690, Test kl loss:  0.000654
+Time for epoch: 124.42694449424744
+[INFO] EPOCH: 367
+Train loss: 0.004284,  Validation loss: 0.074084, Test loss: 0.030683, Train pred loss: 0.003572, Validation pred loss: 0.073390, Test pred loss: 0.030022, Train kl loss: 0.000712, Validation kl loss: 0.000693, Test kl loss:  0.000661
+Time for epoch: 124.04334616661072
+[INFO] EPOCH: 368
+Train loss: 0.004207,  Validation loss: 0.073789, Test loss: 0.030651, Train pred loss: 0.003499, Validation pred loss: 0.073102, Test pred loss: 0.029996, Train kl loss: 0.000708, Validation kl loss: 0.000688, Test kl loss:  0.000655
+Time for epoch: 124.11609101295471
+[INFO] EPOCH: 369
+Train loss: 0.004269,  Validation loss: 0.073682, Test loss: 0.030764, Train pred loss: 0.003561, Validation pred loss: 0.072993, Test pred loss: 0.030108, Train kl loss: 0.000709, Validation kl loss: 0.000689, Test kl loss:  0.000656
+Time for epoch: 124.11246418952942
+[INFO] EPOCH: 370
+Train loss: 0.004256,  Validation loss: 0.073798, Test loss: 0.030391, Train pred loss: 0.003549, Validation pred loss: 0.073107, Test pred loss: 0.029737, Train kl loss: 0.000707, Validation kl loss: 0.000691, Test kl loss:  0.000654
+Time for epoch: 124.32982897758484
+[INFO] EPOCH: 371
+Train loss: 0.004264,  Validation loss: 0.073579, Test loss: 0.030594, Train pred loss: 0.003554, Validation pred loss: 0.072885, Test pred loss: 0.029940, Train kl loss: 0.000710, Validation kl loss: 0.000694, Test kl loss:  0.000654
+Time for epoch: 1461.0427734851837
+[INFO] EPOCH: 372
+Train loss: 0.004234,  Validation loss: 0.073308, Test loss: 0.030661, Train pred loss: 0.003526, Validation pred loss: 0.072620, Test pred loss: 0.030010, Train kl loss: 0.000707, Validation kl loss: 0.000687, Test kl loss:  0.000651
+Time for epoch: 124.44641542434692
+[INFO] EPOCH: 373
+Train loss: 0.004271,  Validation loss: 0.073420, Test loss: 0.030661, Train pred loss: 0.003561, Validation pred loss: 0.072725, Test pred loss: 0.030005, Train kl loss: 0.000710, Validation kl loss: 0.000694, Test kl loss:  0.000657
+Time for epoch: 124.54700088500977
+[INFO] EPOCH: 374
+Train loss: 0.004229,  Validation loss: 0.073851, Test loss: 0.030496, Train pred loss: 0.003519, Validation pred loss: 0.073160, Test pred loss: 0.029845, Train kl loss: 0.000710, Validation kl loss: 0.000691, Test kl loss:  0.000650
+Time for epoch: 124.16860938072205
+[INFO] EPOCH: 375
+Train loss: 0.004253,  Validation loss: 0.073918, Test loss: 0.030523, Train pred loss: 0.003545, Validation pred loss: 0.073227, Test pred loss: 0.029871, Train kl loss: 0.000708, Validation kl loss: 0.000690, Test kl loss:  0.000652
+Time for epoch: 124.18120241165161
+[INFO] EPOCH: 376
+Train loss: 0.004195,  Validation loss: 0.073713, Test loss: 0.030396, Train pred loss: 0.003488, Validation pred loss: 0.073021, Test pred loss: 0.029743, Train kl loss: 0.000708, Validation kl loss: 0.000692, Test kl loss:  0.000653
+Time for epoch: 124.1208336353302
+[INFO] EPOCH: 377
+Train loss: 0.004268,  Validation loss: 0.073118, Test loss: 0.030442, Train pred loss: 0.003559, Validation pred loss: 0.072428, Test pred loss: 0.029790, Train kl loss: 0.000709, Validation kl loss: 0.000690, Test kl loss:  0.000652
+Time for epoch: 124.18767070770264
+[INFO] EPOCH: 378
+Train loss: 0.004269,  Validation loss: 0.073550, Test loss: 0.030207, Train pred loss: 0.003561, Validation pred loss: 0.072860, Test pred loss: 0.029554, Train kl loss: 0.000708, Validation kl loss: 0.000690, Test kl loss:  0.000654
+Time for epoch: 124.24089431762695
+[INFO] EPOCH: 379
+Train loss: 0.004223,  Validation loss: 0.073943, Test loss: 0.030565, Train pred loss: 0.003516, Validation pred loss: 0.073253, Test pred loss: 0.029908, Train kl loss: 0.000707, Validation kl loss: 0.000690, Test kl loss:  0.000657
+Time for epoch: 123.96599769592285
+[INFO] EPOCH: 380
+Train loss: 0.004264,  Validation loss: 0.074127, Test loss: 0.030278, Train pred loss: 0.003557, Validation pred loss: 0.073437, Test pred loss: 0.029626, Train kl loss: 0.000707, Validation kl loss: 0.000690, Test kl loss:  0.000651
+Time for epoch: 124.24729228019714
+[INFO] EPOCH: 381
+Train loss: 0.004268,  Validation loss: 0.073733, Test loss: 0.030638, Train pred loss: 0.003561, Validation pred loss: 0.073045, Test pred loss: 0.029988, Train kl loss: 0.000706, Validation kl loss: 0.000688, Test kl loss:  0.000650
+Time for epoch: 1492.3293998241425
+[INFO] EPOCH: 382
+Train loss: 0.004229,  Validation loss: 0.073171, Test loss: 0.030503, Train pred loss: 0.003523, Validation pred loss: 0.072482, Test pred loss: 0.029852, Train kl loss: 0.000706, Validation kl loss: 0.000688, Test kl loss:  0.000651
+Time for epoch: 123.99622893333435
+[INFO] EPOCH: 383
+Train loss: 0.004258,  Validation loss: 0.072832, Test loss: 0.030508, Train pred loss: 0.003550, Validation pred loss: 0.072140, Test pred loss: 0.029854, Train kl loss: 0.000708, Validation kl loss: 0.000691, Test kl loss:  0.000654
+Time for epoch: 124.00588798522949
+[INFO] EPOCH: 384
+Train loss: 0.004218,  Validation loss: 0.073118, Test loss: 0.030314, Train pred loss: 0.003511, Validation pred loss: 0.072431, Test pred loss: 0.029662, Train kl loss: 0.000707, Validation kl loss: 0.000688, Test kl loss:  0.000653
+Time for epoch: 124.04094529151917
+[INFO] EPOCH: 385
+Train loss: 0.004243,  Validation loss: 0.073870, Test loss: 0.030618, Train pred loss: 0.003537, Validation pred loss: 0.073181, Test pred loss: 0.029967, Train kl loss: 0.000705, Validation kl loss: 0.000689, Test kl loss:  0.000651
+Time for epoch: 124.09823083877563
+[INFO] EPOCH: 386
+Train loss: 0.004231,  Validation loss: 0.073514, Test loss: 0.030344, Train pred loss: 0.003526, Validation pred loss: 0.072824, Test pred loss: 0.029693, Train kl loss: 0.000705, Validation kl loss: 0.000690, Test kl loss:  0.000651
+Time for epoch: 124.09860348701477
+[INFO] EPOCH: 387
+Train loss: 0.004226,  Validation loss: 0.073369, Test loss: 0.030827, Train pred loss: 0.003521, Validation pred loss: 0.072684, Test pred loss: 0.030178, Train kl loss: 0.000705, Validation kl loss: 0.000684, Test kl loss:  0.000648
+Time for epoch: 124.06706500053406
+[INFO] EPOCH: 388
+Train loss: 0.004226,  Validation loss: 0.072913, Test loss: 0.030455, Train pred loss: 0.003521, Validation pred loss: 0.072227, Test pred loss: 0.029804, Train kl loss: 0.000705, Validation kl loss: 0.000686, Test kl loss:  0.000650
+Time for epoch: 124.0623505115509
+[INFO] EPOCH: 389
+Train loss: 0.004252,  Validation loss: 0.072899, Test loss: 0.030341, Train pred loss: 0.003546, Validation pred loss: 0.072212, Test pred loss: 0.029690, Train kl loss: 0.000707, Validation kl loss: 0.000687, Test kl loss:  0.000651
+Time for epoch: 124.16597318649292
+[INFO] EPOCH: 390
+Train loss: 0.004222,  Validation loss: 0.073561, Test loss: 0.030361, Train pred loss: 0.003517, Validation pred loss: 0.072870, Test pred loss: 0.029709, Train kl loss: 0.000705, Validation kl loss: 0.000691, Test kl loss:  0.000652
+Time for epoch: 123.93834805488586
+[INFO] EPOCH: 391
+Train loss: 0.004229,  Validation loss: 0.073957, Test loss: 0.030791, Train pred loss: 0.003523, Validation pred loss: 0.073269, Test pred loss: 0.030140, Train kl loss: 0.000706, Validation kl loss: 0.000688, Test kl loss:  0.000651
+Time for epoch: 1523.6500835418701
+[INFO] EPOCH: 392
+Train loss: 0.004230,  Validation loss: 0.072722, Test loss: 0.030491, Train pred loss: 0.003526, Validation pred loss: 0.072036, Test pred loss: 0.029838, Train kl loss: 0.000704, Validation kl loss: 0.000687, Test kl loss:  0.000653
+Time for epoch: 123.98327684402466
+[INFO] EPOCH: 393
+Train loss: 0.004223,  Validation loss: 0.073155, Test loss: 0.030618, Train pred loss: 0.003519, Validation pred loss: 0.072469, Test pred loss: 0.029966, Train kl loss: 0.000705, Validation kl loss: 0.000686, Test kl loss:  0.000651
+Time for epoch: 124.45840692520142
+[INFO] EPOCH: 394
+Train loss: 0.004248,  Validation loss: 0.073536, Test loss: 0.030402, Train pred loss: 0.003542, Validation pred loss: 0.072846, Test pred loss: 0.029748, Train kl loss: 0.000705, Validation kl loss: 0.000689, Test kl loss:  0.000654
+Time for epoch: 123.94141817092896
+[INFO] EPOCH: 395
+Train loss: 0.004261,  Validation loss: 0.072352, Test loss: 0.030628, Train pred loss: 0.003558, Validation pred loss: 0.071667, Test pred loss: 0.029974, Train kl loss: 0.000703, Validation kl loss: 0.000686, Test kl loss:  0.000654
+Time for epoch: 123.5513699054718
+[INFO] EPOCH: 396
+Train loss: 0.004170,  Validation loss: 0.073450, Test loss: 0.030288, Train pred loss: 0.003467, Validation pred loss: 0.072769, Test pred loss: 0.029638, Train kl loss: 0.000702, Validation kl loss: 0.000681, Test kl loss:  0.000649
+Time for epoch: 123.97859501838684
+[INFO] EPOCH: 397
+Train loss: 0.004244,  Validation loss: 0.072871, Test loss: 0.030316, Train pred loss: 0.003539, Validation pred loss: 0.072183, Test pred loss: 0.029664, Train kl loss: 0.000704, Validation kl loss: 0.000688, Test kl loss:  0.000652
+Time for epoch: 123.83290314674377
+[INFO] EPOCH: 398
+Train loss: 0.004251,  Validation loss: 0.073712, Test loss: 0.030082, Train pred loss: 0.003543, Validation pred loss: 0.073025, Test pred loss: 0.029430, Train kl loss: 0.000708, Validation kl loss: 0.000687, Test kl loss:  0.000652
+Time for epoch: 124.31926727294922
+[INFO] EPOCH: 399
+Train loss: 0.004233,  Validation loss: 0.073133, Test loss: 0.030450, Train pred loss: 0.003528, Validation pred loss: 0.072445, Test pred loss: 0.029797, Train kl loss: 0.000705, Validation kl loss: 0.000688, Test kl loss:  0.000653
+Time for epoch: 124.26924633979797
+[INFO] EPOCH: 400
+Train loss: 0.004234,  Validation loss: 0.073103, Test loss: 0.030324, Train pred loss: 0.003531, Validation pred loss: 0.072417, Test pred loss: 0.029671, Train kl loss: 0.000702, Validation kl loss: 0.000686, Test kl loss:  0.000652
+Time for epoch: 124.28485083580017
+[INFO] EPOCH: 401
+Train loss: 0.004210,  Validation loss: 0.072996, Test loss: 0.030495, Train pred loss: 0.003505, Validation pred loss: 0.072311, Test pred loss: 0.029845, Train kl loss: 0.000704, Validation kl loss: 0.000685, Test kl loss:  0.000649
+Time for epoch: 1569.9629056453705
+[INFO] EPOCH: 402
+Train loss: 0.004227,  Validation loss: 0.072920, Test loss: 0.030480, Train pred loss: 0.003522, Validation pred loss: 0.072234, Test pred loss: 0.029827, Train kl loss: 0.000705, Validation kl loss: 0.000686, Test kl loss:  0.000652
+Time for epoch: 124.07256245613098
+[INFO] EPOCH: 403
+Train loss: 0.004213,  Validation loss: 0.073536, Test loss: 0.030256, Train pred loss: 0.003511, Validation pred loss: 0.072850, Test pred loss: 0.029606, Train kl loss: 0.000702, Validation kl loss: 0.000685, Test kl loss:  0.000650
+Time for epoch: 124.04417061805725
+[INFO] EPOCH: 404
+Train loss: 0.004232,  Validation loss: 0.073980, Test loss: 0.030324, Train pred loss: 0.003527, Validation pred loss: 0.073291, Test pred loss: 0.029674, Train kl loss: 0.000705, Validation kl loss: 0.000689, Test kl loss:  0.000651
+Time for epoch: 123.86517333984375
+[INFO] EPOCH: 405
+Train loss: 0.004205,  Validation loss: 0.073449, Test loss: 0.030468, Train pred loss: 0.003502, Validation pred loss: 0.072763, Test pred loss: 0.029818, Train kl loss: 0.000703, Validation kl loss: 0.000685, Test kl loss:  0.000650
+Time for epoch: 123.74615216255188
+[INFO] EPOCH: 406
+Train loss: 0.004253,  Validation loss: 0.072743, Test loss: 0.030647, Train pred loss: 0.003548, Validation pred loss: 0.072052, Test pred loss: 0.029993, Train kl loss: 0.000705, Validation kl loss: 0.000692, Test kl loss:  0.000654
+Time for epoch: 123.82466769218445
+[INFO] EPOCH: 407
+Train loss: 0.004199,  Validation loss: 0.073363, Test loss: 0.030229, Train pred loss: 0.003498, Validation pred loss: 0.072674, Test pred loss: 0.029576, Train kl loss: 0.000701, Validation kl loss: 0.000689, Test kl loss:  0.000653
+Time for epoch: 124.1398057937622
+[INFO] EPOCH: 408
+Train loss: 0.004216,  Validation loss: 0.073361, Test loss: 0.030237, Train pred loss: 0.003513, Validation pred loss: 0.072677, Test pred loss: 0.029589, Train kl loss: 0.000703, Validation kl loss: 0.000684, Test kl loss:  0.000648
+Time for epoch: 124.14015340805054
+[INFO] EPOCH: 409
+Train loss: 0.004231,  Validation loss: 0.073819, Test loss: 0.030427, Train pred loss: 0.003526, Validation pred loss: 0.073127, Test pred loss: 0.029773, Train kl loss: 0.000705, Validation kl loss: 0.000692, Test kl loss:  0.000655
+Time for epoch: 124.30756878852844
+[INFO] EPOCH: 410
+Train loss: 0.004224,  Validation loss: 0.073010, Test loss: 0.030418, Train pred loss: 0.003522, Validation pred loss: 0.072320, Test pred loss: 0.029765, Train kl loss: 0.000702, Validation kl loss: 0.000690, Test kl loss:  0.000652
+Time for epoch: 123.78846669197083

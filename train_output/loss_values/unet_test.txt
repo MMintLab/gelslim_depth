@@ -1,0 +1,86 @@
+[INFO] EPOCH: 1
+Train loss: 0.264464,  Validation loss: 0.067014, Test loss: 0.120845
+Time for epoch: 97.77035593986511
+[INFO] EPOCH: 1
+Train loss: 0.329405,  Validation loss: 0.069713, Test loss: 0.107038
+Time for epoch: 97.25326681137085
+[INFO] EPOCH: 1
+Train loss: 0.232655,  Validation loss: 0.071222, Test loss: 0.126685
+Time for epoch: 97.25234723091125
+[INFO] EPOCH: 2
+Train loss: 0.006854,  Validation loss: 0.074705, Test loss: 0.123324
+Time for epoch: 96.87568950653076
+[INFO] EPOCH: 1
+Train loss: 0.050796,  Validation loss: 0.064906, Test loss: 0.018888
+Time for epoch: 730.9954597949982
+[INFO] EPOCH: 2
+Train loss: 0.007581,  Validation loss: 0.067279, Test loss: 0.018112
+Time for epoch: 730.0001752376556
+[INFO] EPOCH: 3
+Train loss: 0.005397,  Validation loss: 0.072638, Test loss: 0.017524
+Time for epoch: 728.9165570735931
+[INFO] EPOCH: 4
+Train loss: 0.004528,  Validation loss: 0.073626, Test loss: 0.019275
+Time for epoch: 727.9244749546051
+[INFO] EPOCH: 5
+Train loss: 0.003971,  Validation loss: 0.071774, Test loss: 0.017341
+Time for epoch: 726.6755621433258
+[INFO] EPOCH: 6
+Train loss: 0.003760,  Validation loss: 0.071475, Test loss: 0.019329
+Time for epoch: 726.1039371490479
+[INFO] EPOCH: 7
+Train loss: 0.003429,  Validation loss: 0.069835, Test loss: 0.017402
+Time for epoch: 725.9375095367432
+[INFO] EPOCH: 8
+Train loss: 0.003265,  Validation loss: 0.071948, Test loss: 0.016507
+Time for epoch: 723.7360723018646
+[INFO] EPOCH: 9
+Train loss: 0.003090,  Validation loss: 0.074057, Test loss: 0.017833
+Time for epoch: 722.6223223209381
+[INFO] EPOCH: 10
+Train loss: 0.003028,  Validation loss: 0.075918, Test loss: 0.018295
+Time for epoch: 721.7847437858582
+[INFO] EPOCH: 11
+Train loss: 0.002851,  Validation loss: 0.074966, Test loss: 0.017223
+Time for epoch: 721.927104473114
+Validation loss is at a minimum. Saving the model
+[INFO] EPOCH: 1
+Train loss: 0.040563,  Validation loss: 0.071308, Test loss: 0.018300
+Time for epoch: 730.4097123146057
+[INFO] EPOCH: 2
+Train loss: 0.007395,  Validation loss: 0.074261, Test loss: 0.019191
+Time for epoch: 729.6630647182465
+Validation loss is at a minimum. Saving the model
+[INFO] EPOCH: 3
+Train loss: 0.005134,  Validation loss: 0.069414, Test loss: 0.020000
+Time for epoch: 728.0959768295288
+[INFO] EPOCH: 4
+Train loss: 0.004327,  Validation loss: 0.074356, Test loss: 0.020886
+Time for epoch: 727.3148312568665
+[INFO] EPOCH: 5
+Train loss: 0.003857,  Validation loss: 0.074738, Test loss: 0.018700
+Time for epoch: 725.928797006607
+Validation loss stopped decreasing at epoch 6
+[INFO] EPOCH: 6
+Train loss: 0.003570,  Validation loss: 0.071803, Test loss: 0.018110
+Time for epoch: 724.6693575382233
+Validation loss stopped decreasing at epoch 7
+[INFO] EPOCH: 7
+Train loss: 0.003373,  Validation loss: 0.075807, Test loss: 0.018564
+Time for epoch: 724.3060925006866
+Validation loss stopped decreasing at epoch 8
+[INFO] EPOCH: 8
+Train loss: 0.003208,  Validation loss: 0.070280, Test loss: 0.018684
+Time for epoch: 723.4247417449951
+Validation loss stopped decreasing at epoch 9
+[INFO] EPOCH: 9
+Train loss: 0.003002,  Validation loss: 0.073383, Test loss: 0.018682
+Time for epoch: 722.8244323730469
+Validation loss stopped decreasing at epoch 10
+[INFO] EPOCH: 10
+Train loss: 0.002924,  Validation loss: 0.071784, Test loss: 0.019264
+Time for epoch: 722.4939272403717
+Validation loss stopped decreasing at epoch 11
+[INFO] EPOCH: 11
+Train loss: 0.002800,  Validation loss: 0.071802, Test loss: 0.018812
+Time for epoch: 722.5162680149078
