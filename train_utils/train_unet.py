@@ -75,23 +75,30 @@ train_objects = [f.replace('_train.pt', '.pt') for f in train_objects]
 validation_objects_file = dataset_path+'validation_objects.txt'
 if os.path.exists(validation_objects_file):
     with open(validation_objects_file, 'r') as f:
-        validation_objects = f.read().splitlines()
+        validation_objects_to_exclude = f.read().splitlines()
     #add .pt to the end of the object names
-    validation_objects = [f+'.pt' for f in validation_objects]
+    validation_objects_to_exclude = [f+'.pt' for f in validation_objects_to_exclude]
 else:
-    validation_objects = []
+    validation_objects_to_exclude = []
 
 test_objects_file = dataset_path+'test_objects.txt'
 if os.path.exists(test_objects_file):
     with open(test_objects_file, 'r') as f:
-        test_objects = f.read().splitlines()
+        test_objects_to_exclude = f.read().splitlines()
     #add .pt to the end of the object names
-    test_objects = [f+'.pt' for f in test_objects]
+    test_objects_to_exclude = [f+'.pt' for f in test_objects_to_exclude]
 else:
-    test_objects = []
+    test_objects_to_exclude = []
+
+validation_objects = train_objects
+test_objects = train_objects
 
 #remove test and validation objects from train_objects
-train_objects = [f for f in train_objects if f not in validation_objects and f not in test_objects]
+train_objects = [f for f in train_objects if f not in validation_objects_to_exclude and f not in test_objects_to_exclude]
+#remove test objects from validation_objects
+validation_objects = [f for f in validation_objects if f not in test_objects_to_exclude]
+#remove validation objects from test_objects
+test_objects = [f for f in test_objects if f not in validation_objects_to_exclude]
 
 if exclude_objects is not None:
     train_objects = [f for f in train_objects if f not in exclude_objects]
@@ -115,16 +122,13 @@ if limit_object_lists:
 
 downsample_factor = 0.5
 
-KL_weight = 0.001
-
-num_CNN_layers = 3
-num_FCpre_layers = 1
-CNN_dimensions = [32, 64, 128]
-FCpre_dimensions = [1024]
-latent_dimension = 1024
+CNN_dimensions = [64, 256, 1024]
+#CNN_dimensions = [64,128,256,512,1024]
 
 kernel_size = 3
 maxpool_size = 2
+
+upconv_stride = 2
 
 model_type = 'unet'
 
@@ -178,7 +182,7 @@ ValLoader = DataLoader(ValDataset, batch_size=batch_size, shuffle=True, pin_memo
 
 TestLoader = DataLoader(TestDataset, batch_size=batch_size, shuffle=True, pin_memory=True)
 
-unet = UNet(n_channels=3, n_classes=1).to(device)
+unet = UNet(n_channels=3, n_classes=1, layer_dimensions=CNN_dimensions, kernel_size=kernel_size, maxpool_size=maxpool_size, upconv_stride=upconv_stride).to(device)
 
 #initialize the weights
 
@@ -209,21 +213,17 @@ with open('gelslim_depth/config/config_' + weights_name + '.py', 'w') as f:
     f.write('validation_loss_count_threshold = ' + repr(validation_loss_count_threshold) + '\n')
     f.write('weight_decay = ' + repr(weight_decay) + '\n')
     f.write('activation_func = ' + repr(activation_func) + '\n')
-    f.write('latent_dimension = ' + repr(latent_dimension) + '\n')
     f.write('norm_scale = ' + repr(norm_scale) + '\n')
     f.write('train_indefinitely = ' + repr(train_indefinitely) + '\n')
-    f.write('num_CNN_layers = ' + repr(num_CNN_layers) + '\n')
-    f.write('num_FCpre_layers = ' + repr(num_FCpre_layers) + '\n')
     f.write('CNN_dimensions = ' + repr(CNN_dimensions) + '\n')
-    f.write('FCpre_dimensions = ' + repr(FCpre_dimensions) + '\n')
+    f.write('upconv_stride = ' + repr(upconv_stride) + '\n')
     f.write('downsample_factor = ' + repr(downsample_factor) + '\n')
     f.write('maxpool_size = ' + repr(maxpool_size) + '\n')
     f.write('model_type = ' + repr(model_type) + '\n')
     f.write('input_tactile_image_size = ' + repr(input_tactile_image_size) + '\n')
     f.write('depth_image_blur_kernel = ' + repr(depth_image_blur_kernel) + '\n')
     f.write('#device = ' + repr(device) + '\n')
-    f.write('KL_weight = ' + repr(KL_weight) + '\n')
-    f.write('depth_normalization_parameters = ' + repr(depth_normalization_parameters) + '\n')
+    f.write('depth_normalization_parameters = ' + repr((depth_normalization_parameters[0].item(),depth_normalization_parameters[1].item())) + '\n')
     f.write('num_images_to_display_live = ' + repr(num_images_to_display_live) + '\n')
     f.write('use_difference_image = ' + repr(use_difference_image) + '\n')
     f.write('exclude_objects = ' + repr(exclude_objects) + '\n')

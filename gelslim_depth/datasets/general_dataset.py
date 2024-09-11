@@ -12,6 +12,10 @@ class GeneralDataset(Dataset):
 		
 		assert os.path.exists(directory), f"Dataset path {directory} does not exist"
 
+		self.parallelize = False
+
+		self.use_difference_image = use_difference_image
+
 		self.downsample_factor = downsample_factor
 
 		self.depth_image_blur_kernel = depth_image_blur_kernel
@@ -40,42 +44,42 @@ class GeneralDataset(Dataset):
 
 		if self.separate_fingers:
 			if self.use_difference_image:
-				left_tactile_images = (data['tactile_image'][:, 0:3, ...]-data['base_tactile_image'][:, 0:3, ...])/2.0+127.5
-				right_tactile_images = (data['tactile_image'][:, 3:6, ...]-data['base_tactile_image'][:, 3:6, ...])/2.0+127.5
+				data['tactile_image'] = self.downsample_tactile_images(torch.cat(((data['tactile_image'][:, 0:3, ...]-data['base_tactile_image'][:, 0:3, ...])/2.0+127.5, (data['tactile_image'][:, 3:6, ...]-data['base_tactile_image'][:, 3:6, ...])/2.0+127.5), dim=0), self.downsample_factor)
 			else:
-				left_tactile_images = data['tactile_image'][:, 0:3, ...]
-				right_tactile_images = data['tactile_image'][:, 3:6, ...]
-			left_depth_images = data['depth_image'][:, 0:1, ...]
-			right_depth_images = data['depth_image'][:, 1:2, ...]
-			tactile_images = torch.cat((left_tactile_images, right_tactile_images), dim=0)
-			depth_images = torch.cat((left_depth_images, right_depth_images), dim=0)
+				data['tactile_image'] = self.downsample_tactile_images(torch.cat((data['tactile_image'][:, 0:3, ...], data['tactile_image'][:, 3:6, ...]), dim=0), self.downsample_factor)
+			if self.depth_image_blur_kernel > 1:
+				data['depth_image'] = self.blur_depth_images(self.downsample_depth_images(torch.cat((data['depth_image'][:, 0:1, ...], data['depth_image'][:, 1:2, ...]), dim=0), self.downsample_factor), self.depth_image_blur_kernel)
+			else:
+				data['depth_image'] = self.downsample_depth_images(torch.cat((data['depth_image'][:, 0:1, ...], data['depth_image'][:, 1:2, ...]), dim=0), self.downsample_factor)
 		else:
-			tactile_images = data['tactile_image']
-			depth_images = data['depth_image']
-
-		tactile_images = self.downsample_tactile_images(tactile_images, self.downsample_factor)
-		depth_images = self.downsample_depth_images(depth_images, self.downsample_factor)
-
-		if self.depth_image_blur_kernel > 1:
-			depth_images = self.blur_depth_images(depth_images, self.depth_image_blur_kernel)
+			data['tactile_image'] = self.downsample_tactile_images(data['tactile_image'], self.downsample_factor)
+			if self.depth_image_blur_kernel > 1:
+				data['depth_image'] = self.blur_depth_images(self.downsample_depth_images(data['depth_image'], self.downsample_factor), self.depth_image_blur_kernel)
+			else:
+				data['depth_image'] = self.downsample_depth_images(data['depth_image'], self.downsample_factor)
 		
-		dataset = {}
-		dataset['tactile_image'] = tactile_images
-		dataset['depth_image'] = depth_images
-		object_index_tensor = torch.tensor([object_index]*tactile_images.shape[0])
-		dataset['object_index'] = object_index_tensor
-		return dataset
+		data['object_index'] = torch.tensor([object_index]*data['tactile_image'].shape[0])
+		return data
 	
 	def load_entire_dataset(self):
 		entire_dataset = {}
 		#number_of_objects is the number of keys in the filename dict
 		number_of_objects = len(self.pt_file_list)
 		
-		with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
-			futures = [executor.submit(self.load_object_dataset, object_index) for object_index in range(number_of_objects)]
+		if self.parallelize:
+			with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
+				futures = [executor.submit(self.load_object_dataset, object_index) for object_index in range(number_of_objects)]
 
-			for future in tqdm(concurrent.futures.as_completed(futures), total=number_of_objects):
-				object_dataset = future.result()
+				for future in tqdm(concurrent.futures.as_completed(futures), total=number_of_objects):
+					object_dataset = future.result()
+					for key, data in object_dataset.items():
+						if key in entire_dataset:
+							entire_dataset[key] = torch.cat((entire_dataset[key], data), dim=0)
+						else:
+							entire_dataset[key] = data
+		else:
+			for object_index in tqdm(range(number_of_objects)):
+				object_dataset = self.load_object_dataset(object_index)
 				for key, data in object_dataset.items():
 					if key in entire_dataset:
 						entire_dataset[key] = torch.cat((entire_dataset[key], data), dim=0)

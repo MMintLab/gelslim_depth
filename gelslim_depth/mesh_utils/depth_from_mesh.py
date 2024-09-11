@@ -6,7 +6,7 @@ import os
 from tqdm import tqdm
 
 class DepthImageGenerator():
-    def __init__(self, mesh_dir, pc_scale, dataset_dir, inter_gelslim_distance, gelslim_plane='+y+z', LR_flip=False, image_size=(320,427), image_height_mm=12, pc_sampling=1e5, device='cuda:0'):
+    def __init__(self, mesh_dir, pc_scale, dataset_dir, inter_gelslim_distance, gelslim_plane='+y+z', LR_flip=False, image_size=(320,427), image_height_mm=12, pc_sampling=1e5, device='cpu'):
         self.image_height_mm = image_height_mm
         self.image_size = image_size
         self.mm_per_pixel = image_height_mm / image_size[0]
@@ -22,6 +22,7 @@ class DepthImageGenerator():
 
     def generate_depth_images_v1(self):
         dataset_list = os.listdir(self.dataset_dir)
+        dataset_list = [f for f in dataset_list if f[-3:] == '.pt']
         for pt_file in dataset_list:
             dataset_pt = torch.load(self.dataset_dir + '/' + pt_file, map_location=self.device)
             num_datapoints = dataset_pt['tactile_image'].shape[0]
@@ -201,7 +202,7 @@ class DepthImageGenerator():
         right_depth_image[torch.isnan(right_depth_image)] = 0
         left_depth_image[torch.isnan(left_depth_image)] = 0
         
-        if True:
+        if False:
             import matplotlib.pyplot as plt
             plt.subplot(1,2,1)
             plt.imshow(right_depth_image.cpu())
