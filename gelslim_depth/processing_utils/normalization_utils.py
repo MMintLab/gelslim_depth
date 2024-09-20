@@ -16,10 +16,10 @@ def normalize_tactile_image(tactile_image, image_normalization_method, norm_scal
         scale = 2.0
         bias = [127.5]
         denominator = [255.0]
-    elif image_normalization_method == '0_255':
+    elif image_normalization_method == '0_255_to_0_1':
         scale = 1.0
         bias = [0.0]
-        denominator = [127.5]
+        denominator = [255.0]
     if len(tactile_image.shape) == 3:
         #no batch dimension
         num_channels = tactile_image.shape[0]
@@ -49,10 +49,10 @@ def denormalize_tactile_image(tactile_image, image_normalization_method, norm_sc
         scale = 2.0
         bias = [127.5]
         denominator = [255.0]
-    elif image_normalization_method == '0_255':
+    elif image_normalization_method == '0_255_to_0_1':
         scale = 1.0
         bias = [0.0]
-        denominator = [127.5]
+        denominator = [255.0]
     if len(tactile_image.shape) == 3:
         #no batch dimension
         num_channels = tactile_image.shape[0]
