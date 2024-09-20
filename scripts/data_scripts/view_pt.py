@@ -8,18 +8,23 @@ from mpl_toolkits.axes_grid1 import make_axes_locatable
 
 data_name = sys.argv[1]
 
+data_dir = '/data/william/gelslim_depth/data/real_data'
+
 #get list of files in the data directory
-files = os.listdir('data')
+files = os.listdir(data_dir)
 
 #select filenames that contain the data_name
 data_files = [file for file in files if data_name in file]
-data_file = 'data/'+data_files[0]
+data_file = data_dir+'/'+data_files[0]
 
 pt = torch.load(data_file)
 
 tactile_images = pt['tactile_image']
 in_hand_poses = pt['in_hand_pose']
-depth_images = pt['depth_image']
+try:
+    depth_images = pt['depth_image']
+except:
+    depth_images = torch.zeros(tactile_images.shape[0], 2, tactile_images.shape[2], tactile_images.shape[3])
 
 num_images = tactile_images.shape[0]
 
@@ -59,5 +64,5 @@ while True:
         fig.suptitle("Left                    Right")
 
     #save the figure
-    plt.savefig('scripts/data_scripts/pt_images/'+data_name+'.png')
+    plt.savefig('scripts/data_scripts/pt_images/'+data_name+'.png', dpi=300)
     input('Press Enter to continue')

@@ -1,0 +1,15 @@
+Validation loss is at a minimum. Saving the model
+[INFO] EPOCH: 1
+Train loss: 0.185237,  Validation loss: 0.007702, Test loss: 0.008613
+Time for epoch: 41.84223508834839
+Validation loss is at a minimum. Saving the model
+[INFO] EPOCH: 1
+Train loss: 0.292031,  Validation loss: 0.011637, Test loss: 0.012924
+Time for epoch: 42.278921127319336
+Validation loss is at a minimum. Saving the model
+[INFO] EPOCH: 2
+Train loss: 0.008973,  Validation loss: 0.011193, Test loss: 0.011376
+Time for epoch: 50.958908557891846
+[INFO] EPOCH: 3
+Train loss: 0.005994,  Validation loss: 0.065883, Test loss: 0.066731
+Time for epoch: 55.03517174720764

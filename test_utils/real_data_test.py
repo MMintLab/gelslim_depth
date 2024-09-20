@@ -17,10 +17,13 @@ def predict_depth_from_RGB(images, model, output_size):
     return depth
 
 if __name__ == '__main__':
-    weights_name = 'unet_new'
-    real_data_path = 'data/real_data/'
+    weights_name = 'unet_bigdata'
+    real_data_path = '/data/william/gelslim_depth/data/real_data/'
 
     pt_file_list = os.listdir(real_data_path)
+
+    #remove non .pt files
+    pt_file_list = [pt_file for pt_file in pt_file_list if pt_file[-3:] == '.pt']
 
     gpu = 2
 
@@ -44,6 +47,7 @@ if __name__ == '__main__':
     for i in range(num_objects):
         right_or_left = torch.randint(0, 2, (num_images_from_each_object,))
         pt_file = pt_file_list[i]
+        print(pt_file)
         pt = torch.load(real_data_path+pt_file, map_location='cuda:'+str(gpu) if torch.cuda.is_available() else 'cpu')
         pt_length = pt['tactile_image'].size()[0]
         indices = torch.randint(0, pt_length, (num_images_from_each_object,))

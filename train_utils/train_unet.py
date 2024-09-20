@@ -23,6 +23,7 @@ def parse_args():
     parser.add_argument('--activation_func', type=str, default='relu', choices=['relu', 'tanh', 'mish'], help='Activation function to use')
     parser.add_argument('--train_indefinitely', action='store_true', help='Train past early stopping')
     parser.add_argument('--use_difference_image', action='store_true', help='Use difference tactile image')
+    parser.add_argument('--max_datapoints_per_object', type=int, help='Maximum number of datapoints per object')
 
     return parser.parse_args()
 
@@ -45,9 +46,10 @@ if exclude_objects is not None:
 activation_func = args.activation_func
 train_indefinitely = args.train_indefinitely
 use_difference_image = args.use_difference_image
+max_datapoints_per_object = args.max_datapoints_per_object
 save_at_epochs = [200]
 last_save_epoch = 0
-plot_every_epoch = 10
+plot_every_epoch = 1
 last_plot_epoch = 0
 
 weights_path = 'train_output/weights/'
@@ -65,7 +67,7 @@ loss_values_path += weights_name + '.txt'
 
 live_display_path = 'train_output/live_display/'
 
-dataset_path = 'data/'
+dataset_path = '/data/william/gelslim_depth/data/'
 
 train_objects = os.listdir(dataset_path+'train_data/')
 #replace _train.pt with .pt
@@ -115,15 +117,39 @@ validation_objects = [f[:-3]+'_val.pt' for f in validation_objects]
 #replace .pt with _test.pt in test_objects
 test_objects = [f[:-3]+'_test.pt' for f in test_objects]
 
+real_train_objects_file = dataset_path+'real_data/train_real_objects.txt'
+if os.path.exists(real_train_objects_file):
+    with open(real_train_objects_file, 'r') as f:
+        real_train_objects = f.read().splitlines()
+    #add .pt to the end of the object names
+    real_train_objects = [f+'.pt' for f in real_train_objects]
+
+real_validation_objects_file = dataset_path+'real_data/validation_real_objects.txt'
+if os.path.exists(real_validation_objects_file):
+    with open(real_validation_objects_file, 'r') as f:
+        real_validation_objects = f.read().splitlines()
+    #add .pt to the end of the object names
+    real_validation_objects = [f+'.pt' for f in real_validation_objects]
+
+real_test_objects_file = dataset_path+'real_data/test_real_objects.txt'
+if os.path.exists(real_test_objects_file):
+    with open(real_test_objects_file, 'r') as f:
+        real_test_objects = f.read().splitlines()
+    #add .pt to the end of the object names
+    real_test_objects = [f+'.pt' for f in real_test_objects]
+
 if limit_object_lists:
     train_objects = train_objects[:limit_object_lists]
     validation_objects = validation_objects[:limit_object_lists]
     test_objects = test_objects[:limit_object_lists]
+    real_train_objects = real_train_objects[:limit_object_lists]
+    real_validation_objects = real_validation_objects[:limit_object_lists]
+    real_test_objects = real_test_objects[:limit_object_lists]
 
 downsample_factor = 0.5
 
-CNN_dimensions = [64, 256, 1024]
-#CNN_dimensions = [64,128,256,512,1024]
+#CNN_dimensions = [64, 256, 1024]
+CNN_dimensions = [64,128,256,512,1024]
 
 kernel_size = 3
 maxpool_size = 2
@@ -153,8 +179,9 @@ start_data_load_time = time.time()
 num_images_to_display_live = 5
 
 #initialize the dataset
-TrainDataset = GeneralDataset(directory=dataset_path+'train_data/', pt_file_list=train_objects, use_difference_image=use_difference_image,
-                              separate_fingers=True, downsample_factor=downsample_factor, depth_image_blur_kernel=depth_image_blur_kernel, depth_normalization_parameters = None, norm_scale=norm_scale, device=device)
+TrainDataset = GeneralDataset(directory=dataset_path+'train_data/', pt_file_list=train_objects, extra_directory=dataset_path+'real_data/', extra_pt_list=real_train_objects, use_difference_image=use_difference_image,
+                              separate_fingers=True, downsample_factor=downsample_factor, depth_image_blur_kernel=depth_image_blur_kernel, depth_normalization_parameters = None, norm_scale=norm_scale, max_datapoints_per_object=max_datapoints_per_object,
+                              device=device)
 
 print("Found {} training points".format(len(TrainDataset)))
 
@@ -164,14 +191,16 @@ depth_normalization_parameters = TrainDataset.depth_normalization_parameters
 input_tactile_image_size = TrainDataset.input_tactile_image_size
 
 #initialize the validation dataset
-ValDataset = GeneralDataset(directory=dataset_path+'validation_data/', pt_file_list=validation_objects, use_difference_image=use_difference_image, 
-                            separate_fingers=True, downsample_factor=downsample_factor, depth_image_blur_kernel=depth_image_blur_kernel, depth_normalization_parameters = depth_normalization_parameters, norm_scale=norm_scale, device=device)
+ValDataset = GeneralDataset(directory=dataset_path+'validation_data/', pt_file_list=validation_objects, extra_directory=dataset_path+'real_data/', extra_pt_list=real_validation_objects, use_difference_image=use_difference_image, 
+                            separate_fingers=True, downsample_factor=downsample_factor, depth_image_blur_kernel=depth_image_blur_kernel, depth_normalization_parameters = depth_normalization_parameters, norm_scale=norm_scale, max_datapoints_per_object=max_datapoints_per_object,
+                            device=device)
 
 print("Found {} validation points".format(len(ValDataset)))
 
 #initialize the test dataset
-TestDataset = GeneralDataset(directory=dataset_path+'test_data/', pt_file_list=test_objects, use_difference_image=use_difference_image,
-                             separate_fingers=True, downsample_factor=downsample_factor, depth_image_blur_kernel=depth_image_blur_kernel, depth_normalization_parameters = depth_normalization_parameters, norm_scale=norm_scale, device=device)
+TestDataset = GeneralDataset(directory=dataset_path+'test_data/', pt_file_list=test_objects, extra_directory=dataset_path+'real_data/', extra_pt_list=real_test_objects, use_difference_image=use_difference_image,
+                             separate_fingers=True, downsample_factor=downsample_factor, depth_image_blur_kernel=depth_image_blur_kernel, depth_normalization_parameters = depth_normalization_parameters, norm_scale=norm_scale, max_datapoints_per_object=max_datapoints_per_object,
+                             device=device)
 
 print("Found {} test points".format(len(TestDataset)))
       

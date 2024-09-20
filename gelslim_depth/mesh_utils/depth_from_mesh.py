@@ -6,34 +6,68 @@ import os
 from tqdm import tqdm
 
 class DepthImageGenerator():
-    def __init__(self, mesh_dir, pc_scale, dataset_dir, inter_gelslim_distance, gelslim_plane='+y+z', LR_flip=False, image_size=(320,427), image_height_mm=12, pc_sampling=1e5, device='cpu'):
+    def __init__(self, mesh_dir, object_list, pc_scale, dataset_dir, grasp_widths_file, gelslim_plane='+y+z', LR_flip=False, image_size=(320,427), image_height_mm=12, grasp_width_offset=0.0, pc_sampling=1e5, device='cpu'):
         self.image_height_mm = image_height_mm
         self.image_size = image_size
         self.mm_per_pixel = image_height_mm / image_size[0]
         self.mesh_dir = mesh_dir
-        self.inter_gelslim_distance = inter_gelslim_distance
+        self.grasp_widths_file = grasp_widths_file
         self.gelslim_plane = gelslim_plane #(for right image)
         self.LR_flip = LR_flip
         self.pc_scale = pc_scale
         self.dataset_dir = dataset_dir
+        self.object_list = object_list
         self.plane_axes = [c for c in self.gelslim_plane if c.isalpha()]
         self.pc_sampling = pc_sampling
         self.device = torch.device(device)
+        self.grasp_width_offset = grasp_width_offset
 
     def generate_depth_images_v1(self):
         dataset_list = os.listdir(self.dataset_dir)
         dataset_list = [f for f in dataset_list if f[-3:] == '.pt']
+        if self.object_list is not None:
+            #remove files that are not in the object list
+            if '_val' in dataset_list[0] or '_test' in dataset_list[0] or '_train' in dataset_list[0]:
+                dataset_list = [f for f in dataset_list if f.split('_')[-2] in self.object_list]
+            else:
+                dataset_list = [f for f in dataset_list if f.split('.')[0] in self.object_list]
+        user_in = input('Generating depth images for ' + str(dataset_list) + ', Press enter to continue or q to quit.')
+        if user_in == 'q':
+            return
+        #load the grasp widths from the txt file with the format "object: inter_gelslim_distance \n"and convert to a dictionary 
+        with open(self.grasp_widths_file, 'r') as f:
+            grasp_width_file = f.readlines()
+        grasp_width_file = [line.split(':') for line in grasp_width_file]
+        grasp_widths = {}
+        for line in grasp_width_file:
+            if line[1] != ' None\n' and line[1] != ' None':
+                grasp_widths[line[0]] = float(line[1])
+            else:
+                grasp_widths[line[0]] = None
         for pt_file in dataset_list:
             dataset_pt = torch.load(self.dataset_dir + '/' + pt_file, map_location=self.device)
             num_datapoints = dataset_pt['tactile_image'].shape[0]
-            mesh = o3d.io.read_triangle_mesh(self.mesh_dir + '/' + pt_file[:-3] + '.stl')
+            #mesh  filename replaces .pt with .stl and removes '_val' or '_test' or '_train'
+            if '_val' in pt_file or '_test' in pt_file or '_train' in pt_file:
+                mesh_filename = pt_file.split('_')[-2] + '.stl'
+            else:
+                mesh_filename = pt_file.split('.')[0] + '.stl'
+            mesh = o3d.io.read_triangle_mesh(self.mesh_dir + '/' + mesh_filename)
             pc = mesh.sample_points_uniformly(int(self.pc_sampling))
             pc = torch.from_numpy(np.array(pc.points).astype(np.float32)).to(self.device)
             pc = pc * self.pc_scale
             dataset_pt['depth_image'] = torch.zeros((num_datapoints, 2, self.image_size[0], self.image_size[1]))
             for i in tqdm(range(num_datapoints)):
                 in_hand_pose = dataset_pt['in_hand_pose'][i, ...]
-                right_depth_image, left_depth_image = self.generate_depth_image(pc, in_hand_pose[0], in_hand_pose[1], in_hand_pose[2], invert_affine=False)
+                if '_val' in pt_file or '_test' in pt_file or '_train' in pt_file:
+                    key = pt_file.split('_')[-2]
+                else:
+                    key = pt_file.split('.')[0]
+                inter_gelslim_distance = grasp_widths[key]
+                if inter_gelslim_distance is None:
+                    inter_gelslim_distance = dataset_pt['grasp_widths'][i]
+                inter_gelslim_distance += self.grasp_width_offset
+                right_depth_image, left_depth_image = self.generate_depth_image(pc, in_hand_pose[0], in_hand_pose[1], in_hand_pose[2], inter_gelslim_distance, invert_affine=False)
                 right_depth_image = right_depth_image.unsqueeze(0)
                 left_depth_image = left_depth_image.unsqueeze(0)
                 if self.LR_flip:
@@ -43,7 +77,7 @@ class DepthImageGenerator():
                 dataset_pt['depth_image'][i, ...] = depth_image
             torch.save(dataset_pt, self.dataset_dir + '/' + pt_file)
 
-    def generate_depth_image(self, pc, translation1, translation2, angle, invert_affine=False):
+    def generate_depth_image(self, pc, translation1, translation2, angle, inter_gelslim_distance, invert_affine=False):
         #import pdb; pdb.set_trace()
         #use invert_affine=True if translation1, translation2, and angle are the values of the grasp frame with respect to the point cloud frame
         #use invert_affine=False if translation1, translation2, and angle are the values of the point cloud frame with respect to the grasp frame (i.e. "in_hand_pose")
@@ -141,11 +175,11 @@ class DepthImageGenerator():
             import pdb; pdb.set_trace()
         right_pc = (pc[multiplier*pc[:, perp_ind] > 0])
         left_pc = (pc[multiplier*pc[:, perp_ind] < 0])
-        right_pc[multiplier*right_pc[:, perp_ind] < multiplier*self.inter_gelslim_distance / 2, perp_ind] = multiplier*self.inter_gelslim_distance / 2
-        left_pc[multiplier*left_pc[:, perp_ind] > -multiplier*self.inter_gelslim_distance / 2, perp_ind] = -multiplier*self.inter_gelslim_distance / 2
+        right_pc[multiplier*right_pc[:, perp_ind] < multiplier*inter_gelslim_distance / 2, perp_ind] = multiplier*inter_gelslim_distance / 2
+        left_pc[multiplier*left_pc[:, perp_ind] > -multiplier*inter_gelslim_distance / 2, perp_ind] = -multiplier*inter_gelslim_distance / 2
 
-        right_pc[:, perp_ind] = -(right_pc[:, perp_ind] - multiplier*self.inter_gelslim_distance / 2)*multiplier
-        left_pc[:, perp_ind] = (left_pc[:, perp_ind] + multiplier*self.inter_gelslim_distance / 2)*multiplier
+        right_pc[:, perp_ind] = -(right_pc[:, perp_ind] - multiplier*inter_gelslim_distance / 2)*multiplier
+        left_pc[:, perp_ind] = (left_pc[:, perp_ind] + multiplier*inter_gelslim_distance / 2)*multiplier
 
         left_pc[:, unaligned_index] = -left_pc[:, unaligned_index]
 
@@ -202,7 +236,7 @@ class DepthImageGenerator():
         right_depth_image[torch.isnan(right_depth_image)] = 0
         left_depth_image[torch.isnan(left_depth_image)] = 0
         
-        if False:
+        if True:
             import matplotlib.pyplot as plt
             plt.subplot(1,2,1)
             plt.imshow(right_depth_image.cpu())

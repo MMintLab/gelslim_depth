@@ -7,8 +7,9 @@ from tqdm import tqdm
 import concurrent.futures
 
 class GeneralDataset(Dataset):
-	def __init__(self, directory=None, pt_file_list=None, use_difference_image=False,
-			  separate_fingers=True, downsample_factor: int = 0.5, depth_image_blur_kernel: int = 1, depth_normalization_parameters = None, norm_scale= None, device=None) -> None:
+	def __init__(self, directory=None, pt_file_list=None, extra_directory=None, extra_pt_list=None, use_difference_image=False,
+			  separate_fingers=True, downsample_factor: int = 0.5, depth_image_blur_kernel: int = 1, depth_normalization_parameters = None, norm_scale= None, max_datapoints_per_object=None,
+			  device=None) -> None:
 		
 		assert os.path.exists(directory), f"Dataset path {directory} does not exist"
 
@@ -23,6 +24,12 @@ class GeneralDataset(Dataset):
 		self.dataset_path = directory
 
 		self.pt_file_list = pt_file_list
+
+		self.extra_directory = extra_directory
+
+		self.extra_pt_list = extra_pt_list
+
+		self.max_datapoints_per_object = max_datapoints_per_object
 
 		self.separate_fingers = separate_fingers
 
@@ -59,6 +66,46 @@ class GeneralDataset(Dataset):
 				data['depth_image'] = self.downsample_depth_images(data['depth_image'], self.downsample_factor)
 		
 		data['object_index'] = torch.tensor([object_index]*data['tactile_image'].shape[0])
+
+		#if max_datapoints_per_object is not None, then only take a random subset of the data
+		if self.max_datapoints_per_object is not None and data['tactile_image'].shape[0] > self.max_datapoints_per_object:
+			indices = torch.randperm(data['tactile_image'].shape[0])
+			indices = indices[:self.max_datapoints_per_object]
+			data['tactile_image'] = data['tactile_image'][indices,...]
+			data['depth_image'] = data['depth_image'][indices,...]
+			data['object_index'] = data['object_index'][indices,...]
+		return data
+
+	def load_extra_object_dataset(self, object_index):
+		pt_file = self.extra_pt_list[object_index]
+
+		data = torch.load(os.path.join(self.extra_directory, pt_file), map_location='cpu')
+
+		if self.separate_fingers:
+			if self.use_difference_image:
+				data['tactile_image'] = self.downsample_tactile_images(torch.cat(((data['tactile_image'][:, 0:3, ...]-data['base_tactile_image'][:, 0:3, ...])/2.0+127.5, (data['tactile_image'][:, 3:6, ...]-data['base_tactile_image'][:, 3:6, ...])/2.0+127.5), dim=0), self.downsample_factor)
+			else:
+				data['tactile_image'] = self.downsample_tactile_images(torch.cat((data['tactile_image'][:, 0:3, ...], data['tactile_image'][:, 3:6, ...]), dim=0), self.downsample_factor)
+			if self.depth_image_blur_kernel > 1:
+				data['depth_image'] = self.blur_depth_images(self.downsample_depth_images(torch.cat((data['depth_image'][:, 0:1, ...], data['depth_image'][:, 1:2, ...]), dim=0), self.downsample_factor), self.depth_image_blur_kernel)
+			else:
+				data['depth_image'] = self.downsample_depth_images(torch.cat((data['depth_image'][:, 0:1, ...], data['depth_image'][:, 1:2, ...]), dim=0), self.downsample_factor)
+		else:
+			data['tactile_image'] = self.downsample_tactile_images(data['tactile_image'], self.downsample_factor)
+			if self.depth_image_blur_kernel > 1:
+				data['depth_image'] = self.blur_depth_images(self.downsample_depth_images(data['depth_image'], self.downsample_factor), self.depth_image_blur_kernel)
+			else:
+				data['depth_image'] = self.downsample_depth_images(data['depth_image'], self.downsample_factor)
+		
+		data['object_index'] = torch.tensor([object_index]*data['tactile_image'].shape[0])
+
+		#if max_datapoints_per_object is not None, then only take a random subset of the data
+		if self.max_datapoints_per_object is not None and data['tactile_image'].shape[0] > self.max_datapoints_per_object:
+			indices = torch.randperm(data['tactile_image'].shape[0])
+			indices = indices[:self.max_datapoints_per_object]
+			data['tactile_image'] = data['tactile_image'][indices,...]
+			data['depth_image'] = data['depth_image'][indices,...]
+			data['object_index'] = data['object_index'][indices,...]
 		return data
 	
 	def load_entire_dataset(self):
@@ -67,6 +114,7 @@ class GeneralDataset(Dataset):
 		number_of_objects = len(self.pt_file_list)
 		
 		if self.parallelize:
+			print('loading main dataset in parallel')
 			with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
 				futures = [executor.submit(self.load_object_dataset, object_index) for object_index in range(number_of_objects)]
 
@@ -77,7 +125,21 @@ class GeneralDataset(Dataset):
 							entire_dataset[key] = torch.cat((entire_dataset[key], data), dim=0)
 						else:
 							entire_dataset[key] = data
+			if self.extra_directory is not None:
+				print('loading extra dataset in parallel')
+				number_of_extra_objects = len(self.extra_pt_list)
+				with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
+					futures = [executor.submit(self.load_extra_object_dataset, object_index) for object_index in range(number_of_extra_objects)]
+
+					for future in tqdm(concurrent.futures.as_completed(futures), total=number_of_extra_objects):
+						object_dataset = future.result()
+						for key, data in object_dataset.items():
+							if key in entire_dataset:
+								entire_dataset[key] = torch.cat((entire_dataset[key], data), dim=0)
+							else:
+								entire_dataset[key] = data
 		else:
+			print('loading main dataset sequentially')
 			for object_index in tqdm(range(number_of_objects)):
 				object_dataset = self.load_object_dataset(object_index)
 				for key, data in object_dataset.items():
@@ -85,6 +147,16 @@ class GeneralDataset(Dataset):
 						entire_dataset[key] = torch.cat((entire_dataset[key], data), dim=0)
 					else:
 						entire_dataset[key] = data
+			if self.extra_directory is not None:
+				print('loading extra dataset sequentially')
+				number_of_extra_objects = len(self.extra_pt_list)
+				for object_index in tqdm(range(number_of_extra_objects)):
+					object_dataset = self.load_extra_object_dataset(object_index)
+					for key, data in object_dataset.items():
+						if key in entire_dataset:
+							entire_dataset[key] = torch.cat((entire_dataset[key], data), dim=0)
+						else:
+							entire_dataset[key] = data
 		return entire_dataset
 
 	def downsample_tactile_images(self, tactile_images, downsample_factor):
