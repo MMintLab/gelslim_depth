@@ -5,6 +5,8 @@ Neural-network-based depth estimation from RGB vision-based tactile sensor GelSl
 ![GIF of Grasping a Hex Key with Depth Estimation](https://github.com/MMintLab/gelslim_depth/blob/master/media/animations/hex_key.gif?raw=true)
 ![GIF of Grasping a Pointed Connector with Depth Estimation](https://github.com/MMintLab/gelslim_depth/blob/master/media/animations/pointed_connector.gif?raw=true)
 
+For all functionality associated with the GelSlim 4.0, [visit the project website!](https://www.mmintlab.com/research/gelslim-4-0/)
+
 Tested On: <br />
 <a href="https://pytorch.org/"><img src="https://img.shields.io/badge/PyTorch-v2.0+-red.svg?logo=PyTorch&style=for-the-badge" /></a>
 <a href="#"><img src="https://img.shields.io/badge/python-v3.8+-blue.svg?logo=python&style=for-the-badge" /></a>
