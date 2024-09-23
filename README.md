@@ -1,9 +1,11 @@
 # The GelSlim 4.0 Depth Estimation Package
 Neural-network-based depth estimation from RGB vision-based tactile sensor GelSlim 4.0 <br />
+<p align="center">
 ![GIF of Grasping a Small Screw with Depth Estimation](https://github.com/MMintLab/gelslim_depth/blob/master/media/animations/small_screw.gif?raw=true)
 ![GIF of Grasping a Fin Ray Finger with Depth Estimation](https://github.com/MMintLab/gelslim_depth/blob/master/media/animations/finray.gif?raw=true)<br />
 ![GIF of Grasping a Hex Key with Depth Estimation](https://github.com/MMintLab/gelslim_depth/blob/master/media/animations/hex_key.gif?raw=true)
 ![GIF of Grasping a Pointed Connector with Depth Estimation](https://github.com/MMintLab/gelslim_depth/blob/master/media/animations/pointed_connector.gif?raw=true)
+</p>
 
 For all functionality associated with the GelSlim 4.0, [visit the project website!](https://www.mmintlab.com/research/gelslim-4-0/)
 
