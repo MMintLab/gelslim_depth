@@ -66,7 +66,7 @@ class GeneralDataset(Dataset):
 
 		if self.separate_fingers:
 			if self.use_difference_image:
-				data['tactile_image'] = sample_multi_channel_image_to_desired_size(torch.cat(((data['tactile_image'][:, 0:3, ...]-data['base_tactile_image'][:, 0:3, ...])/2.0+127.5, (data['tactile_image'][:, 3:6, ...]-data['base_tactile_image'][:, 3:6, ...])/2.0+127.5), dim=0), self.input_tactile_image_size, self.interp_method)
+				data['tactile_image'] = sample_multi_channel_image_to_desired_size(torch.cat((get_difference_image(data['tactile_image'][:, 0:3, ...],data['base_tactile_image'][:, 0:3, ...]), get_difference_image(data['tactile_image'][:, 3:6, ...],data['base_tactile_image'][:, 3:6, ...])), dim=0), self.input_tactile_image_size, self.interp_method)
 			else:
 				data['tactile_image'] = sample_multi_channel_image_to_desired_size(torch.cat((data['tactile_image'][:, 0:3, ...], data['tactile_image'][:, 3:6, ...]), dim=0), self.input_tactile_image_size, self.interp_method)
 			if self.depth_image_blur_kernel > 1:
@@ -74,7 +74,10 @@ class GeneralDataset(Dataset):
 			else:
 				data['depth_image'] = sample_multi_channel_image_to_desired_size(torch.cat((data['depth_image'][:, 0:1, ...], data['depth_image'][:, 1:2, ...]), dim=0), self.input_tactile_image_size, self.interp_method)
 		else:
-			data['tactile_image'] = sample_multi_channel_image_to_desired_size(data['tactile_image'], self.input_tactile_image_size, self.interp_method)
+			if self.use_difference_image:
+				data['tactile_image'] = sample_multi_channel_image_to_desired_size(get_difference_image(data['tactile_image'],data['base_tactile_image']), self.input_tactile_image_size, self.interp_method)
+			else:
+				data['tactile_image'] = sample_multi_channel_image_to_desired_size(data['tactile_image'], self.input_tactile_image_size, self.interp_method)
 			if self.depth_image_blur_kernel > 1:
 				data['depth_image'] = self.blur_depth_images(sample_multi_channel_image_to_desired_size(data['depth_image'], self.input_tactile_image_size, self.interp_method), self.depth_image_blur_kernel)
 			else:
@@ -179,10 +182,10 @@ class GeneralDataset(Dataset):
 		return depth
 	
 	def calculate_depth_normalization_params(self):
-		max_depth = self.entire_dataset['depth_image'].max()
-		min_depth = self.entire_dataset['depth_image'].min()
-		mean_depth = self.entire_dataset['depth_image'].mean()
-		std_depth = self.entire_dataset['depth_image'].std()
+		max_depth = self.entire_dataset['depth_image'].max().item()
+		min_depth = self.entire_dataset['depth_image'].min().item()
+		mean_depth = self.entire_dataset['depth_image'].mean().item()
+		std_depth = self.entire_dataset['depth_image'].std().item()
 		return (min_depth, max_depth, mean_depth, std_depth)
 	
 	def calculate_image_normalization_params(self):
@@ -200,7 +203,7 @@ class GeneralDataset(Dataset):
 			stds.append(channel.std().item())
 		return (mins, maxes, means, stds)
 	
-	def normalize_sample(self, sample, depth_normalization_parameters):
+	def normalize_sample(self, sample):
 		new_sample = {}
 		new_sample['tactile_image'] = normalize_tactile_image(sample['tactile_image'], self.image_normalization_method, self.norm_scale, self.image_normalization_parameters)
 		new_sample['depth_image'] = normalize_depth_image(sample['depth_image'], self.depth_normalization_method, self.norm_scale, self.depth_normalization_parameters)

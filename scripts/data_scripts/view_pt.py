@@ -5,10 +5,18 @@ from tqdm import tqdm
 import matplotlib.pyplot as plt
 import torch
 from mpl_toolkits.axes_grid1 import make_axes_locatable
+import gelslim_depth.main_config as main_config
 
-data_name = sys.argv[1]
+#this script will randomly select 5 data points from the dataset and plot the tactile images, depth images, and corresponding in_hand_poses in the same figure, and save the figure
+#usage: python3 scripts/data_scripts/view_pt.py <sub_dir> <data_name>
+#example 1: python3 scripts/data_scripts/view_pt.py train_data peg1_train.pt
+#example 2: python3 scripts/data_scripts/view_pt.py test_data pattern37
 
-data_dir = '/data/william/gelslim_depth/data/real_data'
+sub_dir = sys.argv[1]
+
+data_name = sys.argv[2]
+
+data_dir = main_config.DATA_PATH
 
 #get list of files in the data directory
 files = os.listdir(data_dir)
@@ -30,6 +38,10 @@ num_images = tactile_images.shape[0]
 
 print('Found', num_images, 'data points')
 
+#make directory to save images
+if not os.path.exists('scripts/data_scripts/pt_images'):
+    os.makedirs('scripts/data_scripts/pt_images')
+
 min_depth = 0
 
 #in a while true loop, randomly select 5 points from the dataset, plot tactile images alongside the in_hand_pose and depth images for each
@@ -48,7 +60,7 @@ while True:
         axs[i, 0].set_xticks([])
         axs[i, 0].set_yticks([])
         LD = axs[i, 1].imshow(left_depth_image)
-        #fig.colorbar(im=LD, ax=axs[i, 1])
+        
         axs[i, 1].set_xticks([])
         axs[i, 1].set_yticks([])
         axs[i, 1].set_title("In Hand Pose: "+str((1000*in_hand_pose[0]).round(1))+" mm, "+str((1000*in_hand_pose[1]).round(1))+" mm, "+str((180*(1/np.pi)*in_hand_pose[2]).round(1))+" deg")
@@ -57,7 +69,7 @@ while True:
         axs[i, 2].set_xticks([])
         axs[i, 2].set_yticks([])
         RD = axs[i, 3].imshow(right_depth_image, vmax=0, vmin=min_depth)
-        #fig.colorbar(im=RD, ax=axs[i, 3])
+        
         axs[i, 3].set_xticks([])
         axs[i, 3].set_yticks([])
 

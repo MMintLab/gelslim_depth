@@ -7,26 +7,47 @@ import torch.nn.functional as F
 import matplotlib.pyplot as plt
 
 from gelslim_depth.datasets.general_dataset import GeneralDataset
+from gelslim_depth.processing_utils.normalization_utils import denormalize_depth_image, normalize_tactile_image
+from gelslim_depth.processing_utils.image_utils import sample_multi_channel_image_to_desired_size
+import gelslim_depth.main_config as main_config
+import sys
 
 def predict_depth_from_RGB(images, model, output_size):
-    min_depth, max_depth = config.depth_normalization_parameters
-    images = F.interpolate(images, size=config.input_tactile_image_size, mode='area')/255.0
+    images = sample_multi_channel_image_to_desired_size(images, config.input_tactile_image_size, config.interp_method)
+    images = normalize_tactile_image(images, config.tactile_normalization_method, config.norm_scale, config.tactile_normalization_parameters)
     depth = model(x=images)
-    depth = (max_depth - min_depth)*depth/(-config.norm_scale)+min_depth
-    depth = F.interpolate(depth, size=output_size, mode='area')
+    depth = denormalize_depth_image(depth, config.depth_normalization_method, config.norm_scale, config.depth_normalization_parameters)
+    depth = sample_multi_channel_image_to_desired_size(depth, output_size, config.interp_method)
     return depth
 
 if __name__ == '__main__':
     weights_name = 'unet_bigdata'
-    real_data_path = '/data/william/gelslim_depth/data/real_data/'
+    real_data_path = main_config.DATA_PATH+'/real_data/'
+
+    #gpu to use
+    gpu = 2
 
     pt_file_list = os.listdir(real_data_path)
 
     #remove non .pt files
     pt_file_list = [pt_file for pt_file in pt_file_list if pt_file[-3:] == '.pt']
 
-    gpu = 2
+    #arguments are the list of pt files to display
+    if len(sys.argv) > 1:
+        object_list = sys.argv[1:]
 
+        new_pt_file_list = []
+        for object_name in object_list:
+            for pt_file in pt_file_list:
+                if object_name in pt_file:
+                    new_pt_file_list.append(pt_file)
+        pt_file_list = new_pt_file_list
+
+    #max_number of objects to display
+    max_num_objects = 5
+    pt_file_list = pt_file_list[:max_num_objects]
+
+    #number of images to display from each object
     num_images_from_each_object = 5
 
     config = importlib.import_module('gelslim_depth.config.config_'+weights_name)
@@ -36,7 +57,7 @@ if __name__ == '__main__':
     if config.model_type == 'unet':
         model = importlib.import_module('gelslim_depth.models.unet').UNet(n_channels=3, n_classes=1, layer_dimensions=config.CNN_dimensions, kernel_size=config.kernel_size, maxpool_size=config.maxpool_size, upconv_stride=config.upconv_stride).to(device)
     
-    model.load_state_dict(torch.load(config.weights_path+weights_name+'.pth'))
+    model.load_state_dict(torch.load(config.weights_path+weights_name+'.pth', map_location=device))
 
     model.eval()
 
@@ -71,6 +92,9 @@ if __name__ == '__main__':
             axs[j, 2*i+1].set_xticks([])
             axs[j, 2*i+1].set_yticks([])
     
+    #make directory to save images
+    if not os.path.exists('test_output'):
+        os.makedirs('test_output')
     #tight layout
     plt.tight_layout()
-    fig.savefig('test_output/real_data_depth_predictions.png')
+    fig.savefig('test_output/depth_predictions.png')

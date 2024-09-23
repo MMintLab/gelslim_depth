@@ -78,9 +78,8 @@ class DepthImageGenerator():
             torch.save(dataset_pt, self.dataset_dir + '/' + pt_file)
 
     def generate_depth_image(self, pc, translation1, translation2, angle, inter_gelslim_distance, invert_affine=False):
-        #import pdb; pdb.set_trace()
         #use invert_affine=True if translation1, translation2, and angle are the values of the grasp frame with respect to the point cloud frame
-        #use invert_affine=False if translation1, translation2, and angle are the values of the point cloud frame with respect to the grasp frame (i.e. "in_hand_pose")
+        #use invert_affine=False if translation1, translation2, and angle are the values of the point cloud frame with respect to the grasp frame (i.e. "in_hand_pose"), this is the default and compatible with the provided dataset
         #self.plane_axes removes + and - from the gelslim_plane string and returns a list of the characters in the string
         #plane_signs removes the characters in the gelslim_plane string that are not + or - and returns a list of the characters in the string
         plane_signs = [c for c in self.gelslim_plane if c in ['+', '-']]
@@ -154,25 +153,8 @@ class DepthImageGenerator():
         out_of_plane_middle = (pc[:, perp_ind].max() + pc[:, perp_ind].min()) / 2
         pc[:, perp_ind] = pc[:, perp_ind] - out_of_plane_middle
         
-        if False:
-            #show mins and maxes of each axis of the point cloud
-            print('x min:', pc[:,0].min())
-            print('x max:', pc[:,0].max())
-            print('y min:', pc[:,1].min())
-            print('y max:', pc[:,1].max())
-            print('z min:', pc[:,2].min())
-            print('z max:', pc[:,2].max())
         pc = self.affine2D_pc(pc, perp_ind, translation1*1000, translation2*1000, angle, invert_affine)
-        if False:
-            #show mins and maxes of each axis of the point cloud
-            print('After affine')
-            print('x min:', pc[:,0].min())
-            print('x max:', pc[:,0].max())
-            print('y min:', pc[:,1].min())
-            print('y max:', pc[:,1].max())
-            print('z min:', pc[:,2].min())
-            print('z max:', pc[:,2].max())
-            import pdb; pdb.set_trace()
+
         right_pc = (pc[multiplier*pc[:, perp_ind] > 0])
         left_pc = (pc[multiplier*pc[:, perp_ind] < 0])
         right_pc[multiplier*right_pc[:, perp_ind] < multiplier*inter_gelslim_distance / 2, perp_ind] = multiplier*inter_gelslim_distance / 2
@@ -191,8 +173,7 @@ class DepthImageGenerator():
         #reshape the sample_points to be a list of 2D points
         sample_points = torch.stack((sample_points[0].flatten(), sample_points[1].flatten()), axis=1).to(self.device)
 
-        #import pdb; pdb.set_trace()
-        #plot the point clouds on two subplots
+        #DEBUG CHECKPOINT: plot the point clouds as they are generated, set to False to skip
         if False:
             import matplotlib.pyplot as plt
             plt.subplot(1,2,1)
@@ -204,7 +185,6 @@ class DepthImageGenerator():
             #add colorbar
             plt.colorbar()
             plt.savefig('point_clouds.png')
-            #import pdb; pdb.set_trace()
 
         right_depth = torch.from_numpy(interp.griddata(right_pc[:, [unaligned_index, aligned_index]].cpu(), right_pc[:, perp_ind].cpu(), sample_points.cpu(), method='linear')).float().to(self.device)
         left_depth = torch.from_numpy(interp.griddata(left_pc[:, [unaligned_index, aligned_index]].cpu(), left_pc[:, perp_ind].cpu(), sample_points.cpu(), method='linear')).float().to(self.device)
@@ -217,6 +197,7 @@ class DepthImageGenerator():
         right_depth[right_depth < min_depth_R] = min_depth_R
         left_depth[left_depth < min_depth_L] = min_depth_L
 
+        #DEBUG CHECKPOINT: plot the sampled depth points as they are generated, set to False to skip
         if False:
             import matplotlib.pyplot as plt
             plt.subplot(1,2,1)
@@ -236,6 +217,7 @@ class DepthImageGenerator():
         right_depth_image[torch.isnan(right_depth_image)] = 0
         left_depth_image[torch.isnan(left_depth_image)] = 0
         
+        #DEBUG CHECKPOINT: plot the depth images as they are generated, set to False to skip
         if True:
             import matplotlib.pyplot as plt
             plt.subplot(1,2,1)
@@ -245,7 +227,6 @@ class DepthImageGenerator():
             plt.imshow(left_depth_image.cpu())
             plt.colorbar()
             plt.savefig('depth_images.png')
-            #import pdb; pdb.set_trace()
 
         return right_depth_image, left_depth_image
 

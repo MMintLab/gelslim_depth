@@ -23,6 +23,9 @@ input_tactile_image_size = (160, 213)
 depth_image_blur_kernel = 1
 #device = device(type='cuda', index=1)
 depth_normalization_parameters = (-1.9180814027786255, 0.0)
+depth_normalization_method = 'min_max_to_0_-1'
+image_normalization_parameters = None
+image_normalization_method = '0_255_to_0_1'
 num_images_to_display_live = 5
 use_difference_image = True
 exclude_objects = []
