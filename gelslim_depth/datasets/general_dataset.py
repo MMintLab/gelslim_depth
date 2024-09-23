@@ -101,7 +101,7 @@ class GeneralDataset(Dataset):
 
 		if self.separate_fingers:
 			if self.use_difference_image:
-				data['tactile_image'] = sample_multi_channel_image_to_desired_size(torch.cat(((data['tactile_image'][:, 0:3, ...]-data['base_tactile_image'][:, 0:3, ...])/2.0+127.5, (data['tactile_image'][:, 3:6, ...]-data['base_tactile_image'][:, 3:6, ...])/2.0+127.5), dim=0), self.input_tactile_image_size, self.interp_method)
+				data['tactile_image'] = sample_multi_channel_image_to_desired_size(torch.cat((get_difference_image(data['tactile_image'][:, 0:3, ...],data['base_tactile_image'][:, 0:3, ...]), get_difference_image(data['tactile_image'][:, 3:6, ...],data['base_tactile_image'][:, 3:6, ...])), dim=0), self.input_tactile_image_size, self.interp_method)
 			else:
 				data['tactile_image'] = sample_multi_channel_image_to_desired_size(torch.cat((data['tactile_image'][:, 0:3, ...], data['tactile_image'][:, 3:6, ...]), dim=0), self.input_tactile_image_size, self.interp_method)
 			if self.depth_image_blur_kernel > 1:
@@ -109,7 +109,10 @@ class GeneralDataset(Dataset):
 			else:
 				data['depth_image'] = sample_multi_channel_image_to_desired_size(torch.cat((data['depth_image'][:, 0:1, ...], data['depth_image'][:, 1:2, ...]), dim=0), self.input_tactile_image_size, self.interp_method)
 		else:
-			data['tactile_image'] = sample_multi_channel_image_to_desired_size(data['tactile_image'], self.input_tactile_image_size, self.interp_method)
+			if self.use_difference_image:
+				data['tactile_image'] = sample_multi_channel_image_to_desired_size(get_difference_image(data['tactile_image'],data['base_tactile_image']), self.input_tactile_image_size, self.interp_method)
+			else:
+				data['tactile_image'] = sample_multi_channel_image_to_desired_size(data['tactile_image'], self.input_tactile_image_size, self.interp_method)
 			if self.depth_image_blur_kernel > 1:
 				data['depth_image'] = self.blur_depth_images(sample_multi_channel_image_to_desired_size(data['depth_image'], self.input_tactile_image_size, self.interp_method), self.depth_image_blur_kernel)
 			else:

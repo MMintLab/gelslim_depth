@@ -16,7 +16,7 @@ sub_dir = sys.argv[1]
 
 data_name = sys.argv[2]
 
-data_dir = main_config.DATA_PATH
+data_dir = main_config.DATA_PATH+'/'+sub_dir
 
 #get list of files in the data directory
 files = os.listdir(data_dir)

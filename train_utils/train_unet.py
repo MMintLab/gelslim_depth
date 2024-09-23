@@ -41,6 +41,9 @@ batch_size = 16
 
 depth_image_blur_kernel = 1
 
+#configuration for live display
+num_images_to_display_live = 5
+
 #normalization settings, the resulting parameters will be saved in the config file
 depth_normalization_method = 'min_max_to_0_-1'
 image_normalization_method = '0_255_to_0_1'
@@ -191,9 +194,6 @@ if limit_object_lists:
 device = torch.device('cuda:'+gpu if torch.cuda.is_available() else 'cpu')
 
 start_data_load_time = time.time()
-
-#configuration for live display
-num_images_to_display_live = 5
 
 #initialize the dataset
 TrainDataset = GeneralDataset(directory=dataset_path+'train_data/', pt_file_list=train_objects, extra_directory=dataset_path+'real_data/', extra_pt_list=real_train_objects, use_difference_image=use_difference_image,

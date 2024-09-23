@@ -6,9 +6,8 @@ import torch.nn.functional as F
 
 import matplotlib.pyplot as plt
 
-from gelslim_depth.datasets.general_dataset import GeneralDataset
 from gelslim_depth.processing_utils.normalization_utils import denormalize_depth_image, normalize_tactile_image
-from gelslim_depth.processing_utils.image_utils import sample_multi_channel_image_to_desired_size
+from gelslim_depth.processing_utils.image_utils import sample_multi_channel_image_to_desired_size, get_difference_image
 import gelslim_depth.main_config as main_config
 import sys
 
@@ -21,20 +20,24 @@ def predict_depth_from_RGB(images, model, output_size):
     return depth
 
 if __name__ == '__main__':
-    weights_name = 'unet_bigdata'
-    real_data_path = main_config.DATA_PATH+'/real_data/'
+    weights_name = sys.argv[1]
+
+    gpu = sys.argv[2]
+
+    sub_dir = sys.argv[3]
+
+    data_path = main_config.DATA_PATH+'/'+sub_dir+'/'
 
     #gpu to use
-    gpu = 2
 
-    pt_file_list = os.listdir(real_data_path)
+    pt_file_list = os.listdir(data_path)
 
     #remove non .pt files
     pt_file_list = [pt_file for pt_file in pt_file_list if pt_file[-3:] == '.pt']
 
     #arguments are the list of pt files to display
-    if len(sys.argv) > 1:
-        object_list = sys.argv[1:]
+    if len(sys.argv) > 4:
+        object_list = sys.argv[4:]
 
         new_pt_file_list = []
         for object_name in object_list:
@@ -68,15 +71,16 @@ if __name__ == '__main__':
     for i in range(num_objects):
         right_or_left = torch.randint(0, 2, (num_images_from_each_object,))
         pt_file = pt_file_list[i]
-        print(pt_file)
-        pt = torch.load(real_data_path+pt_file, map_location='cuda:'+str(gpu) if torch.cuda.is_available() else 'cpu')
+        print("Testing on: ", pt_file)
+        pt = torch.load(data_path+pt_file, map_location='cuda:'+str(gpu) if torch.cuda.is_available() else 'cpu')
         pt_length = pt['tactile_image'].size()[0]
         indices = torch.randint(0, pt_length, (num_images_from_each_object,))
         
         tactile_images = torch.zeros((num_images_from_each_object, 3, pt['tactile_image'].size()[2],  pt['tactile_image'].size()[3])).to(device)
+        num_base_tactile_images = pt['base_tactile_image'].size()[0]
         for j in range(num_images_from_each_object):
             if config.use_difference_image:
-                tactile_images[j, ...] = (pt['tactile_image'][indices[j], right_or_left[j]*3:right_or_left[j]*3+3, ...]-pt['base_tactile_image'][indices[j], right_or_left[j]*3:right_or_left[j]*3+3, ...])/2.0 + 127.5
+                tactile_images[j, ...] = get_difference_image(pt['tactile_image'][indices[j], right_or_left[j]*3:right_or_left[j]*3+3, ...],pt['base_tactile_image'][min(indices[j],num_base_tactile_images), right_or_left[j]*3:right_or_left[j]*3+3, ...])
             else:
                 tactile_images[j, ...] = pt['tactile_image'][indices[j], right_or_left[j]*3:right_or_left[j]*3+3, ...]
 
