@@ -8,3 +8,9 @@ Neural-network-based depth estimation from RGB vision-based tactile sensor GelSl
 Tested On: <br />
 <a href="https://pytorch.org/"><img src="https://img.shields.io/badge/PyTorch-v2.0+-red.svg?logo=PyTorch&style=for-the-badge" /></a>
 <a href="#"><img src="https://img.shields.io/badge/python-v3.8+-blue.svg?logo=python&style=for-the-badge" /></a>
+
+## Installation
+
+1. Install Dependencies
+
+2. 

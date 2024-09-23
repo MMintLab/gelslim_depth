@@ -1,0 +1,7 @@
+matplotlib==3.2.2
+numpy==1.22.0
+open3d==0.17.0
+tqdm==4.64.1
+scipy==1.10.0
+torch_ema==0.3
+importlib
