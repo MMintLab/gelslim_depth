@@ -44,6 +44,7 @@ All dictionaries have the following keys relevant to this package (other keys ma
 Also with this dataset are some txt files for configuration:
 - `test_objects.txt`: Objects listed here will be entirely left out of the training and validation sets
 - `validation_objects.txt`: Objects listed here will be entirely left out of the training and testing sets
+
 The following txt configuration files are only for object dataset dictionaries which include the ground truth depth image generated from the mesh
 - `real_data/train_real_objects.txt`: Place names of objects in `real_data` here if you want them included in the training set, we found this to assist training even though there are less data points for these objects.
 - `real_data/validation_real_objects.txt`: Place names of objects in `real_data` here if you want them included in the validation set
