@@ -155,7 +155,7 @@ from gelslim_depth.processing_utils.image_utils import get_difference_image
 3. Ensure these RGB images have the original `uint8` values from 0 to 255 but the tensor datatype should be float.
 4. Then, the estimation can begin as such, with defined `weights_name` and `<device>`:
 
-```
+```python
 import gelslim_depth.config.config_<weights_name>.py as config
 from gelslim_depth.models.unet import UNet
 
@@ -172,7 +172,10 @@ depth_output = predict_depth_from_RGB(diff_image, network, (diff_image.shape[2],
 
 Alternatively, the weights can be imported as recorded by config, this ensures the two are compatible:
 
-```
+```python
 weights_name = <weights_name>
 model.load_state_dict(torch.load(config.weights_path+weights_name+'.pth', map_location=device))
 ```
+
+### Pretrained weights:
+[unet_bigdata.pth]https://www.dropbox.com/scl/fi/oz6lzedj0xwv6r0wprif8/unet_bigdata.pth?rlkey=fn7oo3cg01eo7cuqbdohr2dqe&st=9c6xmbn6&dl=0 : There are the pretrained weights we provide, which work alongside `config_unet_bigdata.py` for the functionality described above.
