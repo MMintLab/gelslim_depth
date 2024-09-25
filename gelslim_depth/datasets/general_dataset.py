@@ -39,6 +39,8 @@ class GeneralDataset(Dataset):
 
 		self.interp_method = interp_method
 
+		self.input_tactile_image_size = None
+
 		self.entire_dataset = self.load_entire_dataset()
 
 		self.depth_normalization_method = depth_normalization_method
@@ -224,6 +226,6 @@ class GeneralDataset(Dataset):
 		sample = {}
 		sample['tactile_image'] = tactile_image
 		sample['depth_image'] = depth_image
-		sample = self.normalize_sample(sample, self.depth_normalization_parameters)
+		sample = self.normalize_sample(sample)
 		sample['object_index'] = object_index
 		return sample

@@ -7,7 +7,7 @@ import gelslim_depth.main_config as main_config
 
 if __name__ == '__main__':
     mesh_dir = 'mesh' #directory containing the mesh files
-    object_list = ['marble','hex_key'] #list of objects to generate depth images for
+    object_list = ['hex_key'] #list of objects to generate depth images for
     pc_scale = 1000 #converts from meters to mm: 1000
     dataset_dir = main_config.DATA_PATH+'/real_data/' #directory containing the pt files
     grasp_widths_file = main_config.DATA_PATH+'/grasp_widths.txt' #file containing the grasp widths for each object

@@ -1,0 +1,35 @@
+Validation loss is at a minimum. Saving the model
+[INFO] EPOCH: 1
+Train loss: 0.611442,  Validation loss: 0.773232, Test loss: 0.761869
+Time for epoch: 11.888319253921509
+Validation loss is at a minimum. Saving the model
+[INFO] EPOCH: 2
+Train loss: 0.564120,  Validation loss: 0.724801, Test loss: 0.713922
+Time for epoch: 9.043763160705566
+Validation loss is at a minimum. Saving the model
+[INFO] EPOCH: 3
+Train loss: 0.488329,  Validation loss: 0.659998, Test loss: 0.649806
+Time for epoch: 8.953238248825073
+Validation loss is at a minimum. Saving the model
+[INFO] EPOCH: 4
+Train loss: 0.385915,  Validation loss: 0.572783, Test loss: 0.563667
+Time for epoch: 10.169978380203247
+Validation loss is at a minimum. Saving the model
+[INFO] EPOCH: 5
+Train loss: 0.265069,  Validation loss: 0.396500, Test loss: 0.388905
+Time for epoch: 10.426159620285034
+Validation loss stopped decreasing at epoch 6
+Validation loss is at a minimum. Saving the model
+[INFO] EPOCH: 6
+Train loss: 0.156049,  Validation loss: 0.197307, Test loss: 0.192692
+Time for epoch: 10.371855020523071
+Validation loss stopped decreasing at epoch 7
+Validation loss is at a minimum. Saving the model
+[INFO] EPOCH: 7
+Train loss: 0.075627,  Validation loss: 0.127768, Test loss: 0.101838
+Time for epoch: 10.014071464538574
+Validation loss stopped decreasing at epoch 8
+Validation loss is at a minimum. Saving the model
+[INFO] EPOCH: 8
+Train loss: 0.041228,  Validation loss: 0.061446, Test loss: 0.038786
+Time for epoch: 11.742713928222656

@@ -4,7 +4,7 @@ import gelslim_depth.main_config as main_config
 weights_name = 'unet_bigdata'
 weights_path = 'train_output/weights/'
 loss_curve_path = 'train_output/loss_curves/'
-dataset_path = main_config.DATA_PATH
+dataset_path = main_config.DATA_PATH+'/'
 num_images_to_display_live = 5
 exclude_objects = []
 batch_size = 16

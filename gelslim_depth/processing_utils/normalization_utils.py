@@ -69,7 +69,7 @@ def denormalize_tactile_image(tactile_image, image_normalization_method, norm_sc
 
 def normalize_depth_image(depth_image, depth_normalization_method, norm_scale, depth_normalization_params=None):
     if '0_255' not in depth_normalization_method:
-        for i in len(depth_normalization_params):
+        for i in range(len(depth_normalization_params)):
             if i == 0:
                 min_depth = depth_normalization_params[i]
             elif i == 1:
@@ -100,7 +100,7 @@ def normalize_depth_image(depth_image, depth_normalization_method, norm_scale, d
 
 def denormalize_depth_image(depth_image, depth_normalization_method, norm_scale, depth_normalization_params=None):
     if '0_255' not in depth_normalization_method:
-        for i in len(depth_normalization_params):
+        for i in range(len(depth_normalization_params)):
             if i == 0:
                 min_depth = depth_normalization_params[i]
             elif i == 1:

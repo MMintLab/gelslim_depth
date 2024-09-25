@@ -65,7 +65,7 @@ def parse_args():
     return parser.parse_args()
 
 #enter a number to limit the number of objects in each of the train, validation, and test sets, useful for debugging
-limit_object_lists = False
+limit_object_lists = 1
 
 #example shell command, run from the repository root directory:
 #python3 train_utils/train_unet.py unet_weights_1 1 --exclude_objects peg1 --activation_func mish --train_indefinitely --use_difference_image --max_datapoints_per_object 1000
@@ -105,7 +105,7 @@ live_display_path = 'train_output/live_display/'
 if not os.path.exists(live_display_path):
     os.makedirs(live_display_path)
 
-dataset_path = main_config.DATA_PATH
+dataset_path = main_config.DATA_PATH+'/'
 
 train_objects = os.listdir(dataset_path+'train_data/')
 #replace _train.pt with .pt
@@ -199,7 +199,7 @@ start_data_load_time = time.time()
 TrainDataset = GeneralDataset(directory=dataset_path+'train_data/', pt_file_list=train_objects, extra_directory=dataset_path+'real_data/', extra_pt_list=real_train_objects, use_difference_image=use_difference_image,
                             image_normalization_parameters=None, depth_normalization_method=depth_normalization_method, image_normalization_method=image_normalization_method,
                             separate_fingers=True, downsample_factor=downsample_factor, depth_image_blur_kernel=depth_image_blur_kernel, depth_normalization_parameters = None, norm_scale=norm_scale, max_datapoints_per_object=max_datapoints_per_object,
-                            device=device)
+                            device=device, interp_method=interp_method)
 
 print("Found {} training points".format(len(TrainDataset)))
 
@@ -213,7 +213,7 @@ input_tactile_image_size = TrainDataset.input_tactile_image_size
 ValDataset = GeneralDataset(directory=dataset_path+'validation_data/', pt_file_list=validation_objects, extra_directory=dataset_path+'real_data/', extra_pt_list=real_validation_objects, use_difference_image=use_difference_image,
                             image_normalization_parameters=image_normalization_parameters, depth_normalization_method=depth_normalization_method, image_normalization_method=image_normalization_method,
                             separate_fingers=True, downsample_factor=downsample_factor, depth_image_blur_kernel=depth_image_blur_kernel, depth_normalization_parameters = depth_normalization_parameters, norm_scale=norm_scale, max_datapoints_per_object=max_datapoints_per_object,
-                            device=device)
+                            device=device, interp_method=interp_method)
 
 print("Found {} validation points".format(len(ValDataset)))
 
@@ -221,7 +221,7 @@ print("Found {} validation points".format(len(ValDataset)))
 TestDataset = GeneralDataset(directory=dataset_path+'test_data/', pt_file_list=test_objects, extra_directory=dataset_path+'real_data/', extra_pt_list=real_test_objects, use_difference_image=use_difference_image, image_normalization_parameters=image_normalization_parameters,
                              depth_normalization_method=depth_normalization_method, image_normalization_method=image_normalization_method,
                              separate_fingers=True, downsample_factor=downsample_factor, depth_image_blur_kernel=depth_image_blur_kernel, depth_normalization_parameters = depth_normalization_parameters, norm_scale=norm_scale, max_datapoints_per_object=max_datapoints_per_object,
-                             device=device)
+                             device=device, interp_method=interp_method)
 
 print("Found {} test points".format(len(TestDataset)))
       

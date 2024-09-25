@@ -178,4 +178,4 @@ model.load_state_dict(torch.load(config.weights_path+weights_name+'.pth', map_lo
 ```
 
 ### Pretrained weights:
-[unet_bigdata.pth](https://www.dropbox.com/scl/fi/oz6lzedj0xwv6r0wprif8/unet_bigdata.pth?rlkey=fn7oo3cg01eo7cuqbdohr2dqe&st=9c6xmbn6&dl=0): There are the pretrained weights we provide, which work alongside `config_unet_bigdata.py` for the functionality described above.
+[unet_bigdata.pth](https://www.dropbox.com/scl/fi/oz6lzedj0xwv6r0wprif8/unet_bigdata.pth?rlkey=fn7oo3cg01eo7cuqbdohr2dqe&st=9c6xmbn6&dl=0): There are the pretrained weights we provide, which work alongside `config_unet_bigdata.py` for the functionality described above. Please move this file into `gelslim_depth/train_output/weights` to ensure functionality.

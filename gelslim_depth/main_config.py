@@ -1,1 +1,1 @@
-DATA_PATH = ''
+DATA_PATH = '/data/william/gelslim_depth/data'
